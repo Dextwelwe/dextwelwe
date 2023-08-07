@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.b6b4de68.css",
-    "main.js": "/static/js/main.1302213e.js",
+    "main.js": "/static/js/main.a7c24ce2.js",
     "static/js/787.39e6372d.chunk.js": "/static/js/787.39e6372d.chunk.js",
     "static/media/Questrial-Regular.ttf": "/static/media/Questrial-Regular.aa1669823cf6c4ef80c9.ttf",
     "index.html": "/index.html",
     "main.b6b4de68.css.map": "/static/css/main.b6b4de68.css.map",
-    "main.1302213e.js.map": "/static/js/main.1302213e.js.map",
+    "main.a7c24ce2.js.map": "/static/js/main.a7c24ce2.js.map",
     "787.39e6372d.chunk.js.map": "/static/js/787.39e6372d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6b4de68.css",
-    "static/js/main.1302213e.js"
+    "static/js/main.a7c24ce2.js"
   ]
 }
