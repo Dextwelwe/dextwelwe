@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dextwelwe/static/css/main.36038a99.css",
+    "main.css": "/dextwelwe/static/css/main.3ce3c5cd.css",
     "main.js": "/dextwelwe/static/js/main.d005cf0d.js",
     "static/js/787.39e6372d.chunk.js": "/dextwelwe/static/js/787.39e6372d.chunk.js",
     "static/media/Questrial-Regular.ttf": "/dextwelwe/static/media/Questrial-Regular.aa1669823cf6c4ef80c9.ttf",
     "index.html": "/dextwelwe/index.html",
-    "main.36038a99.css.map": "/dextwelwe/static/css/main.36038a99.css.map",
+    "main.3ce3c5cd.css.map": "/dextwelwe/static/css/main.3ce3c5cd.css.map",
     "main.d005cf0d.js.map": "/dextwelwe/static/js/main.d005cf0d.js.map",
     "787.39e6372d.chunk.js.map": "/dextwelwe/static/js/787.39e6372d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36038a99.css",
+    "static/css/main.3ce3c5cd.css",
     "static/js/main.d005cf0d.js"
   ]
 }
