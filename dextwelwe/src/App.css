@@ -4,14 +4,20 @@
   src: url(fonts/Questrial-Regular.ttf);
 }
 
+body {
+  -webkit-text-size-adjust: 100%;
+}
 
+svg {
+  width: 100%;
+}
 
 .logo {
  color: #B68D40;
  font-family: dxfont;
  text-align: center;
- font-size: 8vw;
- line-height:7vw;
+ font-size: 7vw;
+ line-height:4vw;
  margin-bottom: 20px;
 }
 
@@ -22,7 +28,7 @@
 
 #content {
   margin-top: 30vh;
-  width: 45%;
+  width: 35%;
 }
 
 .menuMainPage{
@@ -38,31 +44,53 @@
 .btnView{
 background-color: #B68D40;
 color: #F4EBD0 ;
-font-size: 1.5vw;
+font-size: 1.2vw;
 border: hidden;
 font-family: dxfont;
 border-radius:12px 12px 12px 12px;
 }
 
-@media screen and (max-width: 600px) {
+.btnView:active, .btnView:hover{
+ color: black;
+}
+
+@media screen and (max-width: 700px) {
   .logo {
-    font-size:18vw;
+    font-size: 15vw;
+    margin:5%;
+  }
+
+  .menuMainPage{
+    display: grid;
+    width: 90%;
+    background-color: transparent;
+    justify-content: unset;    
   }
   .btnView{
-    font-size: 3.5vw;
+    font-size: 5vw;
+    width: 100%;
+    padding: 2%;
+    border-style: none none solid none;
+    border-color: #122620;
+    position: relative;
+   left : 5.5%;
+    border-radius:30px 30px 30px 30px;
+  
    }
 
   #content {
     width: 90%;
   }
+
 }
 
-@media screen and (min-width: 601px) and (max-width: 1400px)  {
+@media screen and (min-width: 701px) and (max-width: 1400px)  {
  #content {
   width: 60%;
  }
  .logo {
   font-size: 12vw;
+  line-height: 7vw;
  }
 
  .btnView{
