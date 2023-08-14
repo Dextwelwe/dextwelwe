@@ -16,7 +16,7 @@ svg {
  color: #B68D40;
  font-family: dxfont;
  text-align: center;
- font-size: 7vw;
+ font-size: 8vw;
  line-height:4vw;
  margin-bottom: 20px;
 }
@@ -28,15 +28,15 @@ svg {
 
 #content {
   margin-top: 30vh;
-  width: 35%;
+  width: 40%;
 }
 
 .menuMainPage{
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 2px;
-  border-radius:12px 12px 12px 12px;
+  padding: 5px;
+  border-radius:30px 30px 30px 30px;
   background-color: #B68D40;
 
 }
@@ -48,16 +48,25 @@ font-size: 1.2vw;
 border: hidden;
 font-family: dxfont;
 border-radius:12px 12px 12px 12px;
+display: inline-flex;
+justify-content: center;
+align-self: center;
 }
 
 .btnView:active, .btnView:hover{
  color: black;
 }
 
-@media screen and (max-width: 700px) {
+.prevent-select {
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+
+@media screen and (max-width: 600px) {
   .logo {
-    font-size: 15vw;
-    margin:5%;
+    font-size: 16vw;
+    margin:6%;
   }
 
   .menuMainPage{
@@ -77,23 +86,28 @@ border-radius:12px 12px 12px 12px;
     border-radius:30px 30px 30px 30px;
   
    }
+  
 
   #content {
     width: 90%;
   }
 
+
+
 }
 
-@media screen and (min-width: 701px) and (max-width: 1400px)  {
+@media screen and (min-width: 601px) and (max-width: 1400px)  {
  #content {
-  width: 60%;
+  width: 65%;
  }
- .logo {
-  font-size: 12vw;
-  line-height: 7vw;
- }
+ 
 
  .btnView{
   font-size: 2vw;
+ }
+
+ .logo {
+  font-size: 13vw;
+  line-height: 7vw;
  }
 }
