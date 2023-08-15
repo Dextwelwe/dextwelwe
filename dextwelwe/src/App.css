@@ -8,8 +8,12 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-svg {
-  width: 100%;
+.fontFamily {
+  font-family: dxfont;
+}
+
+.fontColor {
+  color: #F4EBD0 ;
 }
 
 .logo {
@@ -91,9 +95,6 @@ align-self: center;
   #content {
     width: 90%;
   }
-
-
-
 }
 
 @media screen and (min-width: 601px) and (max-width: 1400px)  {
@@ -101,7 +102,6 @@ align-self: center;
   width: 65%;
  }
  
-
  .btnView{
   font-size: 2vw;
  }
