@@ -1,6 +1,6 @@
 import React from 'react'
 import About from '.././menu/about.js'
-import { useState } from 'react';
+import { useState} from 'react';
 
 export default function Mainpage() {
   const [abt, setAbt] = useState('none');
@@ -12,6 +12,7 @@ export default function Mainpage() {
       setAbt('none');
     }
   }
+
 
   return (
     <div className=' d-flex justify-content-center'>
