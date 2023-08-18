@@ -3,6 +3,9 @@ import './about.css';
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import img from '../iconAndre.png'
+import fr from '../icons/fr.jpg'
+import ru from '../icons/ru.jpg'
+import eng from '../icons/eng.jpg'
 
 
 
@@ -10,18 +13,14 @@ export default function About({abt , set}) {
   const modal = useRef('');
   const text = useRef('');
 
-
+  async function closeModal(){
+    modal.current.style.setProperty("animation-name", "disapear");
+    text.current.style.setProperty("animation-name", "removeText");
+    }
+  
   function close(){
-  countt().then(setTimeout(set, 500));
+  closeModal().then(setTimeout(set, 500));
   }
-
- async function countt(){
-
-  modal.current.style.setProperty("animation-name", "disapear");
-  text.current.style.setProperty("animation-name", "removeText");
-
-  }
-
 
 
   return (    
@@ -52,9 +51,9 @@ export default function About({abt , set}) {
     <div className='col-lg-4 col-md-4 col-sm-12'>
     <h4 className='fontColor px-lg-0 px-md-0 px-sm-0'>I speak</h4>
     <ul className='h5 px-lg-0 px-md-0 px-sm-3'>
-      <li>English</li>
-      <li>French</li>
-      <li>Russian</li>
+      <li> <span><img src={eng} className='flagCountry' alt='English' /></span> English </li> 
+      <li className='pt-1'> <span><img src={fr} className='flagCountry' alt='French' /></span> French</li>
+      <li className='pt-1'> <span><img src={ru} className='flagCountry' alt='Russian' /></span> Russian</li>
     </ul>
     </div>
     <h3 className='fontColor'>My skills</h3>
@@ -62,7 +61,7 @@ export default function About({abt , set}) {
     <div className='row'>
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox'>
     <h4 className= 'padding10 pt-3'>Programming</h4>
-      <ul>
+      <ul className='h5'>
       <li>Java</li>
       <li>C++</li>
       <li>C#</li>
@@ -72,7 +71,7 @@ export default function About({abt , set}) {
 
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox '>
     <h4 className='padding10 pt-3'>Web</h4>
-    <ul>
+    <ul className='h5'>
       <li>HTML</li>
       <li>CSS</li>
       <li>Javascript</li>
@@ -84,17 +83,17 @@ export default function About({abt , set}) {
     <div className='row '>
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox'>
     <h4 className='padding10 pt-3'>Databases</h4>
-    <ul>
+    <ul className='h5'>
     <li>SQL</li>
       <li>NoSQL</li>
       <li>PL/SQL</li>
-      <li>ORACLE</li>
+      <li>Firebase</li>
       <li>PostgreSQL</li>
       </ul>
     </div>
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox '>
     <h4 className='padding10 pt-3'>Frameworks & other</h4>
-    <ul>
+    <ul className='h5'>
       <li>Angular</li>
       <li>React</li>
       <li>Spring</li>
