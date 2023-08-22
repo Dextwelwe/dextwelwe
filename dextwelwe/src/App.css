@@ -20,7 +20,7 @@ body {
  color: #B68D40;
  font-family: dxfont;
  text-align: center;
- font-size: 8vw;
+ font-size: 6vw;
  line-height:4vw;
  margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@ body {
 
 #content {
   margin-top: 30vh;
-  width: 40%;
+  width: 30%;
 }
 
 .menuMainPage{
@@ -48,7 +48,7 @@ body {
 .btnView{
 background-color: #B68D40;
 color: #F4EBD0 ;
-font-size: 1.2vw;
+font-size: 1vw;
 border: hidden;
 font-family: dxfont;
 border-radius:12px 12px 12px 12px;

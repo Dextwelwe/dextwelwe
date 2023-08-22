@@ -1,0 +1,16 @@
+.imgProject {
+    width: 40%;
+}
+
+.textLanguage{
+    font-size: 20px;
+}
+
+.borderProject{
+    border : none;
+    border-width: 1px;
+    background-color: transparent;
+    padding: 7px;
+    border-radius: 15px 15px 15px 15px;
+}
+

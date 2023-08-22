@@ -60,22 +60,22 @@ export default function About({abt , set}) {
     <div className='container '>
     <div className='row'>
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox'>
-    <h4 className= 'padding10 pt-3'>Programming</h4>
-      <ul className='h5'>
-      <li>Java</li>
-      <li>C++</li>
-      <li>C#</li>
-      <li>Dart</li>
+    <h4 className= 'padding10 pt-3 '>Programming</h4>
+      <ul className='h5 lh-2 fontColor'>
+      <li>OOP / Datastructures & Algorithms</li>
+      <li>Multithreading / Patterns</li>
+      <li>Unit testing / Mocking</li>
+      <li>Java &nbsp; C# &nbsp; Python &nbsp; Dart</li>
       </ul>
     </div>
 
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox '>
     <h4 className='padding10 pt-3'>Web</h4>
-    <ul className='h5'>
-      <li>HTML</li>
-      <li>CSS</li>
+    <ul className='h5 fontColor'>
+      <li>HTML / CSS</li>
       <li>Javascript</li>
       <li>TypeScript</li>
+      <li>Backend integration</li>
     </ul>
     </div>
     </div>
@@ -83,23 +83,34 @@ export default function About({abt , set}) {
     <div className='row '>
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox'>
     <h4 className='padding10 pt-3'>Databases</h4>
-    <ul className='h5'>
-    <li>SQL</li>
-      <li>NoSQL</li>
+    <ul className='h5 fontColor'>
+    <li>SQL / NoSQL</li>
       <li>PL/SQL</li>
+      <li>Transactions</li>
       <li>Firebase</li>
       <li>PostgreSQL</li>
+      
       </ul>
     </div>
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox '>
     <h4 className='padding10 pt-3'>Frameworks & other</h4>
-    <ul className='h5'>
+    <div className='row'>
+      <div className='col'>
+    <ul className='h5 fontColor'>
       <li>Angular</li>
       <li>React</li>
       <li>Spring</li>
-      <li>Flutter</li>
+      <li>Bootstrap</li>
       <li>JQuery</li>
       </ul>
+      </div>
+      <div className='col'>
+        <ul className='h5 fontColor'>
+      <li>Raspberry PI</li>
+     <li>Flutter</li>
+      </ul>
+      </div>
+      </div>
     </div>
     </div>
     </div>
@@ -107,11 +118,7 @@ export default function About({abt , set}) {
     </div>
 
     <h4 className='mt-2 padding10 fontColor'>My Interests</h4>
-    <ul className='h5'>
-      <li>Cycling</li>
-      <li>Photography</li>
-      <li>Technology</li>
-    </ul>
+    <h6 className=' px-1'> &nbsp; Cycling &nbsp; Photography &nbsp; Technology &nbsp;</h6>
 </div>
     </div>
 </div>
