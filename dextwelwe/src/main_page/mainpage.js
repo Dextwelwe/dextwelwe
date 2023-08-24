@@ -24,11 +24,11 @@ export default function Mainpage() {
   }
 
   return (
-    <div className=' d-flex justify-content-center'>
+    <div className='d-flex justify-content-center'>
     {abt === 'block' && <About  abt={abt} set={setAbout}></About>}
     {projects === 'block' && <Projects projects={projects} set={setProject}></Projects>}
       <div id='content'>
-      <div className='logo prevent-select'> Dextwelwe</div>
+      <h4 className='logo prevent-select'> Dextwelwe</h4>
       <div className='menuMainPage prevent-select'>
       <button  className='btnView' onClick={setAbout}> About me</button>
       <button className='btnView' onClick={setProject}> Projects </button>

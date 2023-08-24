@@ -8,7 +8,6 @@ import ru from '../icons/ru.jpg'
 import eng from '../icons/eng.jpg'
 
 
-
 export default function About({abt , set}) {
   const modal = useRef('');
   const text = useRef('');
@@ -116,7 +115,6 @@ export default function About({abt , set}) {
     </div>
     </div>
     </div>
-
     <h4 className='mt-2 padding10 fontColor'>My Interests</h4>
     <h6 className=' px-1'> &nbsp; Cycling &nbsp; Photography &nbsp; Technology &nbsp;</h6>
 </div>
