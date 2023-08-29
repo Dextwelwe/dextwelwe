@@ -1,5 +1,5 @@
 .imgProject {
-    width: 40%;
+    width: 50%;
     height: 50%;
 }
 
@@ -8,10 +8,41 @@
 }
 
 .borderProject{
-    border : none;
-    border-width: 1px;
-    background-color: transparent;
-    padding: 7px;
-    border-radius: 15px 15px 15px 15px;
+    background-color:#F4EBD0;
+    margin-left: -1px;
+    color: black;
+    opacity: 70%;
+    
 }
+
+.borderProject:hover,
+  .borderProject:focus {
+    color: #122620;
+    background-color:#F4EBD0;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+
+@media screen and (max-width: 600px) {
+    .imgProject{
+        width: 100%;
+    }
+    .borderProject{
+        width: 100%;
+    }
+}
+
+@media screen and 
+    
+(min-width: 601px) and (max-width: 990px){
+    .imgProject{
+        width: 100%;
+    }
+    .borderProject{
+        width: 100%;
+    }
+}
+
 

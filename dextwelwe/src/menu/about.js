@@ -33,7 +33,7 @@ export default function About({abt , set}) {
       </div>
     <div style={{padding : '10px', paddingTop : '10px'}}>
     <h4 className='fontColor'>Hey There!</h4>
-  <h5>My name is Danil Moskalenko. I am Computer Science student living in Montréal, Canada</h5>
+  <h5>My name is Danil Moskalenko. I am Computer Science student and amateur photographer living in Montréal, Canada.</h5>
     </div>
     <div className='container flex-column'>
     <div className='row'>
@@ -116,7 +116,7 @@ export default function About({abt , set}) {
     </div>
     </div>
     <h4 className='mt-2 padding10 fontColor'>My Interests</h4>
-    <h6 className=' px-1'> &nbsp; Cycling &nbsp; Photography &nbsp; Technology &nbsp;</h6>
+    <h5 className=' px-1'> &nbsp; Cycling &nbsp; Photography &nbsp; Technology &nbsp; Skateboarding </h5>
 </div>
     </div>
 </div>
