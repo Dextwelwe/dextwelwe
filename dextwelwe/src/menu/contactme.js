@@ -18,8 +18,7 @@ export default function Contactme({contact, set}) {
         }
 
        function close(){
-        console.log('c')
-        closeModal().then(setTimeout(set, 500));
+        closeModal().then(setTimeout(set, 400));
       }
 
   return (
@@ -27,25 +26,17 @@ export default function Contactme({contact, set}) {
     <div>
        <div  style={{'display' :  contact}} id="myModal" className={"modal fontFamily"} >
     <div ref={modal}  className={"modal-contentContactMe"}>
-    <div ref={text} className='textContent'>
+    <div ref={text} className='textContentContactMe'>
       <div className='header'>
       <h2 className='fontColor px-2'>Contact me</h2>
-      
       <button onClick={close} className={"close mx-2"}>&times;</button> 
       </div>
-    
-      <div className=' skillBoxContactMe mt-2 p-3 mx-3'>
-     <a className='textLink' target="_blank"  rel="noopener noreferrer" href='https://github.com/Dextwelwe'><span><img src={gh} alt='github' className='imgLogo'></img> Github</span> </a>
-     <br></br>
-     <a className='textLink' href='\\'><span><img src={li} alt='linkedin' className='imgLogo'></img> LinkedIn</span></a>
-     <br></br>
-      <a className='textLink' target="_blank"  rel="noopener noreferrer" href='https://www.instagram.com/dextwelwe/' ><span><img src={ig} alt='instagram' className='imgLogo'></img> Instagram</span></a>
-     <br></br>
-     <a className='textLink' target="_blank"  rel="noopener noreferrer" href='https://mail.google.com/mail/u/?view=cm&to=dextwelwe@gmail.com'><span><img src={gm} alt='gmail' className='imgLogo'></img> Gmail</span></a>
-     <br></br>
-     <h6 className='textLink'>Dextwelwe@gmail.com</h6>
+      <div className=' skillBoxContactMe d-flex justify-content-around mt-2 p-3 mx-3'>
+     <a className='textLink' target="_blank"  rel="noopener noreferrer" href='https://github.com/Dextwelwe'><span><img src={gh} alt='github' className='imgLogo'></img></span></a>
+     <a className='textLink' href='#'><span><img src={li} alt='linkedin' className='imgLogo'></img></span></a>
+     <a className='textLink' target="_blank"  rel="noopener noreferrer" href='https://www.instagram.com/dextwelwe/' ><span><img src={ig} alt='instagram' className='imgLogo'></img></span></a>
+     <a className='textLink' target="_blank"  rel="noopener noreferrer" href='mailto:dextwelwe@gmail.com'><span><img src={gm} alt='gmail' className='imgLogo'></img></span></a>
     </div>
-    <p></p>
     </div>
     </div>
     </div>

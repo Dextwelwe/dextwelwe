@@ -12,13 +12,19 @@
     color : #F4EBD0;
 }
 
+.textContentContactMe{
+  animation-name: showTextContactMe;
+  animation-duration: 0.4s;
+}
+
 .modal-contentContactMe {
     animation-name: appearContactMe;
-    animation-duration: 0.5s;
-    width: 375px;
-    height: 350px;
+    animation-duration: 0.4s;
+    width: 300px;
+    height: max-content;
     background-color: #B68D40;
     padding: 10px;
+    padding-bottom: 20px;
     border-radius:30px 30px 30px 30px;
     position: fixed;
     top:-100%; right:-100%; left:-100%; bottom:-100%;
@@ -39,7 +45,6 @@
       opacity: 0;
       margin:auto;
       z-index:0;
-    
     }
   }
 
@@ -54,10 +59,23 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 40%;
-      height: 40%;
     }
   }
+
+  @keyframes showTextContactMe {
+    0% {
+      visibility: hidden;
+        opacity: 0;
+    }
+    50%{
+      visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+      visibility: visible;
+        opacity: 1;
+    }
+}
 
   .skillBoxContactMe{
     background-color: #a07c38;
@@ -72,14 +90,11 @@
     } 
     .modal-contentContactMe{
       width: 90%;
-      height : max-content ;
+      height: fit-content;
     }
 
-    .textLink{
-      font-size: 5vw;
-    }
     .imgLogo{
-      width: 8vw;
+      width: 13vw;
     }
   }
 
