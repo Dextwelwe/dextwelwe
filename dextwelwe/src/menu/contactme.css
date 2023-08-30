@@ -1,0 +1,80 @@
+.imgLogo{
+    width: 40px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    font-size: 30px;
+}
+
+.textLink{
+    text-decoration: none;
+    font-size: 25px;
+    color : #F4EBD0;
+}
+
+.modal-contentContactMe {
+    animation-name: appearContactMe;
+    animation-duration: 0.5s;
+    width: 375px;
+    height: 320px;
+    background-color: #B68D40;
+    padding: 10px;
+    border-radius:30px 30px 30px 30px;
+    position: fixed;
+    top:-100%; right:-100%; left:-100%; bottom:-100%;
+    margin:auto;
+    z-index:0;
+    box-sizing:content-box;
+  }
+
+.textLink  :hover ,
+.textLink :focus{
+    cursor: pointer;
+    color : white;
+}
+
+
+
+
+
+  @keyframes appearContactMe {
+    0%{
+      opacity: 0;
+      width: 100px;
+      height: 100px;
+      margin:auto;
+      z-index:0;
+    }
+  }
+
+  @keyframes disapearContactMe {
+    80%{
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      height: 40%;
+    }
+  }
+
+  .skillBoxContactMe{
+    background-color: #a07c38;
+    border-radius:10px 10px 10px 10px;
+}
+
+  @media screen and (max-width: 600px) {
+    @keyframes disapearContactMe {
+        100%{
+        width: 90%;
+      height: 90%;
+        }
+    } 
+  }
+
+
