@@ -25,7 +25,9 @@ export default function About({abt , set}) {
   return (    
     <div className={"fontFamily"} > 
       <div  style={{'display' :  abt}} id="myModal" className={"modal"} >
-    <div ref={modal}  className={"modal-content "}>
+     
+    <div ref={modal}  className={"modal-content"}>
+ 
       <div ref={text} className='textContent'>
       <div className='header'>
       <h1 className='fontColor'>About me</h1>
