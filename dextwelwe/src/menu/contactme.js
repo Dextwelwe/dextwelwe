@@ -16,7 +16,6 @@ export default function Contactme({contact, set}) {
         modal.current.style.setProperty("animation-name", "disapearContactMe");
         text.current.style.setProperty("animation-name", "removeText");
         }
-
        function close(){
         closeModal().then(setTimeout(set, 400));
       }
@@ -33,7 +32,7 @@ export default function Contactme({contact, set}) {
       </div>
       <div className=' skillBoxContactMe d-flex justify-content-around mt-2 p-3 mx-3'>
      <a className='textLink' target="_blank"  rel="noopener noreferrer" href='https://github.com/Dextwelwe'><span><img src={gh} alt='github' className='imgLogo'></img></span></a>
-     <a className='textLink' href='#'><span><img src={li} alt='linkedin' className='imgLogo'></img></span></a>
+     <a className='textLink' href='##'><span><img src={li} alt='linkedin' className='imgLogo'></img></span></a>
      <a className='textLink' target="_blank"  rel="noopener noreferrer" href='https://www.instagram.com/dextwelwe/' ><span><img src={ig} alt='instagram' className='imgLogo'></img></span></a>
      <a className='textLink' target="_blank"  rel="noopener noreferrer" href='mailto:dextwelwe@gmail.com'><span><img src={gm} alt='gmail' className='imgLogo'></img></span></a>
     </div>
