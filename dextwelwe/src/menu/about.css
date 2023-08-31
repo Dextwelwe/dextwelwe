@@ -10,14 +10,14 @@
 
   .modal-content {
     animation-name: appear;
-    padding: 20px;
+    padding: 15px;
     animation-duration: 0.5s;
     animation-fill-mode: both;
     width: 40%;
     height: 65%;
     background-color: #B68D40;
     border-radius:30px 30px 30px 30px;
-    border-width: 7px;
+    border-width: 5px;
     border-color: wheat;
     position: fixed;
     top:-100%; right:-100%; left:-100%; bottom:-100%;
