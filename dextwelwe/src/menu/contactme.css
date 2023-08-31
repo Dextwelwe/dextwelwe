@@ -29,7 +29,8 @@
     border-width: 5px;
     padding-bottom: 20px;
     border-radius:30px 30px 30px 30px;
-    border-color:wheat;
+  outline: solid;
+  outline-color: #B68D40;
     position: fixed;
     top:-100%; right:-100%; left:-100%; bottom:-100%;
     margin:auto;
