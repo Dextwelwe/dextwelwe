@@ -32,8 +32,8 @@
   @keyframes appear {
     0%{
       opacity: 0;
-      width: 35%;
-      height: 35%;
+      width: 30%;
+      height: 65%;
       margin:auto;
       z-index:0;
     }
@@ -50,8 +50,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 60%;
-      height: 80%;
+      width: 50%;
+      height: 65%;
     }
   }
 
@@ -156,17 +156,35 @@
       width: 70%;
       height: 80%;
   }
-  }
+  
+  @keyframes appear {
+    0% { opacity: 0;
+       width: 60%;
+         height: 80%;
+    }
+    } 
+  
 
-  @media screen and (min-width: 901px) and (max-width: 1400px)  {
+  @keyframes disapear {
+    80%{
+      opacity: 0%;
+    }
+   100%{ 
+    opacity: 0;
+    width: 80%;
+    height: 80%;
+   }
+  }
+}
+  @media screen and (min-width: 901px) and (max-width: 1399px)  {
     .modal-content {
         width: 60%;
         height: 80%;
     }
     @keyframes appear {
       0% { opacity: 0;
-         width: 35%;
-           height: 35%;
+         width: 50%;
+           height: 80%;
       }
       } 
 
@@ -188,8 +206,11 @@
         height: 85%;
     }
     @keyframes appear {
-    0% {  width: 50%;
-      height: 50%;
+
+    0% { 
+      opacity: 0;
+       width: 55%;
+      height: 65%;
     }
     } 
     @keyframes disapear {
@@ -197,7 +218,7 @@
         opacity: 1;
       }
       80%{
-        opacity: 0%;
+        opacity: 0;
       }
      100%{ 
       opacity: 0;

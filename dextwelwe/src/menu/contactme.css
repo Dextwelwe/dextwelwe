@@ -20,8 +20,9 @@
 .modal-contentContactMe {
     animation-name: appearContactMe;
     animation-duration: 0.4s;
+    transform: translateY(42px, 18px);
     width: 300px;
-    height: max-content;
+    height: 150px;
     background-color: #B68D40;
     padding: 10px;
     padding-bottom: 20px;
@@ -42,10 +43,15 @@
 
   @keyframes appearContactMe {
     0%{
+      width: 200px;
+      height: 150px;
       opacity: 0;
-      margin:auto;
-      z-index:0;
     }
+
+    100%{
+      width: 300px;
+    }
+
   }
 
   @keyframes disapearContactMe {
@@ -54,6 +60,7 @@
     }
 
     100%{
+      width: 400px;
       opacity: 0;
       visibility: hidden;
       display: flex;
@@ -84,12 +91,30 @@
 
   @media screen and (max-width: 600px) {
     @keyframes disapearContactMe {
+      90%{
+        opacity:0;
+      }
         100%{
+          width: 100%;
+          height: max-content;
           opacity: 0;
         }
     } 
+
+    @keyframes appearContactMe {
+      0%{
+        width: 60%;
+        opacity: 0;
+      }
+      100%{
+        width: 80%;
+      }
+  
+    }
+
+
     .modal-contentContactMe{
-      width: 90%;
+      width: 80%;
       height: fit-content;
     }
 
