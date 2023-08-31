@@ -115,13 +115,11 @@ align-items: center;
     height: 2.5em;
     position: relative;
     left : 12%; 
-    margin-bottom: 6px;
-    border : solid;
-    border-color :#122620;
+    margin-bottom: 3px;
+    border-style: none none solid  none;
+    border-color: #122620;
     border-width: 2px;
     border-radius:30em 30em 30em 30em;
-    outline : solid;
-    outline-color: #B68D40;
    }
  
 }
