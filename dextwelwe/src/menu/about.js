@@ -35,7 +35,7 @@ export default function About({abt , set}) {
       </div>
     <div style={{padding : '10px', paddingTop : '10px'}}>
     <h4 className='fontColor'>Hey There!</h4>
-  <h5>My name is Danil Moskalenko. I am a Computer Science student and amateur photographer living in Montréal, Canada.</h5>
+  <h5>My name is Danil Moskalenko. I am a Web Developper and amateur Photographer living in Montréal, Canada.</h5>
     </div>
     <div className='container flex-column'>
     <div className='row'>
@@ -64,8 +64,8 @@ export default function About({abt , set}) {
     <h4 className= 'padding10 pt-3 '>Programming</h4>
       <ul className='h5 lh-2 fontColor'>
       <li>OOP / Datastructures & Algorithms</li>
-      <li>Multithreading / Patterns</li>
-      <li>Unit testing / Mocking</li>
+      <li>Design Patterns</li>
+      <li>Unit / Mock testing</li>
       <li>Java &nbsp; C# &nbsp; Python &nbsp; Dart</li>
       </ul>
     </div>
@@ -87,14 +87,13 @@ export default function About({abt , set}) {
     <ul className='h5 fontColor'>
     <li>SQL / NoSQL</li>
       <li>PL/SQL</li>
-      <li>Transactions</li>
       <li>Firebase</li>
       <li>PostgreSQL</li>
       
       </ul>
     </div>
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox '>
-    <h4 className='padding10 pt-3'>Frameworks & other</h4>
+    <h4 className='padding10 pt-3'>Frameworks & Libraries</h4>
     <div className='row'>
       <div className='col'>
     <ul className='h5 fontColor'>
@@ -102,13 +101,12 @@ export default function About({abt , set}) {
       <li>React</li>
       <li>Spring</li>
       <li>Bootstrap</li>
-      <li>JQuery</li>
       </ul>
       </div>
       <div className='col'>
         <ul className='h5 fontColor'>
-      <li>Raspberry PI</li>
      <li>Flutter</li>
+     <li>JQuery</li>
       </ul>
       </div>
       </div>
@@ -118,7 +116,7 @@ export default function About({abt , set}) {
     </div>
     </div>
     <h4 className='mt-2 padding10 fontColor'>My Interests</h4>
-    <h5 className=' px-1'> &nbsp; Cycling &nbsp; Photography &nbsp; Technology &nbsp; Skateboarding </h5>
+    <h5 className=' px-1'> &nbsp; Cycling &nbsp; Photography &nbsp; Technology &nbsp; Web Design </h5>
 </div>
     </div>
 </div>

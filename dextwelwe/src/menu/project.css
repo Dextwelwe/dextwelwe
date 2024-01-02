@@ -8,7 +8,8 @@
 }
 
 .borderProject{
-    background-color:#F4EBD0;
+    border-radius:5px 5px 5px 5px; 
+    background-color:#93aad2;
     margin-left: -1px;
     color: black;
     opacity: 70%;
@@ -18,7 +19,7 @@
 .borderProject:hover,
   .borderProject:focus {
     color: #122620;
-    background-color:#F4EBD0;
+    background-color:#859fcc;
     text-decoration: none;
     cursor: pointer;
     opacity: 1;
