@@ -6,18 +6,20 @@
     height: 100%; 
     overflow: auto; 
     background-color:  transparent; 
-    backdrop-filter: blur(400px)
+    backdrop-filter: blur(400px);
   }
 
   .modal-content {
     animation-name: appear;
     padding: 15px;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-fill-mode: both;
     width: 40%;
-    height: 65%;
-    background-color:#cdd7ea ; 
+    background-color:#cdd7ea; 
     border-radius:5px 5px 5px 5px;
+    border: solid;
+    border-width: 2px;
+    border-color: #cdd7ea;
     border-width: 5px;
     position: fixed;
     top:-100%; right:-100%; left:-100%; bottom:-100%;
@@ -25,45 +27,42 @@
     z-index:0;
     overflow-y: scroll;
     box-sizing:content-box;
-      outline: solid;
-      outline-color: #cdd7ea ;
+  }
+
+  .modal-about {
+    height: max-content;
   }
 
   ::-webkit-scrollbar {
   width: 0;
   }
 
-
-
   @keyframes appear {
     0%{
       opacity: 0;
-      width: 30%;
-      height: 65%;
       margin:auto;
       z-index:0;
     }
   }
 
   @keyframes disapear {
-    80%{
+  
+    50%{
       opacity: 0;
+      visibility: hidden;
     }
-
     100%{
       opacity: 0;
       visibility: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 50%;
-      height: 65%;
     }
   }
 
 .textContent{
   animation-name: showText;
-  animation-duration: 0.5s;
+  animation-duration: 0.7s;
 }
 
 .header{
@@ -109,13 +108,8 @@
   border-radius:30px 30px 30px 30px;
 }
 
-
 @keyframes showText {
     0% {
-      visibility: hidden;
-        opacity: 0;
-    }
-    90%{
       visibility: hidden;
         opacity: 0;
     }
@@ -130,15 +124,14 @@
       visibility: hidden;
     }
     100% {
-      visibility: hidden;;
+      visibility: hidden;
     }
 }
-
  
 .close {
     color: #26385a;
     width: 50px;
-    height: 50px;
+    height: 38px;
     font-size: 28px;
     font-weight: bold;
     background-color: #cdd7ea;
@@ -148,6 +141,7 @@
     border-radius:5px 5px 5px 5px; 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
   
   .close:hover,
@@ -164,51 +158,15 @@
       height: 80%;
       border-width:3px;
   }
-  
-  @keyframes appear {
-    0% { opacity: 0;
-       width: 60%;
-         height: 80%;
-    }
-    } 
 
-  @keyframes disapear {
-    80%{
-      .modal{
-      backdrop-filter: blur(10px)
-      }
-      opacity: 0%;
-    }
-   100%{ 
-    opacity: 0;
-    width: 80%;
-    height: 80%;
-   }
-  }
+
 }
   @media screen and (min-width: 901px) and (max-width: 1399px)  {
     .modal-content {
-        width: 60%;
-        height: 80%;
-        border-width:3px;
-    }
-    @keyframes appear {
-      0% { opacity: 0;
-         width: 50%;
-           height: 80%;
-      }
-      } 
-
-    @keyframes disapear {
-      80%{
-        opacity: 0%;
-      }
-     100%{ 
-      opacity: 0;
       width: 70%;
       height: 80%;
-     }
-    }
+      border-width:3px;
+  }
   }
 
   @media screen and (max-width: 600px) {
@@ -216,27 +174,6 @@
         width: 80%;
         height: 85%;
         border-width:3px;
-    }
-    @keyframes appear {
-
-    0% { 
-      opacity: 0;
-       width: 55%;
-      height: 65%;
-    }
-    } 
-    @keyframes disapear {
-      30%{
-        opacity: 1;
-      }
-      80%{
-        opacity: 0;
-      }
-     100%{ 
-      opacity: 0;
-      width: 100%;
-      height: 100%;
-     }
     }
   }
 

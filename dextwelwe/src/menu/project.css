@@ -1,6 +1,5 @@
 .imgProject {
-    width: 50%;
-    height: 50%;
+    width: 45%;
 }
 
 .textLanguage{
@@ -13,7 +12,14 @@
     margin-left: -1px;
     color: black;
     opacity: 70%;
-    
+}
+
+.modalProjet{
+    height: max-content;
+}
+
+.skillBoxProject{
+height:50%;
 }
 
 .borderProject:hover,

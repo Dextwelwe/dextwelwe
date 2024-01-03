@@ -8,28 +8,35 @@ export default function Mainpage() {
   const [abt, setAbt] = useState('none');
   const [projects, setProjects] = useState('none');
   const [contact, setContact] = useState('none');
+  const [invisible, setInvisible] = useState('no')
 
   function setAbout(){
     if (abt === 'none'){
     setAbt('block');
+    setInvisible('yes')
     } else {
       setAbt('none');
+      setInvisible('no')
     }
   }
 
   function setProject(){
     if(projects === 'none'){
       setProjects('block');
+      setInvisible('yes')
     } else {
       setProjects('none');
+      setInvisible('no')
     }
   }
 
   function setContactMe(){
     if(contact === 'none'){
       setContact('block');
+      setInvisible('yes')
     } else {
       setContact('none');
+      setInvisible('no')
     }
   }
 
@@ -38,7 +45,7 @@ export default function Mainpage() {
     {abt === 'block' && <About  abt={abt} set={setAbout}></About>}
     {contact === 'block' && <Contactme contact={contact} set={setContactMe}></Contactme>}
     {projects === 'block' && <Projects projects={projects} set={setProject}></Projects>}
-    
+      {invisible === 'no' && 
       <div id='content' className='bgSmScr'>
       <h4 className='logo prevent-select'> Dextwelwe</h4>
       <div className='menuMainPage prevent-select'>
@@ -48,6 +55,7 @@ export default function Mainpage() {
       <button className='btnView' onClick={setContactMe}>Contact me</button>
       </div>
       </div>
+}
       </div>
   )
 }

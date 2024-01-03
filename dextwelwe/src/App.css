@@ -14,8 +14,8 @@ body, html {
 
 .fontColor {
   color: #0B1F42 ;
- 
 }
+
 
 .logo {
  justify-content: center;
@@ -56,26 +56,19 @@ body, html {
   width: 37%;
 }
 
-
-
 .menuMainPage{
+  margin-top: 25px;
   justify-content: space-around;
   align-items: center;
   display: flex;
   border-radius: 5px 5px 5px 5px;
   width: 100%;
-  background-color: #dbe3f0 ;
   height:30%;
-  border: solid;
-  border-width: 2px;
-  outline: solid;
   outline-color:#dbe3f0 ;
- 
+  border-color: white;
 }
 
 .btnView{
-background-color: #dbe3f0;
-color: black ;
 font-size: 1.3vw;
 border: hidden;
 font-family: dxfont;
@@ -83,6 +76,8 @@ border-radius:12px 12px 12px 12px;
 display: inline-flex;
 justify-content: center;
 align-items: center;
+background-color: transparent;
+color: white;
 }
 
 .btnView:active, .btnView:hover{
@@ -106,7 +101,7 @@ align-items: center;
   }
 
   .logo {
-    font-size: 16vw;
+    font-size: 15.5vw;
     margin:6%;
     height: fit-content;
   }
@@ -130,13 +125,10 @@ align-items: center;
     left : 12%; 
     margin-bottom: 10px;
     border-color: navy;
-    border-width: 2px;
     border-radius: 5px 5px 5px 5px;
     border: solid;
-    border-width: 1px;
-    outline: solid;
-    outline-color:#dbe3f0 ;
-
+    border-width: 2px;
+    border-color:#dbe3f0 ;
    }
  
 }

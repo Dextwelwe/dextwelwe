@@ -7,7 +7,6 @@ import fr from '../icons/fr.jpg'
 import ru from '../icons/ru.jpg'
 import eng from '../icons/eng.jpg'
 
-
 export default function About({abt , set}) {
   const modal = useRef('');
   const text = useRef('');
@@ -15,18 +14,18 @@ export default function About({abt , set}) {
   async function closeModal(){
     modal.current.style.setProperty("animation-name", "disapear");
     text.current.style.setProperty("animation-name", "removeText");
+    
     }
   
   function close(){
-  closeModal().then(setTimeout(set, 500));
+  closeModal().then(setTimeout(set, 400));
   }
-
 
   return (    
     <div className={"fontFamily"} > 
       <div  style={{'display' :  abt}} id="myModal" className={"modal"} >
      
-    <div ref={modal}  className={"modal-content"}>
+    <div ref={modal}  className={"modal-content modal-about"}>
  
       <div ref={text} className='textContent'>
       <div className='header'>

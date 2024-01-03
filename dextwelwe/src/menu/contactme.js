@@ -17,12 +17,10 @@ export default function Contactme({contact, set}) {
         text.current.style.setProperty("animation-name", "removeText");
         }
        function close(){
-        closeModal().then(setTimeout(set, 400));
+        closeModal().then(setTimeout(set, 500));
       }
 
   return (
-    <>
-    <div>
        <div  style={{'display' :  contact}} id="myModal" className={"modal fontFamily"} >
     <div ref={modal}  className={"modal-contentContactMe"}>
     <div ref={text} className='textContentContactMe'>
@@ -39,7 +37,5 @@ export default function Contactme({contact, set}) {
     </div>
     </div>
     </div>
-    </div>
-    </>
   )
 }
