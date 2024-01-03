@@ -14,7 +14,9 @@
     opacity: 70%;
 }
 
-
+.modalProjet{
+    height:max-content;
+}
 
 .skillBoxProject{
 height:50%;
@@ -37,6 +39,9 @@ height:50%;
     .borderProject{
         width: 100%;
     }
+    .modalProjet{
+        height:85%;
+    }
 }
 
 @media screen and 
@@ -46,6 +51,9 @@ height:50%;
     }
     .borderProject{
         width: 100%;
+    }
+    .modalProjet{
+        height: 80%;
     }
 }
 
