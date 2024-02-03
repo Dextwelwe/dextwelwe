@@ -16,7 +16,7 @@ export default function About({abt , set}) {
     }
   
   function close(){
-  closeModal().then(setTimeout(set, 700));
+  closeModal().then(setTimeout(set, 500));
   }
 
   return (    
