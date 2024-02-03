@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.35835974.css",
-    "main.js": "/static/js/main.cf1094fd.js",
+    "main.css": "/static/css/main.4fc510a7.css",
+    "main.js": "/static/js/main.1c54ba38.js",
     "static/js/787.39e6372d.chunk.js": "/static/js/787.39e6372d.chunk.js",
-    "static/media/ru.jpg": "/static/media/ru.37d6316856eea362812f.jpg",
-    "static/media/fr.jpg": "/static/media/fr.f394c0216e5d406768ff.jpg",
     "static/media/screenGrocery.jpg": "/static/media/screenGrocery.ccf2ba8599fdc02da393.jpg",
-    "static/media/eng.jpg": "/static/media/eng.c13ff070e79270273343.jpg",
     "static/media/iconAndre.png": "/static/media/iconAndre.c8403d0ba5ed5d5c5071.png",
     "static/media/Questrial-Regular.ttf": "/static/media/Questrial-Regular.aa1669823cf6c4ef80c9.ttf",
+    "static/media/screen.jpg": "/static/media/screen.35c20d022764a0935db2.jpg",
     "static/media/instagram.png": "/static/media/instagram.2d5cedd576ca1a740d7c.png",
-    "static/media/screen.jpg": "/static/media/screen.872a9288fc6735ef0d4c.jpg",
+    "static/media/wrench-solid.svg": "/static/media/wrench-solid.3f2cbe6d5c7f8e5c1792ffe58007a6b0.svg",
     "index.html": "/index.html",
-    "main.35835974.css.map": "/static/css/main.35835974.css.map",
-    "main.cf1094fd.js.map": "/static/js/main.cf1094fd.js.map",
+    "main.4fc510a7.css.map": "/static/css/main.4fc510a7.css.map",
+    "main.1c54ba38.js.map": "/static/js/main.1c54ba38.js.map",
     "787.39e6372d.chunk.js.map": "/static/js/787.39e6372d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35835974.css",
-    "static/js/main.cf1094fd.js"
+    "static/css/main.4fc510a7.css",
+    "static/js/main.1c54ba38.js"
   ]
 }
