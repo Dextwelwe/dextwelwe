@@ -1,5 +1,6 @@
 .modal {
-    align-items: center;
+  
+    display :flex;
     left: 0;
     top: 0;
     width: 100%; 
@@ -12,8 +13,8 @@
   .modal-content {
     animation-name: appear;
     padding: 15px;
-    animation-duration: 1s;
-    animation-fill-mode: both;
+    animation-duration: 1.3s;
+    height: 800px;
     width: 40%;
     background-color:#cdd7ea; 
     border-radius:5px 5px 5px 5px;
@@ -29,10 +30,7 @@
     box-sizing:content-box;
   }
 
-  .modal-about {
-    height: max-content;
-  }
-
+ 
   ::-webkit-scrollbar {
   width: 0;
   }
@@ -40,7 +38,7 @@
   @keyframes appear {
     0%{
       opacity: 0;
-      margin:auto;
+      
       z-index:0;
     }
   }
@@ -62,7 +60,7 @@
 
 .textContent{
   animation-name: showText;
-  animation-duration: 0.7s;
+  animation-duration: 1.5s;
 }
 
 .header{
@@ -86,7 +84,13 @@
 .img{
     max-width: 40%;
     height: 50px;
-    border-radius:30px 30px 30px 30px;
+    border-radius:5px;
+}
+
+.imgCyframe{
+  max-width: 40%;
+  height: 50px;
+  border-radius: 5px;
 }
 
 .headerText {
@@ -105,7 +109,7 @@
 .flagCountry{
   width: 30px;
   height: 30px;
-  border-radius:30px 30px 30px 30px;
+  border-radius:5px;
 }
 
 @keyframes showText {

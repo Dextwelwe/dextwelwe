@@ -3,6 +3,7 @@ import {useState} from 'react';
 import About from '.././menu/about.js'
 import Projects from '../menu/projects.js';
 import Contactme from '../menu/contactme.js';
+import {Link } from "react-router-dom";
 
 export default function Mainpage() {
   const [abt, setAbt] = useState('none');
@@ -41,6 +42,7 @@ export default function Mainpage() {
   }
 
   return (
+    <div className='bg'>
     <div className='d-flex justify-content-center'>
     {abt === 'block' && <About  abt={abt} set={setAbout}></About>}
     {contact === 'block' && <Contactme contact={contact} set={setContactMe}></Contactme>}
@@ -51,11 +53,12 @@ export default function Mainpage() {
       <div className='menuMainPage prevent-select'>
       <button  className='btnView' onClick={setAbout}> About me</button>
       <button className='btnView' onClick={setProject}> Projects </button>
-      <button className='btnView' onClick={()=>alert('Coming soon')}> Photography</button>
+      <Link className='btnView text-decoration-none' to="/photography">Photography</Link>
       <button className='btnView' onClick={setContactMe}>Contact me</button>
       </div>
       </div>
-}
+} 
+      </div>
       </div>
   )
 }

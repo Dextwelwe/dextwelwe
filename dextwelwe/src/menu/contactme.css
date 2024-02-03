@@ -14,7 +14,7 @@
 
 .textContentContactMe{
   animation-name: showTextContactMe;
-  animation-duration: 0.5s;
+  animation-duration: 0.6s;
 }
 
 .modal-contentContactMe {
@@ -28,7 +28,7 @@
     border: solid;
     border-width: 2px;
     padding-bottom: 20px;
-    border-radius:5px 5px 5px 5px;
+    border-radius: 10px;
  
     position: fixed;
     top:-115%; right:-100%; left:-100%; bottom:-100%;

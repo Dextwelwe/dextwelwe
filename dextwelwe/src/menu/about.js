@@ -3,9 +3,7 @@ import './about.css';
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import img from '../iconAndre.png'
-import fr from '../icons/fr.jpg'
-import ru from '../icons/ru.jpg'
-import eng from '../icons/eng.jpg'
+import cyframe from '../cyframe_logo.jpg'
 
 export default function About({abt , set}) {
   const modal = useRef('');
@@ -18,7 +16,7 @@ export default function About({abt , set}) {
     }
   
   function close(){
-  closeModal().then(setTimeout(set, 400));
+  closeModal().then(setTimeout(set, 700));
   }
 
   return (    
@@ -34,38 +32,51 @@ export default function About({abt , set}) {
       </div>
     <div style={{padding : '10px', paddingTop : '10px'}}>
     <h4 className='fontColor'>Hey There!</h4>
-  <h5>My name is Danil Moskalenko. I am a Web Developper and amateur Photographer living in Montréal, Canada.</h5>
+  <h4>My name is Danil Moskalenko. I am a Full Stack Web Developper and amateur Photographer living in Montréal, Canada.</h4>
+  
     </div>
     <div className='container flex-column'>
     <div className='row'>
-    <div className='col-lg-8 col-md-8 col-sm-12'>
-      <h4 className='fontColor'>I studied at</h4>
+    <div className='col-lg-12 col-md-12 col-sm-12'>
+      <h4 className='fontColor mt-1'>I studied at</h4>
       <div className='studies'>
       <img src={img} className='img' alt='Andre Laurendeau'/>
       <div>
-      <h3 className='px-2'>Cégep André-Laurendeau</h3>
-      <h6 className='px-2 lh-1'>-Computer Science 2021-2024</h6> 
-      </div>
+     <h4 className='px-2 m-0'>Cégep André-Laurendeau</h4>
+     <ul>
+     <li><h5 className='px-2 lh-1 m-0'> Computer Science 2021-2024.</h5> </li>
+     <li><h5 className='px-2 lh-1'>Specialisation in <strong> Web Developpement</strong>.</h5></li>
+      </ul>
+     </div>
     </div>
     </div>
     <div className='col-lg-4 col-md-4 col-sm-12'>
-    <h4 className='fontColor px-lg-0 px-md-0 px-sm-0'>I speak</h4>
-    <ul className='h5 px-lg-0 px-md-0 px-sm-3'>
-      <li> <span><img src={eng} className='flagCountry' alt='English' /></span> English </li> 
-      <li className='pt-1'> <span><img src={fr} className='flagCountry' alt='French' /></span> French</li>
-      <li className='pt-1'> <span><img src={ru} className='flagCountry' alt='Russian' /></span> Russian</li>
-    </ul>
     </div>
-    <h3 className='fontColor'>My skills</h3>
+     <h4 className='fontColor mt-1'>I work at</h4>
+      <div className='studies'>
+      <img src={cyframe} className='imgCyframe' alt='CyFrame'/>
+      <div className=''>
+      <h5 className='px-2 m-0'>CyFrame</h5>
+      <ul>
+      <li><h5 className='px-2 lh-1 m-0'>Web Developper.</h5></li>
+      <li><h5 className='px-2 '>I am working on redesigning 60+ Web pages for an ERP software company. My current Web stack is <strong>JavaScript </strong>,<strong> Jquery </strong>,
+      <strong> ASP & Oracle</strong>.
+      </h5></li>
+      </ul>
+      </div>
+      </div>
+   
+    <h4 className='fontColor mt-1'>My skills</h4>
     <div className='container '>
     <div className='row'>
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox'>
     <h4 className= 'padding10 pt-3 '>Programming</h4>
       <ul className='h5 lh-2 fontColor'>
-      <li>OOP / Datastructures & Algorithms</li>
+      <li>Object Oriented Programming</li>  
+      <li>Datastructures & Algorithms</li>
       <li>Design Patterns</li>
       <li>Unit / Mock testing</li>
-      <li>Java &nbsp; C# &nbsp; Python &nbsp; Dart</li>
+      <li>Java &nbsp; C# &nbsp; Python &nbsp;</li>
       </ul>
     </div>
 
@@ -75,7 +86,7 @@ export default function About({abt , set}) {
       <li>HTML / CSS</li>
       <li>Javascript</li>
       <li>TypeScript</li>
-      <li>Backend integration</li>
+      <li>ASP</li>
     </ul>
     </div>
     </div>
@@ -84,10 +95,11 @@ export default function About({abt , set}) {
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox'>
     <h4 className='padding10 pt-3'>Databases</h4>
     <ul className='h5 fontColor'>
-    <li>SQL / NoSQL</li>
       <li>PL/SQL</li>
-      <li>Firebase</li>
       <li>PostgreSQL</li>
+      <li>Oracle</li>
+      <li>Firebase</li>
+      
       
       </ul>
     </div>
@@ -96,16 +108,11 @@ export default function About({abt , set}) {
     <div className='row'>
       <div className='col'>
     <ul className='h5 fontColor'>
-      <li>Angular</li>
       <li>React</li>
-      <li>Spring</li>
+      <li>Flask</li>
+      <li>Java Spring</li>
       <li>Bootstrap</li>
-      </ul>
-      </div>
-      <div className='col'>
-        <ul className='h5 fontColor'>
-     <li>Flutter</li>
-     <li>JQuery</li>
+      <li>JQuery</li>
       </ul>
       </div>
       </div>
@@ -114,8 +121,10 @@ export default function About({abt , set}) {
     </div>
     </div>
     </div>
-    <h4 className='mt-2 padding10 fontColor'>My Interests</h4>
-    <h5 className=' px-1'> &nbsp; Cycling &nbsp; Photography &nbsp; Technology &nbsp; Web Design </h5>
+    <div className=' padding10' >
+    <h4 className=' fontColor'>My Interests</h4>
+    <h5 > User Experience &nbsp; · New Technologies &nbsp; · Web Design </h5>
+    </div>
 </div>
     </div>
 </div>
