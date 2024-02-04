@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd3afd5e.css",
+    "main.css": "/static/css/main.b875c026.css",
     "main.js": "/static/js/main.fe0b76eb.js",
     "static/js/787.39e6372d.chunk.js": "/static/js/787.39e6372d.chunk.js",
     "static/media/screenGrocery.jpg": "/static/media/screenGrocery.ccf2ba8599fdc02da393.jpg",
@@ -10,12 +10,12 @@
     "static/media/instagram.png": "/static/media/instagram.2d5cedd576ca1a740d7c.png",
     "static/media/wrench-solid.svg": "/static/media/wrench-solid.3f2cbe6d5c7f8e5c1792ffe58007a6b0.svg",
     "index.html": "/index.html",
-    "main.dd3afd5e.css.map": "/static/css/main.dd3afd5e.css.map",
+    "main.b875c026.css.map": "/static/css/main.b875c026.css.map",
     "main.fe0b76eb.js.map": "/static/js/main.fe0b76eb.js.map",
     "787.39e6372d.chunk.js.map": "/static/js/787.39e6372d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd3afd5e.css",
+    "static/css/main.b875c026.css",
     "static/js/main.fe0b76eb.js"
   ]
 }
