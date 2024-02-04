@@ -1,5 +1,6 @@
 .imgProject {
     width: 45%;
+    height : max-content;
 }
 
 .textLanguage{
@@ -37,7 +38,8 @@
         width: 100%;
     }
     .modalProjet{
-        height:85%;
+        height:90%;
+        width: 85%;
     }
 }
 

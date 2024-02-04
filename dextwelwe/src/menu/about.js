@@ -56,12 +56,12 @@ export default function About({abt , set}) {
       <div className='studies'>
       <img src={cyframe} className='imgCyframe' alt='CyFrame'/>
       <div className=''>
-      <h5 className='px-2 m-0'>CyFrame</h5>
+      <h4 className='px-2 m-0'>CyFrame</h4>
       <ul>
       <li><h5 className='px-2 lh-1 m-0'>Web Developper.</h5></li>
-      <li><h5 className='px-2 '>I am working on redesigning 60+ Web pages for an ERP software company. My current Web stack is <strong>JavaScript </strong>,<strong> Jquery </strong>,
-      <strong> ASP & Oracle</strong>.
-      </h5></li>
+      <li><h5 className='px-2 lh-1 m-0'>I am working on redesigning 60+ Web pages for an ERP software company. </h5 ></li>
+      <li><h5 className='px-2 lh-1 '>My current Web stack is <strong>JavaScript · Jquery · </strong>
+      <strong> ASP · Oracle</strong></h5></li>
       </ul>
       </div>
       </div>
@@ -123,7 +123,7 @@ export default function About({abt , set}) {
     </div>
     <div className=' padding10' >
     <h4 className=' fontColor'>My Interests</h4>
-    <h5 > User Experience &nbsp; · New Technologies &nbsp; · Web Design </h5>
+    <h5 > User Experience &nbsp; · New Technologies &nbsp; · Web Design &nbsp; ·  React</h5> 
     </div>
 </div>
     </div>
