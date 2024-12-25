@@ -151,3 +151,19 @@ color: white;
  }
 }
 
+@media screen and (max-width: 450px) {
+  .bg {
+   height:100vh;
+   overflow: hidden;
+  }
+
+  .logo {
+    font-size: 70px;
+   }
+
+   .btnView{
+    width: 340px;
+   }
+
+}
+

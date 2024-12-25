@@ -40,7 +40,7 @@ export default function Ph() {
       <div style={{height:'100%'}} className="textContent"ref={text}>
       <div className='headerPh bg-transparent'>
       <div className='navTopPh'>
-      <h1 >Photography</h1>
+      <h1>Photography</h1>
       <button onClick={close} className={"close"}><span style={{marginTop:'-2px'}}>&times;</span></button>
       </div>
       <div  className='buttonNavPhWrapper'>
