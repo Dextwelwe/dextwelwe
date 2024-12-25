@@ -202,7 +202,8 @@
       border-radius: 5px;
   }
   .header{
-    width: 92%;
+    margin-top:0;
+    width: 96%;
   }
   .Hey{
    padding: 5px;
