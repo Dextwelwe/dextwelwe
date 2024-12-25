@@ -56,6 +56,7 @@
 
 .Hey{
   margin-top :65px;
+  padding: 10px;
 }
 
 .padding10{
@@ -181,12 +182,14 @@
 
   @media screen and (max-width: 600px) {
     .modal-content {
-        width: 90%;
-        height: 90%;
+        width: 97%;
+        height: 97%;
         border-width:3px;
-        max-height: 90%;
-        padding: 20px !important;
+        box-sizing: border-box;
+        max-height: 97%;
+        padding: 7px !important;
         padding-right: 0px !important;
+        padding-left: 0;
     }
     .img{
       max-width: 40%;
@@ -200,6 +203,9 @@
   }
   .header{
     width: 92%;
+  }
+  .Hey{
+   padding: 5px;
   }
   }
 

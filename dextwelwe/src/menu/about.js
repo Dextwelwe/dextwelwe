@@ -31,7 +31,7 @@ export default function About({abt , set}) {
       <h1 className='fontColor'>About me</h1>
       <button onClick={close} className={"close"}>&times;</button>
       </div>
-    <div className='Hey' style={{padding : '10px', paddingTop : '10px'}}>
+    <div className='Hey' style={{paddingTop : '10px'}}>
     <h4 className='fontColor'>Hey There! &nbsp;<span><img src={hello} alt="waving at you :)" width={30} height={30} /></span></h4>
   <h4>My name is Danil Moskalenko. I am a Full Stack Web Developper and amateur Photographer living in Montréal, Canada.</h4>
   <h5> I’ve got a thing for both tech and photography. I love exploring new ideas, learning as I go, and finding that perfect mix of creativity and problem-solving.</h5>
