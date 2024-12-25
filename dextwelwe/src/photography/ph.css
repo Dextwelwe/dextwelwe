@@ -1,9 +1,265 @@
 .main-div {
-    height : 95%;
-    width : 80%;
+    height : 99%;
+    width : max-content;
+    animation-name: appear;
     border-radius : 5px;
     background-color: #cdd7ea;
-    animation-name: appear;
-    animation-duration: 1.5s;
+    max-width: 1690px;
+    animation-duration: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+  @keyframes disapearPH {
+    50%{
+      opacity: 0;
+      visibility: hidden;
+    }
+    100%{
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+
+.buttonNavPhWrapper{
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 10px;
+    gap: 20px;
+    height: 40px;
+    width: 100%;
+}
+
+#rootPH{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.buttonNavPh{
+    width: 100px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #becce4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.imgWrapper{
+    margin : 10px;
+    margin-bottom: 0;
+    padding: 0;
+    height: max-content;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    width: max-content;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navTopPh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.bgPhotographyGradient{
+  background: #e65c00;
+  background: linear-gradient(
+    to right,
+    #e65c00,#F9D423
+  );
+  width: 100vw;
+  height: 100vh;
+  animation-name: appearNewBg;
+  animation-duration: 0.3s;
+}
+
+
+
+.bgPhotographyGradientStreet{
+    background: #e65c00;
+    background: linear-gradient(
+      to right,
+      black,#F9D423
+    );
+    animation: gradient 15s ease infinite;
+    width: 100vw;
+    height: 100vh;
+}
+
+.selectedPh{
+    width: 100px;
+    border-radius: 5px;
+    background-color: #becce4;
+    border-style: solid;
+    border-color : #0B1F42;
+    height: 40px;
+}
+
+.headerPh{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding : 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 2px;
+    margin-bottom: 30px;
+    background-color: #cdd7ea;
+    height: 100px;
+}
+
+.headerPh >h1 {
+    font-weight: 400;
+}
+
+.photosPH{
+    margin-top : 10px;
+    overflow-y: auto;
+    height: max-content;
+    text-align: center;
+    height: calc(100% - 135px);
+}
+
+.blocker{
+    display: flex;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background-color: orange;
+}
+.picturePH{
+    cursor: pointer;
+    margin: 4px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 533px;
+    width: 800px;
+}
+.picturePHVertical{
+    cursor: pointer;
+    margin: 4px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    
+}
+
+@media screen and (max-width: 1750px) {
+    .main-div{
+        max-width: 1500px;
+    }
+
+     .picturePH{
+        width: 650px;
+        height: 433px;
+    }
+}
+
+@media screen and (max-width: 1590px) {
+    .main-div{
+        max-width: 1400px;
+    }
+
+     .picturePH{
+        width: 650px;
+        height: 433px;
+    }
+}
+
+@media screen and (max-width: 1475px) {
+    .main-div{
+        max-width: 1300px;
+    }
+
+     .picturePH{
+        width: 550px;
+        height:366px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .main-div{
+        max-width: 95%;
+    }
+    .picturePH{
+        width: 550px;
+        height:366px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .main-div{
+        max-width: 95%;
+    }
+    .picturePH{
+        width: 500px;
+        height:333px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .main-div{
+        max-width: 95%;
+    }
+    .picturePH{
+        width: 450px;
+        height:300px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .main-div{
+        max-width: 95%;
+    }
+
+    .picturePH{
+        width: 800px;
+        height:533px;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .main-div{
+        max-width: 95%;
+    }
+
+    .picturePH{
+        width: 700px;
+        height: 466px;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .picturePH{
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .picturePH{
+        width: 500px;
+        height: 333px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .picturePH{
+        width: 430px;
+        height: 286px;
+    }
+}
+
+

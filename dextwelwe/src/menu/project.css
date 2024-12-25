@@ -6,6 +6,10 @@
     font-size: 20px;
 }
 
+.skillBoxProject{
+    background-color: #becce4;
+}
+
 .borderProject{
     border-radius:5px 5px 5px 5px; 
     background-color:#93aad2;
@@ -14,8 +18,66 @@
     opacity: 70%;
 }
 
+.infoApps{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 55%;
+}
+
 .modalProjet{
     height:max-content;
+}
+
+.buttonLink{
+    width: 100%;
+}
+
+.textContentProject{
+    animation-duration: 2s;
+  }
+
+
+  @keyframes showTextProject {
+    0% {
+      visibility: hidden;
+        opacity: 0;
+    }
+    50%{
+      visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+      visibility: visible;
+        opacity: 1;
+    }
+}  
+
+
+@keyframes disapearProject {
+    50%{
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    100%{
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+@keyframes removeTextProject {
+    0% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: hidden;
+    }
 }
 
 
@@ -28,6 +90,29 @@
     opacity: 1;
   }
 
+  .modal-content-project {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 15px;
+    overflow: auto;
+    animation-duration: 0.5s;
+    width: 650px;
+    animation-name: appear;
+    transform: translateY(42px, 18px);
+    height: max-content;
+    max-height: 90%;
+    background-color:#cdd7ea; 
+    border-radius:5px 5px 5px 5px;
+    border: solid;
+    border-width: 2px;
+    border-color: #cdd7ea;
+    border-width: 5px;
+    position: fixed;
+    top:-130%; right:-100%; left:-100%; bottom:-100%;
+    margin:auto;
+    box-sizing:content-box;
+  }  
+
+
 
 @media screen and (max-width: 600px) {
     .imgProject{
@@ -37,9 +122,35 @@
         width: 100%;
     }
     .modalProjet{
-        height:90%;
+        max-height:90%;
         width: 85%;
     }
+    .buttonProject{
+        width: 100% !important;
+    }
+    .infoApps {
+        width: 100%;
+    }
+    .skillBoxProject > .row {
+        gap : 5px;
+    }
+    .modal-content-project{
+      top: -100%;
+    }
+}
+
+.headerApp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    background-color: #cdd7ea;
+}
+
+.modalProject{
+    width: unset;
 }
 
 @media screen and 
@@ -51,8 +162,27 @@
         width: 100%;
     }
     .modalProjet{
-        height: 80%;
+        width: 80%;
     }
+    .buttonProject{
+        width: 100% !important;
+    }
+    .infoApps {
+        width: 100%;
+    }
+    .skillBoxProject > .row {
+        gap : 5px;
+    }
+    .modal-content-project{
+      top: -100%;
+    }
+}
+
+.buttonProject{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 

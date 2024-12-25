@@ -13,14 +13,13 @@
 }
 
 .textContentContactMe{
-  animation-name: showTextContactMe;
-  animation-duration: 0.6s;
+  animation-duration: 1s;
 }
 
 .modal-contentContactMe {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     animation-name: appearContactMe;
-    animation-duration: 0.6s;
+    animation-duration: 0.5s;
     transform: translateY(42px, 18px);
     width: 300px;
     height: 150px;
@@ -30,12 +29,19 @@
     border-width: 2px;
     padding-bottom: 20px;
     border-radius: 8px;
- 
     position: fixed;
-    top:-115%; right:-100%; left:-100%; bottom:-100%;
+    top:-135%; right:-100%; left:-100%; bottom:-100%;
     margin:auto;
     z-index:0;
     box-sizing:content-box;
+  }
+
+  @keyframes appearContactMe {
+    0%{
+      opacity: 0;
+      
+      z-index:0;
+    }
   }
 
 .textLink  :hover ,
@@ -44,12 +50,6 @@
     color : white;
 }
 
-
-  @keyframes appearContactMe {
-    0% {
-      opacity: 0;
-    }
-  }
 
   @keyframes disapearContactMe {
     80%{
@@ -89,7 +89,7 @@
   @media screen and (max-width: 600px) {
   
     .modal-contentContactMe{
-      top:-100%; right:-100%; left:-100%; bottom:-100%;
+      top: -120%; right:-100%; left:-100%; bottom:-100%;
       width: 80%;
       height: fit-content;
     }
@@ -98,5 +98,16 @@
       width: 11vw;
     }
   }
+
+  .headerCM{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color: #cdd7ea;
+  }
+
+
 
 

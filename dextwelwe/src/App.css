@@ -24,16 +24,15 @@ body, html {
  color: #dbe3f0;
  font-family: dxfont;
  text-align: center;
- font-size: 7.15vw;
- line-height:5vw;
- margin-bottom: 0.1em;
+ font-size: 130px;
+ line-height:80px;
+ margin: 0;
  height: auto;
 
 }
 
 .bg {
   background: linear-gradient(109.6deg, rgb(20, 30, 48) 12%, rgb(36, 59, 85) 92%);
-  background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   width: 100vw;
   height: 100vh;
@@ -52,24 +51,24 @@ body, html {
 }
 
 #content {
-  margin-top: 30vh;
-  width: 37%;
+  top: 25%;
+  position: relative;
+  
 }
 
 .menuMainPage{
   margin-top: 25px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   border-radius: 5px 5px 5px 5px;
   width: 100%;
-  height:30%;
   outline-color:#dbe3f0 ;
   border-color: white;
 }
 
 .btnView{
-font-size: 1.3vw;
+font-size: 25px;
 border: hidden;
 font-family: dxfont;
 border-radius:12px 12px 12px 12px;
@@ -93,16 +92,17 @@ color: white;
 @media screen and (max-width: 600px) {
   .bg {
    height:100vh;
+   overflow: hidden;
   }
 
   #content {
     width: 100%;
-   
   }
 
   .logo {
-    font-size: 15.5vw;
+    font-size: 80px;
     margin:6%;
+    margin-bottom: 0;
     height: fit-content;
   }
 
@@ -111,18 +111,17 @@ color: white;
     display: flex;
     flex-direction: column;
     -ms-flex-align: center;
-    width: 80%;
     background-color: transparent;
     justify-content: center;    
     height: auto;
     outline: none;
+    margin-top: 10px;
   }
   .btnView{
-    font-size: 5vw;
-    width: 95%;
-    height: 2.2em;
+    font-size: 25px;
+    width: 385px;
+    height: 60px;
     position: relative;
-    left : 12%; 
     margin-bottom: 10px;
     border-color: navy;
     border-radius: 5px 5px 5px 5px;
@@ -135,35 +134,20 @@ color: white;
 
 @media screen and (min-width: 601px) and (max-width: 900px)  {
   #content{
-    width: 60%;
+    width: max-content;
   }
 
   .logo {
-    font-size: 12vw;
-    height: 7.2vw;
+    font-size: 100px;
    }
 
    .menuMainPage{
    height: auto;
+   margin-top: 20px;
    }
 
 .btnView{
-  font-size: 2.1vw;
+  font-size: 20px;
  }
 }
 
-
-@media screen and (min-width:901px) and (max-width: 1400px)  {
- #content {
-  width: 50%;
- }
-
- .logo {
-  font-size: 10vw;
-  height: 7vw;
- }
-
- .btnView{
-  font-size: 1.9vw;
- }
-}

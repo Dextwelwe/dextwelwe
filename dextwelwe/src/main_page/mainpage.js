@@ -13,52 +13,51 @@ export default function Mainpage() {
 
   function setAbout(){
     if (abt === 'none'){
-    setAbt('block');
-    setInvisible('yes')
+      setAbt('block');
+      setInvisible('yes')
     } else {
-      setAbt('none');
-      setInvisible('no')
-    }
+        setAbt('none');
+        setInvisible('no')
+      }
   }
 
   function setProject(){
     if(projects === 'none'){
-      setProjects('block');
-      setInvisible('yes')
+        setProjects('block');
+        setInvisible('yes')
     } else {
-      setProjects('none');
-      setInvisible('no')
-    }
+        setProjects('none');
+        setInvisible('no')
+      }
   }
 
   function setContactMe(){
     if(contact === 'none'){
-      setContact('block');
-      setInvisible('yes')
+        setContact('block');
+        setInvisible('yes')
     } else {
-      setContact('none');
-      setInvisible('no')
-    }
+        setContact('none');
+        setInvisible('no')
+      }
   }
+
 
   return (
     <div className='bg'>
-    <div className='d-flex justify-content-center'>
-    {abt === 'block' && <About  abt={abt} set={setAbout}></About>}
-    {contact === 'block' && <Contactme contact={contact} set={setContactMe}></Contactme>}
-    {projects === 'block' && <Projects projects={projects} set={setProject}></Projects>}
-      {invisible === 'no' && 
-      <div id='content' className='bgSmScr'>
-      <h4 className='logo prevent-select'> Dextwelwe</h4>
-      <div className='menuMainPage prevent-select'>
-      <button  className='btnView' onClick={setAbout}> About me</button>
-      <button className='btnView' onClick={setProject}> Projects </button>
-      <Link className='btnView text-decoration-none' to="/photography">Photography</Link>
-      <button className='btnView' onClick={setContactMe}>Contact me</button>
+      <div className='d-flex justify-content-center vh-100 overflow-hidden'>
+        {abt === 'block' && <About  abt={abt} set={setAbout}></About>}
+        {contact === 'block' && <Contactme contact={contact} set={setContactMe}></Contactme>}
+        {projects === 'block' && <Projects projects={projects} set={setProject}></Projects>}
+        {invisible === 'no' && 
+        <div id='content' className='bgSmScr'>
+          <h4 className='logo prevent-select'> Dextwelwe</h4>
+        <div className='menuMainPage prevent-select'>
+          <button  className='btnView' onClick={setAbout}> About me</button>
+          <button className='btnView' onClick={setProject}> Applications </button>
+        <Link className='btnView text-decoration-none' to="/photography">Photography</Link>
+          <button className='btnView' onClick={setContactMe}>Contact me</button>
       </div>
+      </div>} 
       </div>
-} 
-      </div>
-      </div>
-  )
+      </div>)
 }

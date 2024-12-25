@@ -2,21 +2,22 @@ import React, {useRef} from 'react'
 import './about.css';
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import img from '../iconAndre.png'
-import cyframe from '../cyframe_logo.jpg'
+import img from '../icons/iconAndre.png'
+import hello from '../icons/hello.png'
+import cyframe from '../icons/cyframe_logo.jpg'
 
 export default function About({abt , set}) {
   const modal = useRef('');
   const text = useRef('');
 
-  async function closeModal(){
+    function closeModal(){
     modal.current.style.setProperty("animation-name", "disapear");
     text.current.style.setProperty("animation-name", "removeText");
-    
     }
   
   function close(){
-  closeModal().then(setTimeout(set, 500));
+  closeModal()
+  setTimeout(set, 400);
   }
 
   return (    
@@ -30,43 +31,46 @@ export default function About({abt , set}) {
       <h1 className='fontColor'>About me</h1>
       <button onClick={close} className={"close"}>&times;</button>
       </div>
-    <div style={{padding : '10px', paddingTop : '10px'}}>
-    <h4 className='fontColor'>Hey There!</h4>
+    <div className='Hey' style={{padding : '10px', paddingTop : '10px'}}>
+    <h4 className='fontColor'>Hey There! &nbsp;<span><img src={hello} alt="waving at you :)" width={30} height={30} /></span></h4>
   <h4>My name is Danil Moskalenko. I am a Full Stack Web Developper and amateur Photographer living in Montréal, Canada.</h4>
+  <h5> I’ve got a thing for both tech and photography. I love exploring new ideas, learning as I go, and finding that perfect mix of creativity and problem-solving.</h5>
+  <h5> Whether I'm working on a project or just out with my camera, I'm always up for trying something new and challenging myself.</h5>
   
     </div>
     <div className='container flex-column'>
     <div className='row'>
     <div className='col-lg-12 col-md-12 col-sm-12'>
-      <h4 className='fontColor mt-1'>I studied at</h4>
+      <h4 style={{textDecoration : 'underline'}} className='fontColor mt-1'>I studied at</h4>
       <div className='studies'>
       <img src={img} className='img' alt='Andre Laurendeau'/>
       <div>
      <h4 className='px-2 m-0'>Cégep André-Laurendeau</h4>
      <ul>
-     <li><h5 className='px-2 lh-1 m-0'> Computer Science 2021-2024.</h5> </li>
-     <li><h5 className='px-2 lh-1'>Specialisation in <strong> Web Developpement</strong>.</h5></li>
+     <li><h5 className='px-2 lh-1 m-0'> Computer Science 2021-2024</h5> </li>
+     <li><h5 className='px-2 lh-1'>Specialisation in <strong> Web </strong>  & <strong> Software Developpement</strong></h5></li>
       </ul>
      </div>
     </div>
     </div>
     <div className='col-lg-4 col-md-4 col-sm-12'>
     </div>
-     <h4 className='fontColor mt-1'>I work at</h4>
+     <h4 style={{textDecoration : 'underline'}} className='fontColor mt-1'>I work at</h4>
       <div className='studies'>
       <img src={cyframe} className='imgCyframe' alt='CyFrame'/>
       <div className=''>
       <h4 className='px-2 m-0'>CyFrame</h4>
       <ul>
-      <li><h5 className='px-2 lh-1 m-0'>Web Developper.</h5></li>
-      <li><h5 className='px-2 lh-1 m-0'>I am working on redesigning 60+ Web pages for an ERP software company. </h5 ></li>
-      <li><h5 className='px-2 lh-1 '>My current Web stack is <strong>JavaScript · Jquery · </strong>
-      <strong> ASP · Oracle</strong></h5></li>
+      <li><h5 className='px-2 lh-2 m-0'>Full Stack Web Developper</h5></li>
+      <li><h5 className='px-2 lh-2 m-0'>Developing an ERP System for the Plastic Industry</h5></li>
+      <li><h5 className='px-2 lh-2 m-0'>My current Tech stack is:</h5>
+      </li>
+      <p style={{marginLeft:'10px'}}><strong>Express.js · Node.js · Crystal Reports · Git ·</strong><strong> ASP Classic · VBScript · Oracle</strong></p>
       </ul>
       </div>
       </div>
    
-    <h4 className='fontColor mt-1'>My skills</h4>
+    <h4 style={{textDecoration : 'underline'}} className='fontColor mt-1'>My skills</h4>
     <div className='container '>
     <div className='row'>
     <div className='col-lg-6 col-md-6 col-sm-12 skillBox'>
@@ -122,8 +126,8 @@ export default function About({abt , set}) {
     </div>
     </div>
     <div className=' padding10' >
-    <h4 className=' fontColor'>My Interests</h4>
-    <h5 > User Experience &nbsp; · New Technologies &nbsp; · Web Design &nbsp; ·  React</h5> 
+    <h4 style={{textDecoration : 'underline'}} className=' fontColor'>My Interests</h4>
+    <h5 > User Experience &nbsp; · New Technologies &nbsp; · Web Design &nbsp; ·  Cycling &nbsp; ·  Photography</h5> 
     </div>
 </div>
     </div>
