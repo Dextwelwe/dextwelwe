@@ -1,0 +1,334 @@
+:root{
+  --DeskNavHeight : 70px ;
+}
+
+.homeScreenRoot {
+    text-align: center;
+    background-image: url('../../assets/images/background.webp');
+    background-size: cover;
+    background-position: left; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--white);
+}
+  
+  .homeScreenContent {
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    border : 2px solid var(--white);
+    background-color: var(--black);
+    height: var(--DeskNavHeight);
+  }
+
+
+  .menuWrapper{
+    width: 60%;
+  }
+
+   .menuItem{
+    cursor: pointer;
+    color: var(--white);
+    width: 100%;
+    font-size: 1rem;
+   }
+
+   .menu span {
+    height: 450px;
+    background-color: var(--white);
+    width: 2px;
+   }
+
+   .vl1{
+    margin-top:  -100px;
+   }
+
+   .vl2 {
+    margin-top:  -80px;
+   }
+
+   .vl3{
+    margin-top: 80px;
+   }
+
+   .vl4{
+    margin-top: -100px;
+   }
+
+  .menu{
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .header{
+    top: 0;
+  }
+
+   .titleWrapper{
+    padding: 0px 45px 0px 50px;
+    text-align: center;
+    height: var(--DeskNavHeight);
+    position: relative;
+  }
+  
+  h1{
+    font-size:3.75rem;
+    font-weight: normal;
+    margin: 0;
+    box-sizing: border-box;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    margin-top: 1%;
+  }
+  
+  .vertical-line{
+    border-right: 1px solid white;
+    height: 500px;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .bottom {
+    display: none;
+  }
+
+  .imgContactMe{
+    display: none;
+    width: 40px;
+    height: 40px;
+
+  }
+  
+  p {
+    margin: 0;
+  }
+
+   img{
+         width: 40px;
+         height: 17px;
+         align-self: flex-start;
+   }
+
+
+  .burgerIconWrapper{
+    display: none;
+    padding: 0px 30px;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+
+  .iconClose {
+    width: 17px;
+    height: 17px;
+    align-self: flex-start;
+  }
+
+  .iconMenu{
+    width: 40px;
+    height: 17px;
+    align-self: flex-start;
+  }
+
+   @media screen and (max-width: 1000px) {
+
+    :root {
+      --DeskNavHeight : 60px;
+    }
+    .menuItem{
+    font-size: 0.8rem;
+   }
+
+   h1{
+    margin : 0;
+    font-size: 2.2rem;
+  }
+
+  .titleWrapper {
+    width: unset;
+  }
+  }
+
+    @media screen and (max-width: 750px) {
+ :root {
+      --DeskNavHeight : 50px;
+    }
+
+    .menuItem{
+    font-size: 0.65rem;
+   }
+
+   h1{
+     margin: 0;
+    font-size: 1.9rem;
+  }
+
+  .titleWrapper {
+    padding-right: 10px;
+    padding-left: 30px;
+    width: unset;
+  }
+    }
+
+  @media screen and (max-width: 600px) {
+    .homeScreenRoot{
+        padding : 0 20px;
+        align-items: flex-start;
+        background-position:left; 
+        box-sizing: border-box;
+        height: 100dvh;
+    }
+    .homeScreenContent{
+        margin-top: 30px;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        border : none;
+        background-color: transparent;  
+        border-top : 6px solid var(--white);
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .titleWrapper{
+        padding: 0;
+        width: max-content;
+        width: 100%;
+        height: max-content;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+            height: 24px;
+    }
+
+    h1{
+       transform: unset;
+       top: unset;
+       margin: 0;
+      font-size: 1.2rem;
+      }
+
+      .burgerIconWrapper {
+        display: flex;
+        align-items: start;
+        gap : 10px;
+        right: 31px;
+        top: 51px;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .menuWrapper {
+        flex-direction: column;
+        display: none;
+    }
+
+    .bottom{
+        display: block;
+        position: absolute;
+        font-size: 15vw;
+        color: var(--white);
+        text-align: center;
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 0px;
+        box-sizing: border-box;
+    }
+
+    .menu span{
+        display: none;
+    }
+
+     .menuItem  {
+        width: 100%;
+        text-align: start;
+        font-size: 1.5rem;
+    }
+    
+    /* Nav Bar Responsive */
+
+    .responsive {
+        background: black !important;
+    }
+
+    .responsive  .menuWrapper{
+        display: block !important;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        top: 100px;
+        border-top : 6px solid white;
+        border-bottom : 6px solid white;
+        height: max-content;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        padding-left: 15px;
+      }
+
+       .responsive .homeScreenContent{
+        flex-direction: column !important;
+        height: max-content;
+      }
+      
+      .responsive .menu{
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         gap: 30px;
+     }
+
+       .responsive .imgContactMe{
+        display: block;
+       }
+
+       .responsive .contactMe{
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+       }
+
+     .responsive .menuItem {
+      font-size: 1.1rem;
+     }
+       .responsive .abt{
+         display: flex;
+         align-items: flex-end;
+         justify-content: start;
+          position: absolute;
+          bottom: -70px;
+          background: white !important;
+          color: var(--black);
+          width: 175px;
+          padding: 5px;
+          padding-left: 10px;
+          padding-right: 5px;
+          text-align: start;
+          left: 0;
+      }
+
+      .responsive .bottom{
+         display: none;
+     }
+  }
