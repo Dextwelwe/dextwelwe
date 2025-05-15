@@ -74,7 +74,8 @@
   }
 
    .titleWrapper{
-    padding: 0px 45px 0px 50px;
+    padding-left : 5%;
+    padding-right: 5%;
     text-align: center;
     height: var(--DeskNavHeight);
     position: relative;
@@ -147,7 +148,15 @@
     align-self: flex-start;
   }
 
-   @media screen and (max-width: 1000px) {
+  .selectLanguageWrapper{
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--black);
+  }
+
+   @media screen and (max-width: 1100px) {
 
     :root {
       --DeskNavHeight : 60px;
@@ -162,28 +171,32 @@
   }
 
   .titleWrapper {
+    padding-left: 40px;
+    padding-right: 40px;
     width: unset;
   }
   }
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 900px) {
  :root {
       --DeskNavHeight : 50px;
     }
-
+    .menuWrapper{
+      width: 65%;
+    }
     .menuItem{
-    font-size: 0.65rem;
+    font-size: 0.60rem;
    }
 
    h1{
      margin: 0;
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 
   .titleWrapper {
-    padding-right: 10px;
-    padding-left: 30px;
     width: unset;
+    padding-left: 20px;
+    padding-right: 20px;
   }
     }
 
@@ -227,7 +240,7 @@
 
       .burgerIconWrapper {
         display: flex;
-        align-items: start;
+        align-items: center;
         gap : 10px;
         right: 31px;
         top: 51px;
@@ -238,6 +251,10 @@
     .menuWrapper {
         flex-direction: column;
         display: none;
+    }
+
+    .selectLanguageWrapper{
+    display: none;
     }
 
     .bottom{
@@ -330,5 +347,15 @@
 
       .responsive .bottom{
          display: none;
+     }
+     
+     .responsive .selectLanguageWrapper{
+       display: block;
+        padding: 0;
+        z-index: 100;
+        top: unset;
+        bottom: 45px;
+        right:  25px;
+        position: absolute;
      }
   }

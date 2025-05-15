@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound/NotFound';
 
 import { BrowserRouter , Routes, Route} from "react-router";
 
+import './i18n';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
