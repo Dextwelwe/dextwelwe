@@ -1,5 +1,5 @@
 :root{
-  --DeskNavHeight : 70px ;
+  --DeskNavHeight : 80px ;
 }
 
 .homeScreenRoot {
@@ -35,6 +35,7 @@
     color: var(--white);
     width: 100%;
     font-size: 1rem;
+     text-decoration: none;
    }
 
    .menu span {
@@ -67,6 +68,9 @@
     padding: 0;
     height: 100%;
     width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
   }
 
   .header{
@@ -81,8 +85,8 @@
     position: relative;
   }
   
-  h1{
-    font-size:3.75rem;
+  .title{
+    font-size:3.5rem;
     font-weight: normal;
     margin: 0;
     box-sizing: border-box;
@@ -97,15 +101,6 @@
     height: 500px;
   }
   
-  ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-  }
-
-  a {
-    text-decoration: none;
-  }
 
   .bottom {
     display: none;
@@ -117,17 +112,6 @@
     height: 40px;
 
   }
-  
-  p {
-    margin: 0;
-  }
-
-   img{
-         width: 40px;
-         height: 17px;
-         align-self: flex-start;
-   }
-
 
   .burgerIconWrapper{
     display: none;
@@ -149,11 +133,11 @@
   }
 
   .selectLanguageWrapper{
-    width: 50px;
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: var(--black);
+    padding-top: 6px;
+    height: 30px;
   }
 
    @media screen and (max-width: 1100px) {
@@ -162,45 +146,30 @@
       --DeskNavHeight : 60px;
     }
     .menuItem{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
    }
 
-   h1{
-    margin : 0;
-    font-size: 2.2rem;
-  }
-
-  .titleWrapper {
-    padding-left: 40px;
-    padding-right: 40px;
-    width: unset;
-  }
-  }
-
-    @media screen and (max-width: 900px) {
- :root {
-      --DeskNavHeight : 50px;
-    }
-    .menuWrapper{
+   .menuWrapper{
       width: 65%;
     }
-    .menuItem{
-    font-size: 0.60rem;
+
+   .menuItem{
+    font-size: 1.5vw;
    }
 
-   h1{
-     margin: 0;
+   .title{
+    margin : 0;
     font-size: 2rem;
   }
 
   .titleWrapper {
-    width: unset;
     padding-left: 20px;
     padding-right: 20px;
+    width: unset;
   }
-    }
+  }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 740px) {
     .homeScreenRoot{
         padding : 0 20px;
         align-items: flex-start;
@@ -231,7 +200,7 @@
             height: 24px;
     }
 
-    h1{
+    .title{
        transform: unset;
        top: unset;
        margin: 0;
@@ -299,7 +268,6 @@
         height: max-content;
         padding-top: 30px;
         padding-bottom: 70px;
-        padding-left: 15px;
       }
 
        .responsive .homeScreenContent{
@@ -323,21 +291,21 @@
         width: 100%;
         gap: 15px;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
        }
 
      .responsive .menuItem {
       font-size: 1.1rem;
      }
        .responsive .abt{
-         display: flex;
-         align-items: flex-end;
-         justify-content: start;
+          display: flex;
+          align-items: flex-end;
+          justify-content: start;
           position: absolute;
           bottom: -70px;
           background: white !important;
           color: var(--black);
-          width: 175px;
+          width: max-content;
           padding: 5px;
           padding-left: 10px;
           padding-right: 5px;
@@ -350,12 +318,12 @@
      }
      
      .responsive .selectLanguageWrapper{
-       display: block;
-        padding: 0;
+        display: block;
+        padding-top: 5px;
         z-index: 100;
         top: unset;
         bottom: 45px;
-        right:  25px;
+        left:  25px;
         position: absolute;
      }
   }

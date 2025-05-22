@@ -1,0 +1,29 @@
+.customSelect {
+  border : solid 1px var(--white);
+  background-color: var(--black);
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  width: 40px;
+  padding-top : inherit;
+  height: inherit;
+}
+
+.selectedOption {
+ font-family: inherit;
+ cursor: pointer;
+ height: max-content;
+ padding: 5px;
+ background-color: inherit;
+ color: var(--white);
+ border: none;
+}
+
+.customSelect:hover{
+border-color: var(--black);
+background-color: var(--white);
+color: var(--black);
+}
+
+
+
