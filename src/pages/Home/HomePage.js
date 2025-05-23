@@ -1,5 +1,5 @@
 import hs from './HomePage.module.css';
-import '../../styles/navbar.css'
+
 import {useRef, useState} from 'react'
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';

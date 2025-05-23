@@ -1,31 +1,31 @@
-.wrapper {
+.navWrapper {
  padding-top: 35px;
 }
 
-.content{
+.navMainContent{
     box-sizing: border-box;
     width: 100%;
     display: flex;
     justify-content: space-between;
     height: 30px;
-    padding-left: 40px;
-    padding-right: 20px;
+   padding-left: inherit;
+   padding-right: inherit;
 }
 
-.titleWrapper{
+.navTitleWrapper{
     padding-right: 40px;
     text-align: start;
     width: max-content;
 }
 
-.menuWrapper{
+.navMenuWrapper{
     width: 100%;
     display: flex;
     justify-content: flex-end;
     position: relative;
 }
 
-.menu {
+.navMenu {
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -33,13 +33,13 @@
     gap: 15px;
 }
 
-.abt {
+.navAbt {
     display: block;
     margin-left: 5%;
     text-decoration: none;
 }
 
-.burgerIconWrapper{
+.navBurgerIconWrapper{
     display: none;
     padding: 0px 30px;
     align-items: flex-start;
@@ -47,19 +47,19 @@
     font-weight: normal;
 }
 
-  .iconMenu{
+  .navIconMenu{
     width: 40px;
     height: 17px;
     align-self: flex-start;
   }
 
-   .iconClose {
+   .navIconClose {
     width: 17px;
     height: 17px;
     align-self: flex-start;
   }
 
-.selectLanguageWrapper{
+   .navSelectLanguageWrapper{
     padding-left: 10px;
     padding-right: 10px;
     align-self: flex-end;
@@ -70,12 +70,12 @@
     padding-top: 7px;
 }
 
-.imgContactMe{
+.navImgContactMe{
     height: 100%;
     background-color: white;
 }
 
-.contactMe {
+.navContactMe {
     padding: 5px;
     box-sizing: border-box;
     display: flex;
@@ -90,9 +90,7 @@
     font-size: inherit;
 }
 
-
-
-.link{
+.navTitle{
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -101,64 +99,58 @@
     font-size: 1.3rem;
 }
 
-.link h1 {
+.navTitle h1 {
     margin-top: -4px;
     font-weight: normal;
 }
 
 
 @media screen and (max-width: 1100px) {
-  .link {
+  .navTitle {
         font-size: 1rem;
     }
 
-   .link h1 {
+   .navTitle h1 {
     margin-top: -4px;
    } 
 
-    .menu {
+    .navMenu {
      justify-content: flex-end;
      width: 100%;
      max-width: 600px;
      gap : 20px;
     }
 
-    .menuWrapper{
+    .navMenuWrapper{
         width: 100%;
         margin-right: unset;
         padding-right: 10px;
     }
 
-    .selectLanguageWrapper {
+    .navSelectLanguageWrapper {
         padding-top: 9px;
         padding-left: 0;
         width: 30px;
         font-size: 0.8rem;
     }
 
-    .content {
-        padding-left: 20px;
-        padding-right: 10px;
-    }
-
-    .contactMe {
+    .navContactMe {
         font-size: 0.8rem;
     }
 
-    .titleWrapper {
+    .navTitleWrapper {
         padding-right: 10px;
     }
 
 }
 
   @media screen and (max-width: 740px) {
-    .link h1 {
+    .navTitle h1 {
         font-size: 1.2rem;
         margin: 0;
     }
 
-     .content{
-        padding-top: 30px;
+     .navMainContent{
         justify-content: space-between;
         align-items: flex-start;
         flex-direction: row;
@@ -171,7 +163,7 @@
         color: var(--white);
     }
 
-    .titleWrapper{
+    .navTitleWrapper{
         padding: 0;
         width: max-content;
         width: 100%;
@@ -182,11 +174,11 @@
         height: 24px;
     }
 
-    .contactMe{
+    .navContactMe{
        display: none ;
     }
 
-    .title{
+    .navTitle{
        transform: unset;
        top: unset;
        margin: 0;
@@ -194,31 +186,29 @@
        font-weight: normal;
       }
 
-    .menuWrapper {
+    .navMenuWrapper {
         flex-direction: column;
         display: none;
     }
 
-    .selectLanguageWrapper{
+    .navSelectLanguageWrapper{
     display: none;
     }
 
 
-    .menuWrapper {
+    .navMenuWrapper {
         flex-direction: column;
         display: none;
     }
 
-    .wrapper{
-        padding : 0 20px;
+    .navWrapper{
         padding-top: 30px;
          align-items: flex-start;
         background-position:left; 
         box-sizing: border-box;
-        height: 100dvh;
     }
 
-    .menu {
+    .navMenu {
         margin: 0;
         padding: 0;
         gap: 0;
@@ -227,7 +217,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .burgerIconWrapper {
+    .navBurgerIconWrapper {
         display: flex;
         align-items: center;
         gap : 10px;
@@ -237,13 +227,21 @@
         padding: 0;
     }
 
-    .imgContactMe{
-    display: none;
-    width: 40px;
-    height: 40px;
+    .navImgContactMe{
+     display: none;
+     width: 40px;
+     height: 40px;
     }
 
-    .responsive  .menuWrapper{
+    .responsive  {
+     background-color: black !important;
+     background: black;
+     height: 100dvh;
+     padding-left : 20px;
+     padding-right: 20px;
+    }
+
+    .responsive  .navMenuWrapper{
         display: block !important;
         flex-direction: column;
         box-sizing: border-box;
@@ -257,23 +255,23 @@
         padding-bottom: 70px;
       }
 
-       .responsive .content{
+       .responsive .navMainContent{
         flex-direction: column !important;
         height: max-content;
       }
       
-      .responsive .menu{
+      .responsive .navMenu{
          flex-direction: column;
          align-items: center;
          width: 100%;
          gap: 30px;
      }
 
-       .responsive .imgContactMe{
+       .responsive .navImgContactMe{
         display: block;
        }
 
-        .responsive .contactMe{
+        .responsive .navContactMe{
         display: flex;
         gap: 15px;
         width: 100%;
@@ -283,7 +281,7 @@
         align-items: flex-end;
        }
 
-        .responsive .abt{
+        .responsive .navAbt{
           display: flex;
           align-items: flex-end;
           justify-content: start;
@@ -300,20 +298,19 @@
           background-color: white;
       }
 
-     .responsive .menuItem {
+     .responsive .navMenuItem {
       font-size: 1.1rem;
      }
       
 
-      .responsive .bottom{
+      .responsive .navBottom{
          display: none;
      }
      
-     .responsive .selectLanguageWrapper{
+     .responsive .navSelectLanguageWrapper{
         display: block;
         padding: 0;
-        z-index: 100;
-        padding-top: 6px;
+        padding-top: 5px;
         height: 30px;
         top: unset;
         bottom: 45px;

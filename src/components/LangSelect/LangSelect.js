@@ -1,6 +1,6 @@
 import {useRef, useEffect } from 'react';
 import { useTranslation} from 'react-i18next';
-import cs from './LangSelect.module.css';
+import ls from './LangSelect.module.css';
 import useLocalStorage from '../../hooks/useLocalStorage';
 
 const LangSelect = () => {
@@ -14,7 +14,7 @@ const LangSelect = () => {
    useEffect(() => {i18n.changeLanguage(language);}, [language,i18n]);
 
   return (
-    <div ref={lang} className={cs.customSelect} onClick={handleOptionClick}>{options}</div>
+    <div ref={lang} className={ls.customSelect} onClick={handleOptionClick}>{options}</div>
   );
 };
 

@@ -7,10 +7,10 @@ export default function ContactMeButton() {
   const {t} = useTranslation();
 
   return (
-        <Link className={nav.abt} to="/contact-me">
-          <div className={nav.contactMe}>
+        <Link className={nav.navAbt} to="/contact-me">
+          <div className={nav.navContactMe}>
             <p style={{width : "max-content"}}>{t('CONTACT_ME')}</p>
-            <img alt='contact me' className={nav.imgContactMe} src={contactMe} />
+            <img alt='contact me' className={nav.navImgContactMe} src={contactMe} />
           </div>
         </Link>
   )

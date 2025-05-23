@@ -24,6 +24,8 @@ h1 {
 :root {
   --white : #D9D9D9;
   --black : #000000;
+  --smRootPadding : 20px;
+  --responsiveRootPadding : 0px;
 }
 
 .mainWrapper {
@@ -31,3 +33,38 @@ h1 {
   height: 100dvh;
   box-sizing: border-box;
 }
+
+.defaultPadding {
+    padding-left: 40px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1100px) {
+
+.defaultPadding {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+}
+
+ @media screen and (max-width: 740px) {
+
+.defaultPadding {
+  padding-left: var(--smRootPadding);
+  padding-right: var(--smRootPadding);
+}
+/* Change default padding when the burger menu is open */
+.responsiveMenu .defaultPadding {
+  padding-left: var(--responsiveRootPadding);
+  padding-right: var(--responsiveRootPadding);
+  overflow: hidden;
+}
+ }
+
+
+
+
+
+
+

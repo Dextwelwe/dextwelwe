@@ -1,9 +1,10 @@
-
 import nb from './Navbutton.module.css'
-export default function NavButton({title}) {
+import { Link } from 'react-router';
+export default function NavButton({title, url}) {
+  
   return (
-    <div className={nb.navButtonWrapper}>
+    <Link to={url} className={nb.navButtonWrapper}>
         {title}
-    </div>
+    </Link>
   )
 }
