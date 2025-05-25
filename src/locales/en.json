@@ -4,5 +4,17 @@
 "PHOTOGRAPHY" : "PHOTOGRAPHY",
 "CONTACT_ME" : "CONTACT ME",
 "MENU" : "MENU",
-"CLOSE" : "CLOSE"
+"CLOSE" : "CLOSE",
+"TITLE_INTRO" : "HEY THERE!",
+"CURRENT_STACK" : "MY CURRENT STACK",
+"MY_SKILLS" : "MY SKILLS",
+"PERSONAL_INTERESTS" : "PERSONAL INTERESTS",
+"MY_SKILLS_DESC" : "I have a strong foundation in object-oriented programming, data structures, algorithms, and design patterns. I'm experienced with Java, C#, and Python, and I write clean, testable code using unit and mock testing. On the web side, I work with HTML, CSS, JavaScript, TypeScript, and ASP. My database skills include PL/SQL, PostgreSQL, Oracle, and Firebase. I'm also familiar with modern frameworks like React, Flask, Java Spring, Bootstrap, and jQuery.",
+"TITLE_INTRO_DESC" : "My name is Danil Moskalenko. I am a Full Stack Web Developper and amateur Photographer living in Montréal, Canada. I’ve got a thing for both tech and photography. I love exploring new ideas, learning as I go, and finding that perfect mix of creativity and problem-solving. Whether I'm working on a project or just out with my camera, I'm always up for trying something new and challenging myself.",
+"INTEREST_USER_EXPERIENCE": "User Experience",
+"INTEREST_NEW_TECH": "New Technologies",
+"INTEREST_PROGRAMMING_TECHNIQUES": "Discovering new programming techniques",
+"INTEREST_CYCLING": "Cycling",
+"INTEREST_PHOTOGRAPHY": "Photography"
+
 }

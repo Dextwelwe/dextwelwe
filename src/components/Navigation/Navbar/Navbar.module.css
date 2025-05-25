@@ -1,5 +1,10 @@
 .navWrapper {
  padding-top: 35px;
+ width: 100%;
+ z-index: 9999;
+ background-color: rgba(0, 0, 0, 0.5);
+ position: fixed;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .navMainContent{
@@ -8,8 +13,6 @@
     display: flex;
     justify-content: space-between;
     height: 30px;
-   padding-left: inherit;
-   padding-right: inherit;
 }
 
 .navTitleWrapper{
@@ -61,7 +64,6 @@
 
    .navSelectLanguageWrapper{
     padding-left: 10px;
-    padding-right: 10px;
     align-self: flex-end;
     color: var(--white);
     text-align: center;
@@ -102,6 +104,15 @@
 .navTitle h1 {
     margin-top: -4px;
     font-weight: normal;
+}
+
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 
@@ -236,7 +247,7 @@
     .responsive  {
      background-color: black !important;
      background: black;
-     height: 100dvh;
+     height: 100vh;
      padding-left : 20px;
      padding-right: 20px;
     }

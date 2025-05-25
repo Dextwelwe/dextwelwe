@@ -1,17 +1,40 @@
-.mainWrapper {
-    background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url(../../assets/images/bgAboutMe.webp);
-    background-size: cover;
-    background-position: left; 
-    background-repeat: no-repeat; 
-    width: 100%;
-    height: 100vh;
-    height : 100dvh;
+
+.content {
+  position: relative;
+  padding-top: 50vh;
+  animation: paddingShift 1s ease-out forwards;
 }
 
-  @media screen and (max-width: 740px) {
-    .mainWrapper {
-      box-sizing: border-box;
-    }
+.bgFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+    url(../../assets/images/bgAboutMe.webp) center center no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+@keyframes paddingShift {
+ 0% {
+    padding-top: 100vh;
   }
+  100% {
+    padding-top: 60vh;
+  }
+}
+
+.content article:first-of-type {
+  border-top: 4px solid var(--white);
+}
+
+
+.bottom {
+    border-top: 1px solid var(--white);
+    color: var(--white);
+}

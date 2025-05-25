@@ -5,6 +5,7 @@
 .homeScreenRoot {
     text-align: center;
     background-image: url('../../assets/images/background.webp');
+    background-color: black;
     background-size: cover;
     background-position: left; 
     background-repeat: no-repeat; 
@@ -13,6 +14,7 @@
     align-items: center;
     height: 100vh;
     color: var(--white);
+    animation: bgMoveIn 1.2s ease-out forwards;
 }
   
   .homeScreenContent {
@@ -21,10 +23,10 @@
     box-sizing: border-box;
     display: flex;
     border : 2px solid var(--white);
-    background-color: var(--black);
+    background-color: #00000080;
     height: var(--DeskNavHeight);
+    animation: fadeIn 1.2s ease-in-out forwards;
   }
-
 
   .menuWrapper{
     width: 60%;
@@ -138,7 +140,26 @@
     right: 20px;
     padding-top: 6px;
     height: 30px;
+    animation: fadeIn 1.2s ease-in-out forwards;
   }
+
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bgMoveIn {
+  0% {
+    background-position: -50px -100px;
+  }
+  100% {
+    background-position: left; 
+  }
+}
 
    @media screen and (max-width: 1100px) {
 
@@ -175,7 +196,7 @@
         align-items: flex-start;
         background-position:left; 
         box-sizing: border-box;
-        height: 100dvh;
+        height: 100vh;
     }
     .homeScreenContent{
         margin-top: 30px;

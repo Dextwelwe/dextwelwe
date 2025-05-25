@@ -43,7 +43,7 @@ export default function Navbar() {
   }
 
   return (
-      <div ref={nv} className={nav.navWrapper}>
+      <div ref={nv} className={[nav.navWrapper, "defaultPadding"].join(" ")} >
       <nav className={nav.navMainContent}>
         <div className={nav.navTitleWrapper}>
         <Link className={nav.navTitle} to={"/"}><h1>DEXTWELWE</h1></Link>
