@@ -3,13 +3,21 @@ import Background from '../../components/Background/Background';
 import cm from './ContactMe.module.css'
 import bgImg from '../../assets/images/abtMeBg.webp'
 import Footer from '../../components/Navigation/Bottom/Footer';
+import { useRef } from 'react';
+import { useRollUp } from '../../hooks/useRollUp';
+import { useViewportSize } from '../../hooks/useViewportWidth';
 
 export default function ContactMe() {
   const {t} = useTranslation();
+  const contentRef = useRef(null);
+  const firstRollElem = useRef(null);
+  const {height} = useViewportSize();
+  useRollUp(firstRollElem, contentRef, height*0.2)
   return (
     <>
       <Background imgSrc={bgImg} />
-        <div className={[cm.content , 'defaultPadding' , 'content'].join(" ")}>
+        <div ref={contentRef} className={[cm.content , 'defaultPadding' , 'content'].join(" ")}>
+          <div ref={firstRollElem}>
        <h1 className={cm.title}>{t("THANK_YOU")} </h1>
        <h1 className={cm.title}>{t("FOR_YOUR_TIME")} :) </h1>
        <div className={cm.links}>
@@ -38,6 +46,7 @@ export default function ContactMe() {
         </div>
        </div>
        <Footer />
+        </div>
         </div>
     </>
   )

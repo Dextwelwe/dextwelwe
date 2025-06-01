@@ -8,13 +8,15 @@ import Background from '../../components/Background/Background';
 import app from './Applications.module.css'
 import bgImg from '../../assets/images/applicationsBg.webp';
 import Footer from '../../components/Navigation/Bottom/Footer';
+import { useViewportSize } from '../../hooks/useViewportWidth';
 
 export default function Applications() {
   const {t} = useTranslation();
    const firstRollElem = useRef(null); 
    const contentRef = useRef(null);
+   const {height} = useViewportSize();
    const contentClasses = [app.content , 'defaultPadding' , 'content'].join(" ");
-   useRollUp(firstRollElem,contentRef);
+   useRollUp(firstRollElem,contentRef, height * 0.25);
 
    return (
     <>
