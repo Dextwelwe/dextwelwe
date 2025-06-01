@@ -37,28 +37,26 @@ function HomePage() {
           <div className={hs.titleWrapper}>
           <h1 className={hs.title}>DEXTWELWE</h1>
           <div className={hs.burgerIconWrapper} role="button" tabIndex={0}  aria-label={burgerMenuTitle} onClick={toggleBurgerMenu}>
-            { burgerMenuTitle === 'MENU' ?
-           ( <h1 className={hs.title}>{t('MENU')}</h1> ) : (<h1 className={hs.title}>{t('CLOSE')}</h1> )}
+            <p className={hs.title}>{t(burgerMenuTitle === 'MENU' ? 'MENU' : 'CLOSE')}</p>
             <div className={hs.iconBurgerMenuWrapper}>
             <img alt='menu' src={iconBurgerMenu} className={styleIconBurgerMenu} />
             </div>
           </div>
           </div>
-          <div  className={hs.menuWrapper}>
+          <div className={hs.menuWrapper}>
             <ul className={hs.menu}>
             <span className={hs.vl1}></span>
-            <Link className={hs.menuItem} to="/about-me">{t("ABOUT_ME")}</Link>
+            <li><h2><Link className={hs.menuItem} to="/about-me">{t("ABOUT_ME")}</Link></h2></li>
             <span className={hs.vl2} ></span>
-            <Link className={hs.menuItem} to="/applications">{t('APPLICATIONS')}</Link>
+            <li><h2><Link className={hs.menuItem} to="/applications">{t('APPLICATIONS')}</Link></h2></li>
             <span className={hs.vl3}></span>
-            <Link className={hs.menuItem} to="/photography">{t('PHOTOGRAPHY')}</Link>
+            <li><h2><Link className={hs.menuItem} to="/photography">{t('PHOTOGRAPHY')}</Link></h2></li>
             <span className={hs.vl4}></span>
-            <Link className={[hs.menuItem, hs.abt].join(' ')} to="/about-me">
+            <li><h2><Link className={[hs.menuItem, hs.abt].join(' ')} to="/contact-me"> {t('CONTACT_ME')}
               <div className={hs.contactMe}>
-                <p>{t('CONTACT_ME')}</p>
                 <img alt='contact me' className={hs.imgContactMe} src={contactMe} />
               </div>
-              </Link>
+              </Link></h2></li>
             </ul>
           </div>
           <div className={hs.bottom}>DEXTWELWE</div>

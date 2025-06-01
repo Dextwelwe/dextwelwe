@@ -1,6 +1,6 @@
 .stackList {
     display: flex;
-    width: 50%;
+    width: 40%;
     box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: flex-start;

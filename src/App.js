@@ -9,6 +9,8 @@ import NotFound from './pages/NotFound/NotFound';
 import { BrowserRouter , Routes, Route} from "react-router";
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import RouteNavWrapper from './pages/RouteNavWrapper/RouteNavWrapper';
+import PreloadBackgrounds from './components/Background/PreloadBackgrounds';
 
 export default function App() {
   const { i18n } = useTranslation();
@@ -20,13 +22,16 @@ export default function App() {
   return (
     <div>
 <BrowserRouter>
+      <PreloadBackgrounds />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route element={<RouteNavWrapper />}>
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/applications" element={<Applications />} />
         <Route path="/photography" element={<Photography />} />
         <Route path="/contact-me" element={<ContactMe />} />
         <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
 </BrowserRouter>
     </div>

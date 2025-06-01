@@ -1,0 +1,12 @@
+.content {
+  position: relative;
+  padding-top: 100vh;
+  color: var(--white);
+  font-family: 'Satoshi';
+}
+
+.title {
+   font-size: 2rem !important;
+   width: max-content;
+    font-family: 'Namata';
+}

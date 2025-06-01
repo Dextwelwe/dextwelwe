@@ -48,18 +48,19 @@ export default function Navbar() {
         <div className={nav.navTitleWrapper}>
         <Link className={nav.navTitle} to={"/"}><h1>DEXTWELWE</h1></Link>
         <div className={nav.navBurgerIconWrapper} role="button" tabIndex={0}  aria-label={burgerMenuTitle} onClick={toggleBurgerMenu}>
-            { burgerMenuTitle === 'MENU' ?
-           ( <h1 className={nav.navTitle}>{t('MENU')}</h1> ) : (<h1 className={nav.navTitle}>{t('CLOSE')}</h1>)}
+             <p className={nav.navTitle}>{t(burgerMenuTitle === 'MENU' ? 'MENU' : 'CLOSE')}</p>
+            <div>
             <img alt='menu' src={iconBurgerMenu} className={styleIconBurgerMenu} />
+            </div>
           </div>
           </div>
-          <div className={nav.navMenuWrapper}>
-        <li className={nav.navMenu} onClick={(e)=>closeMenu(e)}>
+          <div className={nav.navMenuWrapper} onClick={(e)=>closeMenu(e)}>
+        <li className={nav.navMenu}>
         <NavButton title={t('ABOUT_ME')} url='/about-me' />
         <NavButton title={t('APPLICATIONS')} url='/applications'/>
         <NavButton title={t('PHOTOGRAPHY')} url='/photography'/>
         </li>
-        <ContactMeButton />
+        <ContactMeButton onClick={clearResponsive} />
         </div>
         <div className={nav.navSelectLanguageWrapper}><LangSelect /></div> 
       </nav>

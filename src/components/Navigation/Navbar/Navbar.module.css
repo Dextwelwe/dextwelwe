@@ -156,11 +156,7 @@
 }
 
   @media screen and (max-width: 740px) {
-    .navTitle h1 {
-        font-size: 1.2rem;
-        margin: 0;
-    }
-
+    
      .navMainContent{
         justify-content: space-between;
         align-items: flex-start;
@@ -193,7 +189,7 @@
        transform: unset;
        top: unset;
        margin: 0;
-       font-size: 1.2rem;
+       font-size: 1.5rem;
        font-weight: normal;
       }
 

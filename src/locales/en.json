@@ -15,6 +15,22 @@
 "INTEREST_NEW_TECH": "New Technologies",
 "INTEREST_PROGRAMMING_TECHNIQUES": "Discovering new programming techniques",
 "INTEREST_CYCLING": "Cycling",
-"INTEREST_PHOTOGRAPHY": "Photography"
-
+"INTEREST_PHOTOGRAPHY": "Photography",
+"TRY" : "TRY",
+"GROCERY_APP" : "GROCERY APP",
+"GROCERY_APP_DESC" :"A personal-use grocery app with a simple, intuitive design and focused functionality. Built with React, vanilla CSS, and Firestore. It supports creating and removing custom food categories, adding multiple items at once, and marking items as purchased or deleted. Designed for quick, straight to the point list management.",
+"GROCERY_APP_STACK" : "REACT,CSS,FIREBASE",
+"PERSONAL_WEBSITE" : "PERSONAL WEBSITE",
+"PERSONAL_WEBSITE_DESC" : "You're currently browsing it :) \n This project was a full redesign of my previous site, created to challenge and refine my front-end skills. Built with React and vanilla CSS for an extra layer of difficulty. If you made it here, then the mission was a success.",
+"PERSONAL_WEBSITE_STACK" : "REACT,CSS,FIGMA",
+"THANK_YOU" : "THANK YOU",
+"FOR_YOUR_TIME" : "FOR YOUR TIME",
+"OR" : "OR",
+"LETS_TALK" : "LET'S TALK",
+"NAME" : "Name",
+"EMAIL" : "Email",
+"PHONE_NUMBER" : "Phone number",
+"TEXT_HERE" : "Text here",
+"SEND" : "SEND",
+"PAGE_NOT_FOUND" : "PAGE NOT FOUND"
 }

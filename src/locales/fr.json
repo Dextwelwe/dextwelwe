@@ -15,5 +15,22 @@
     "INTEREST_NEW_TECH": "Nouvelles technologies",
     "INTEREST_PROGRAMMING_TECHNIQUES": "Découverte de nouvelles techniques de programmation",
     "INTEREST_CYCLING": "Vélo de route",
-    "INTEREST_PHOTOGRAPHY": "Photographie"
+    "INTEREST_PHOTOGRAPHY": "Photographie",
+    "TRY" : "ESSAYEZ",
+    "GROCERY_APP" : "ÉPICERIE",
+    "GROCERY_APP_DESC" :"Une application d’épicerie conçue pour un usage personnel, avec une interface simple, intuitive et des fonctionnalités ciblées. Développée avec React, CSS vanilla et Firestore. Elle permet de créer et supprimer des catégories d’aliments personnalisées, d’ajouter plusieurs articles en une seule fois, et de marquer les articles comme achetés ou supprimés. Pensée pour une gestion de liste rapide et efficace, sans superflu.",
+    "GROCERY_APP_STACK" : "REACT,CSS,FIREBASE",
+    "PERSONAL_WEBSITE" : "SITE WEB PERSONNEL",
+    "PERSONAL_WEBSITE_DESC"  : "Vous êtes en train de le parcourir :) Ce projet est une refonte complète de mon ancien site, conçu pour tester et améliorer mes compétences en front-end. Développé avec React et du CSS vanilla, pour ajouter un peu de défi. Si vous êtes arrivé jusqu’ici, alors la mission est réussie.",
+    "PERSONAL_WEBSITE_STACK" : "REACT,CSS,FIGMA",
+    "THANK_YOU" : "MERCI",
+    "FOR_YOUR_TIME" : "POUR VOTRE TEMPS",
+    "OR" : "OU",
+    "LETS_TALK" : "PRENONS CONTACT",
+    "NAME" : "Nom",
+    "EMAIL" : "Courriel",
+    "PHONE_NUMBER" : "Numero de telephone",
+    "TEXT_HERE" : "Texte ici",
+    "SEND" : "ENVOYER",
+    "PAGE_NOT_FOUND" : "PAGE NON TROUVÉE"
 }

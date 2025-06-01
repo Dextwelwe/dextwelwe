@@ -15,6 +15,7 @@
     height: 100vh;
     color: var(--white);
     animation: bgMoveIn 1.2s ease-out forwards;
+    overflow: hidden;
 }
   
   .homeScreenContent {
@@ -44,6 +45,10 @@
     height: 450px;
     background-color: var(--white);
     width: 2px;
+   }
+
+   .menu li {
+    width: 100%;
    }
 
    .vl1{
@@ -88,7 +93,7 @@
   }
   
   .title{
-    font-size:3.5rem;
+    font-size:3.5rem !important;
     font-weight: normal;
     margin: 0;
     box-sizing: border-box;
@@ -180,7 +185,7 @@
 
    .title{
     margin : 0;
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .titleWrapper {
@@ -225,7 +230,7 @@
        transform: unset;
        top: unset;
        margin: 0;
-      font-size: 1.2rem;
+      font-size: 1.5rem !important;
       }
 
       .burgerIconWrapper {
@@ -298,9 +303,22 @@
       
       .responsive .menu{
          flex-direction: column;
-         align-items: center;
+         align-items: flex-start;
          width: 100%;
          gap: 30px;
+     }
+
+     .responsive .menu li{
+        width: max-content;
+        font-size: 1.1rem;
+     }
+
+     .responsive .menu h2{
+        font-size: 1.1rem;
+     }
+
+     .responsive .menu li:nth-of-type(3){
+      margin-bottom : -30px !important;
      }
 
        .responsive .imgContactMe{
@@ -308,9 +326,8 @@
        }
 
        .responsive .contactMe{
+        margin-left: 15px;
         display: flex;
-        width: 100%;
-        gap: 15px;
         justify-content: space-between;
         align-items: flex-end;
        }
@@ -318,6 +335,7 @@
      .responsive .menuItem {
       font-size: 1.1rem;
      }
+
        .responsive .abt{
           display: flex;
           align-items: flex-end;
@@ -346,5 +364,6 @@
         bottom: 45px;
         left:  25px;
         position: absolute;
+         animation: none;
      }
   }

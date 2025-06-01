@@ -1,8 +1,11 @@
+import Background from "../../components/Background/Background";
+
+import bgImg from '../../assets/images/background.webp'
 
 export default function Photography() {
   return (
     <div>
-      Photography
+      <Background imgSrc={bgImg} />
     </div>
   )
 }
