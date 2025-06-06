@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound/NotFound';
 import { BrowserRouter , Routes, Route} from "react-router";
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet'
 import RouteNavWrapper from './pages/RouteNavWrapper/RouteNavWrapper';
 import PreloadBackgrounds from './components/Background/PreloadBackgrounds';
 
@@ -20,21 +21,28 @@ export default function App() {
    ,[i18n])
 
   return (
-    <div>
-<BrowserRouter>
-      <PreloadBackgrounds />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route element={<RouteNavWrapper />}>
-        <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/photography" element={<Photography />} />
-        <Route path="/contact-me" element={<ContactMe />} />
-        <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-</BrowserRouter>
-    </div>
-
+    <>
+      <Helmet>
+        <title>Dextwelwe | Web Developer</title>
+        <meta name="description" content="Danil Moskalenko. Full-stack developer. Projects, photography, and contact info." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Dextwelwe" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://dextwelwe.com/"  />
+      </Helmet>
+      <BrowserRouter>
+            <PreloadBackgrounds />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route element={<RouteNavWrapper />}>
+              <Route path="/about-me" element={<AboutMe />} />
+              <Route path="/applications" element={<Applications />} />
+              <Route path="/photography" element={<Photography />} />
+              <Route path="/contact-me" element={<ContactMe />} />
+              <Route path="*" element={<NotFound />} />
+              </Route>
+            </Routes>
+      </BrowserRouter>
+</>
 )
 }

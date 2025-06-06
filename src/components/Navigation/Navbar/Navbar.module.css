@@ -1,5 +1,6 @@
 .navWrapper {
  padding-top: 35px;
+ padding-bottom: 30px !important;
  width: 100%;
  z-index: 9999;
  background-color: rgba(0, 0, 0, 0.5);

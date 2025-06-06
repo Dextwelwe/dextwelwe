@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.header{
+    width: 50%;
+}
+
 .desc {
     width: 40%;
     font-size: 1rem;

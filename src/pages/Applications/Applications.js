@@ -1,6 +1,8 @@
 import { useRollUp } from '../../hooks/useRollUp';
 import { useTranslation } from 'react-i18next';
 import { useRef } from 'react';
+import { Helmet } from 'react-helmet'
+
 
 import AppCard from '../../components/Applications/AppCard/AppCard';
 import Background from '../../components/Background/Background';
@@ -20,6 +22,10 @@ export default function Applications() {
 
    return (
     <>
+      <Helmet>
+          <title>Dextwelwe |  {t('APPLICATIONS').toLowerCase()}</title>
+          <link rel="canonical" href="https://dextwelwe.com/applications" />
+      </Helmet>
         <Background imgSrc={bgImg} / >
         <div ref={contentRef} className={contentClasses}>
         <div ref={firstRollElem}>

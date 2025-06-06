@@ -70,7 +70,7 @@ h2 {
 }
 
 .defaultPadding {
-  padding-bottom: 30px;
+  padding-bottom: 0px;
     padding-left: 40px;
     padding-right: 40px;
     box-sizing: border-box;

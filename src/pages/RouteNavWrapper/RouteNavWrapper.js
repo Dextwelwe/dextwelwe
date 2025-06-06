@@ -6,11 +6,9 @@ export default function RouteNavWrapper() {
   const hideHeader = pathname === '/';
 
   return (
-    <>
-      {!hideHeader && <Navbar />}
       <main>
+      {!hideHeader && <Navbar />}
         <Outlet />
       </main>
-    </>
   );
 }

@@ -22,10 +22,15 @@ export function useRollUp(introRef, contentRef,  minPaddingTop=0, offset=10) {
   const applyPadding = () => {
     const sumHeight = intro.getBoundingClientRect().height;
     let pxValue = window.innerHeight - sumHeight - offset;
+    console.log(pxValue)
     // 100 is ~ navbar height and generally a point that content shouldn't be able to reach
     if (pxValue < 100){
       pxValue = minPaddingTop
+      if (minPaddingTop > 0) {
+        pxValue = minPaddingTop
+      }
     }
+
     const finalPaddingVh = (pxValue / window.innerHeight) * 100;
     content.style.paddingTop = `${finalPaddingVh}vh`;
   };
