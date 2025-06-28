@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect,useRef} from 'react';
 import { useViewportSize } from './useViewportWidth';
-
+let prevHeight = window.innerHeight;
 export function useRollUp(introRef, contentRef,  minPaddingTop=0, offset=10) {
- const {height} = useViewportSize(); 
-
+  const { height } = useViewportSize();   
+  const prevHeightRef = useRef(window.innerHeight);
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
@@ -13,39 +13,37 @@ export function useRollUp(introRef, contentRef,  minPaddingTop=0, offset=10) {
     }
   }, []);
 
- useEffect(() => {
-  const content = contentRef.current;
-  const intro = introRef.current;
- 
-  if (!content || !intro) return;
+  
 
-  const applyPadding = () => {
-    const sumHeight = intro.getBoundingClientRect().height;
-    let pxValue = window.innerHeight - sumHeight - offset;
-    console.log(pxValue)
-    // 100 is ~ navbar height and generally a point that content shouldn't be able to reach
-    if (pxValue < 100){
-      pxValue = minPaddingTop
-      if (minPaddingTop > 0) {
-        pxValue = minPaddingTop
-      }
-    }
+   useEffect(() => {
+    const intro = introRef.current;
+    const content = contentRef.current;
+    if (!intro || !content) return;
 
-    const finalPaddingVh = (pxValue / window.innerHeight) * 100;
-    content.style.paddingTop = `${finalPaddingVh}vh`;
-  };
-    
-  content.style.transition = 'padding-top 1s ease';
-   const timeout = setTimeout(() => {
-      applyPadding();
-    }, 100);
+    const onResize = () => {
+      const currH = window.innerHeight;
+      const diff = Math.abs(currH - prevHeightRef.current);
 
-  window.addEventListener('resize', applyPadding);
+      // bail if change is less than 50px
+      if ((diff < 150 && window.innerWidth < 800) && diff != 0) return;
 
-  return () => {
-    clearTimeout(timeout);
-    window.removeEventListener('resize', applyPadding);
-  } 
-}, [introRef, contentRef, offset, height, minPaddingTop]);
+      // calculate padding in px
+      const introH = intro.getBoundingClientRect().height;
+      let padPx = currH - introH - offset;
+      if (padPx < 100) padPx = Math.max(padPx, minPaddingTop);
+
+      content.style.transition = 'padding-top 1s ease';
+      content.style.paddingTop = `${padPx}px`;
+
+      // update for next comparison
+      prevHeightRef.current = currH;
+    };
+
+    // initial application
+    onResize();
+
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, [introRef, contentRef, offset, minPaddingTop]);
 
 }

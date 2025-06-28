@@ -1,0 +1,110 @@
+.content {
+  position: relative;
+  font-family: 'Satoshi';
+  overflow: hidden;
+  padding-top: 100px;
+  color: var(--white);
+  width: 100%;
+}
+
+.mainContent{
+  height: calc(100vh - var(--navbarHeight));
+  width: 100%;
+}
+
+.imageIndex{
+  place-self: end;
+  padding-bottom: 5px;
+  width: 100%;
+  font-size: 18px;
+  text-align: end;
+  z-index: 9999;
+}
+
+.currentImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  animation-duration:0.5s;
+  animation-timing-function: ease-in-out;
+  place-self: center;
+}
+
+.imageSwipe{
+  opacity: 1;
+}
+
+.swipeRight {
+  animation-name: swipeFromRight;
+}
+
+.swipeLeft {
+  animation-name: swipeFromLeft;
+}
+
+.swipeOutLeft {
+  animation-name: swipeOutToLeft;
+}
+
+.swipeOutRight {
+  animation-name: swipeOutFromRight;
+}
+
+
+@keyframes swipeFromRight {
+  from {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes swipeOutToLeft {
+  from { transform: translateX(0);
+        opacity: 1;
+      }
+  to   { transform: translateX(-150%);
+         opacity: 0; 
+    }
+}
+
+@keyframes swipeFromLeft {
+  from {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+     opacity: 1;
+  }
+}
+
+@keyframes swipeOutFromRight {
+  from { 
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to   { transform: translateX(150%);
+     opacity: 0
+    }
+}
+

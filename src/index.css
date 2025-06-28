@@ -42,6 +42,8 @@ h2 {
   --hideContent : none;
   --scrollbar-width: 0px;
   --pageHeaderTitle : 1.5rem;
+  --navbarHeight : 100px;
+  --imageCategoriesHeight : 32px;
 }
 
 .border4white{

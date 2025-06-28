@@ -10,3 +10,11 @@
    width: max-content;
     font-family: 'Namata';
 }
+
+@media screen and (max-width: 770px) {
+  .title {
+    font-size: 1.5rem !important;
+  }
+}
+
+
