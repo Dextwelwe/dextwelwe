@@ -13,7 +13,7 @@ export default function ContactMe() {
   const contentRef = useRef(null);
   const firstRollElem = useRef(null);
   const {height} = useViewportSize();
-  useRollUp(firstRollElem, contentRef, height*0.25)
+  useRollUp(firstRollElem, contentRef, height*0.25,20)
   return (
     <>
       <Helmet>
@@ -24,19 +24,17 @@ export default function ContactMe() {
         <div ref={contentRef} className={[cm.content , 'defaultPadding' , 'content'].join(" ")}>
           <section ref={firstRollElem}>
          <header>
-        <h1 className={cm.title}>{t("THANK_YOU")}</h1>
-        <h2 className={cm.title}>{t("FOR_YOUR_TIME")} :)</h2>
+          <h1 className={cm.title} > {t("THANK_YOU")} <br/> {t("FOR_YOUR_TIME")} :) </h1>
         </header>
        <nav className={cm.links} aria-label="External Links">
           <a href='https://github.com/Dextwelwe' target='_blank' rel='noreferrer'>GITHUB</a>
           <a href='https://linkedin.com/in/danil-moskalenko-a94391282' target='_blank' rel='noreferrer'>LINKEDIN</a>
           <a href='mailto:dextwelwe@gmail.com' target='_blank' rel='noreferrer'>GMAIL</a>
        </nav>
-          <h2 className={cm.title}>{t("OR")}</h2>
-
+          <h2 className={cm.title2}>{t("OR")}</h2>
       <section className={cm.bottom}>
         <div className={cm.bottomTxt}>
-          <h2 className={cm.title}>{t("LETS_TALK")} ...</h2>
+          <h2 className={cm.title2}>{t("LETS_TALK")} ...</h2>
         </div>
 
         <div className={cm.formWrapper}>

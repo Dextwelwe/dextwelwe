@@ -1,7 +1,7 @@
 import { useEffect,useRef} from 'react';
 import { useViewportSize } from './useViewportWidth';
 let prevHeight = window.innerHeight;
-export function useRollUp(introRef, contentRef,  minPaddingTop=0, offset=10) {
+export function useRollUp(introRef, contentRef,  minPaddingTop=0, offset=0) {
   const { height } = useViewportSize();   
   const prevHeightRef = useRef(window.innerHeight);
   useEffect(() => {

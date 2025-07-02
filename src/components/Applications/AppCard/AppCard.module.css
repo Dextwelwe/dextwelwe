@@ -46,14 +46,16 @@
 @media screen and (max-width: 740px) {
     .wrapper{
         width: 100%;
+        padding: 14px;
     }
 
     .stack {
         width: max-content;
+        font-size: 11px;
     }
 
-    .footer {
-        flex-direction: column;
-        gap: 15px;
+    .links{
+        font-size: 15px;
     }
+    
 }

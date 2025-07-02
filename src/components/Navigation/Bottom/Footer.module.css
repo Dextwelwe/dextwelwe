@@ -3,3 +3,7 @@
     color: var(--white);
     margin-top: 50px;
 }
+
+.bottom h6 {
+    opacity: 0.8;
+}

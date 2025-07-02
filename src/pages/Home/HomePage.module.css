@@ -222,7 +222,7 @@
         height: max-content;
         justify-content: space-between;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
             height: 24px;
     }
 
@@ -230,7 +230,7 @@
        transform: unset;
        top: unset;
        margin: 0;
-      font-size: 1.5rem !important;
+      font-size: 1.2rem !important;
       }
 
       .burgerIconWrapper {
@@ -273,7 +273,7 @@
      .menuItem  {
         width: 100%;
         text-align: start;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     /* Nav Bar Responsive */

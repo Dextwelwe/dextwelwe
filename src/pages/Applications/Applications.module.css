@@ -7,8 +7,9 @@
 
 .title {
    font-size: 2rem !important;
+   font-weight: normal;
    width: max-content;
-    font-family: 'Namata';
+  font-family: 'Satoshi';
 }
 
 @media screen and (max-width: 770px) {

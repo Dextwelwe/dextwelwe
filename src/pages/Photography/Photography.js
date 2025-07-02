@@ -9,10 +9,10 @@ import ImageObj from "../../components/Photography/Image/Image";
 const imgData = getImgData();
 
 const categories = [
-  {title : "HAWAII",     index : 0, data : imgData.hawaii},
-  {title : "NEW YORK",   index : 1, data : imgData.newYork},
-  {title : "MONTREAL",   index : 2, data : imgData.montreal}
- ];
+  {title : "HAWAII",     index : 0, data : imgData.hawaii.data , desc : imgData.hawaii.descId},
+  {title : "NEW YORK",   index : 1, data : imgData.newYork.data,  desc : imgData.newYork.descId},
+  {title : "MONTREAL",   index : 2, data : imgData.montreal.data,  desc : imgData.montreal.descId}
+];
 
 export default function Photography() {
 
@@ -32,7 +32,6 @@ export default function Photography() {
   }
 
 function changeImg(dir) {
-
   if (isAnimating) return;
   const lastIndex = currCategory.data.length - 1;
   let nextIndex;
@@ -50,9 +49,9 @@ function changeImg(dir) {
   setOldImgIndex(currImgIndex);
   
   setTimeout(() => {
-    setOldImgIndex(null);
     setIsAnimating(false);
-  }, 500);
+    setOldImgIndex(null);
+  }, 400);
 }
 
 
@@ -62,16 +61,15 @@ return (
     <div className={ph.mainContent}>
      <div className={ph.currentImage}>
       <div className={ph.imageWrapper}>
-  {oldImgIndex !== null && (
-      <ImageObj src={currCategory.data[oldImgIndex].src}  key={`prev-${oldImgIndex}`} className={`${ph.image} ${ph.imageSwipe} ${direction === '+' ? ph.swipeOutLeft : ph.swipeOutRight}`}/>
-  )}
-      <ImageObj src={currCategory.data[currImgIndex].src} key={`curr-${currImgIndex}`} style={{display : oldImgIndex === null ? 'block' : 'none'}} className={oldImgIndex !== null ? (`${ph.image} ${direction === '+' ? ph.swipeRight : ph.swipeLeft}`):''}/>
-      <span className={ph.imageIndex}>{currImgIndex + 1} / {currCategory.data.length}</span>
-    </div>
-    <CurrentImageFooter desc={t(currCategory.data[currImgIndex].descId)} category={currCategory.title} categories={categories} changeCategory={setCategory} buttonAction={changeImg}/>
+      {oldImgIndex !== null && 
+        <ImageObj src={currCategory.data[oldImgIndex].src}  key={`curr-${oldImgIndex}`} className={`${ph.image} ${ph.imageSwipe} ${direction === '+' ? ph.swipeOutLeft : ph.swipeOutRight}`}/>
+      }
+        <ImageObj src={currCategory.data[currImgIndex].src} key={`curr-${currImgIndex}`} className={ (`${ph.image} ${direction === '+' ? ph.swipeRight : ph.swipeLeft}`)} />
+      </div>
+        <span className={ph.imageIndex}>{currImgIndex + 1} / {currCategory.data.length}</span>
+        <CurrentImageFooter desc={currCategory.data[currImgIndex].descId.trim() === "" ? t(currCategory.desc) : t(currCategory.data[currImgIndex].descId.trim())} category={currCategory.title} categories={categories} changeCategory={setCategory} buttonAction={changeImg}/>
       </div>
     </div>
-    <div>
-    </div>
   </div>
-)}
+  )
+}

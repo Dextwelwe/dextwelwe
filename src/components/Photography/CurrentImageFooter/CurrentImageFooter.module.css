@@ -33,6 +33,10 @@
  @media screen and (max-width: 740px) {
     .curentImageWrapper{
         flex-wrap: wrap;
+        margin-top: 15px;
+        height: 50%;
+        align-content: flex-start;
+        margin-top: 0px;
     }
 
     .header {
@@ -41,16 +45,14 @@
     }
 
     .desc {
-        margin-top: 45px;
+        margin-top: 15px;
         order: 3;
         width: 100%;
+        min-height: 100px;
     }
 
     .nav{
         width: 50%;
         order: 2;
     }
-
-
-
  }
