@@ -9,7 +9,7 @@ export default function ContactMeButton({onClick}) {
   return (
         <Link onClick={onClick} className={nav.navAbt} to="/contact-me">
           <div className={nav.navContactMe}>
-            <p style={{width : "max-content"}}>{t('CONTACT_ME')}</p>
+            <p style={{width : "max-content"}}>{t('MENU.CONTACT_ME')}</p>
             <img alt='contact me' className={nav.navImgContactMe} src={contactMe} />
           </div>
         </Link>

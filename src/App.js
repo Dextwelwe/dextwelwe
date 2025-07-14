@@ -15,6 +15,7 @@ import PreloadBackgrounds from './components/Background/PreloadBackgrounds';
 
 export default function App() {
   const { i18n } = useTranslation();
+
   
  useEffect( ()=> {
    i18n.changeLanguage(i18n.language)}
@@ -23,8 +24,8 @@ export default function App() {
   return (
     <>
       <Helmet>
-        <title>Dextwelwe | Web Developer</title>
-        <meta name="description" content="Danil Moskalenko. Full-stack developer. Projects, photography, and contact info." />
+        <title>Dextwelwe | {i18n.t('Web Developer')}</title>
+        <meta name="description" content={i18n.t('WEBSITE_DESC')} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Dextwelwe" />
         <meta name="robots" content="index, follow" />

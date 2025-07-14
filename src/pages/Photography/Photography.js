@@ -1,11 +1,11 @@
 import Background from "../../components/Background/Background";
 import { useTranslation } from 'react-i18next';
 import ph from './Photography.module.css';
-import { useState} from "react";
+import { useState , useRef , useEffect} from "react";
 import CurrentImageFooter from "../../components/Photography/CurrentImageFooter/CurrentImageFooter";
 import getImgData from './PhotoData';
 import ImageObj from "../../components/Photography/Image/Image";
-
+import { Helmet } from 'react-helmet'
 const imgData = getImgData();
 
 const categories = [
@@ -23,6 +23,7 @@ export default function Photography() {
   const [direction, setDirection] = useState('+');
   const [isAnimating, setIsAnimating] = useState(false);
   const contentClasses = [ph.content , 'defaultPadding' , 'content'].join(" ");
+  const isFirstRender = useRef(true);
 
   function setCategory(category) {
     setCurrCategory(categories[category]);
@@ -51,12 +52,22 @@ function changeImg(dir) {
   setTimeout(() => {
     setIsAnimating(false);
     setOldImgIndex(null);
-  }, 400);
+  }, 500);
 }
+
+useEffect(() => {
+  if (isFirstRender.current) {
+    isFirstRender.current = false;
+  }
+}, []);
 
 
 return (
   <div  className={contentClasses}>
+      <Helmet>
+          <title>Dextwelwe |  {t('MENU.PHOTOGRAPHY').toLowerCase()}</title>
+          <link rel="canonical" href="https://dextwelwe.com/contact-me" />
+      </Helmet>
     <Background imgSrc={null} />
     <div className={ph.mainContent}>
      <div className={ph.currentImage}>
@@ -64,7 +75,8 @@ return (
       {oldImgIndex !== null && 
         <ImageObj src={currCategory.data[oldImgIndex].src}  key={`curr-${oldImgIndex}`} className={`${ph.image} ${ph.imageSwipe} ${direction === '+' ? ph.swipeOutLeft : ph.swipeOutRight}`}/>
       }
-        <ImageObj src={currCategory.data[currImgIndex].src} key={`curr-${currImgIndex}`} className={ (`${ph.image} ${direction === '+' ? ph.swipeRight : ph.swipeLeft}`)} />
+        <ImageObj src={currCategory.data[currImgIndex].src} key={`curr-${currImgIndex}`} className={`${ph.image} ${isFirstRender.current ? ph.swipeRightSlow : (direction === '+' ? ph.swipeRight : ph.swipeLeft)}`}
+ />
       </div>
         <span className={ph.imageIndex}>{currImgIndex + 1} / {currCategory.data.length}</span>
         <CurrentImageFooter desc={currCategory.data[currImgIndex].descId.trim() === "" ? t(currCategory.desc) : t(currCategory.data[currImgIndex].descId.trim())} category={currCategory.title} categories={categories} changeCategory={setCategory} buttonAction={changeImg}/>

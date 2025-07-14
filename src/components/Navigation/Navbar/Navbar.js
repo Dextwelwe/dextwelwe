@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className={nav.navTitleWrapper}>
         <Link className={nav.navTitle} to={"/"}><h1>DEXTWELWE</h1></Link>
         <div className={nav.navBurgerIconWrapper} role="button" tabIndex={0}  aria-label={burgerMenuTitle} onClick={toggleBurgerMenu}>
-             <p className={nav.navTitle}>{t(burgerMenuTitle === 'MENU' ? 'MENU' : 'CLOSE')}</p>
+             <p className={nav.navTitle}>{t(burgerMenuTitle === 'MENU' ? 'MENU.MENU' : 'MENU.CLOSE')}</p>
             <div>
             <img alt='menu' src={iconBurgerMenu} className={styleIconBurgerMenu} />
             </div>
@@ -56,9 +56,9 @@ export default function Navbar() {
           </div>
           <div className={nav.navMenuWrapper}>
         <li className={nav.navMenu}>
-        <NavButton  title={t('ABOUT_ME')} url='/about-me' />
-        <NavButton  title={t('APPLICATIONS')} url='/applications'/>
-        <NavButton  title={t('PHOTOGRAPHY')} url='/photography'/>
+        <NavButton  title={t('MENU.ABOUT_ME')} url='/about-me' />
+        <NavButton  title={t('MENU.APPLICATIONS')} url='/applications'/>
+        <NavButton  title={t('MENU.PHOTOGRAPHY')} url='/photography'/>
         </li>
         <ContactMeButton onClick={clearResponsive} />
         </div>

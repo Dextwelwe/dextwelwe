@@ -37,7 +37,7 @@ function HomePage() {
           <div className={hs.titleWrapper}>
           <h1 className={hs.title}>DEXTWELWE</h1>
           <div className={hs.burgerIconWrapper} role="button" tabIndex={0}  aria-label={burgerMenuTitle} onClick={toggleBurgerMenu}>
-            <p className={hs.title}>{t(burgerMenuTitle === 'MENU' ? 'MENU' : 'CLOSE')}</p>
+            <p className={hs.title}>{t(burgerMenuTitle === 'MENU' ? 'MENU.MENU' : 'MENU.CLOSE')}</p>
             <div className={hs.iconBurgerMenuWrapper}>
             <img alt='menu' src={iconBurgerMenu} className={styleIconBurgerMenu} />
             </div>
@@ -46,13 +46,13 @@ function HomePage() {
           <div className={hs.menuWrapper}>
             <ul className={hs.menu}>
             <span className={hs.vl1}></span>
-            <li><h2><Link className={hs.menuItem} to="/about-me">{t("ABOUT_ME")}</Link></h2></li>
+            <li><h2><Link className={hs.menuItem} to="/about-me">{t("MENU.ABOUT_ME")}</Link></h2></li>
             <span className={hs.vl2} ></span>
-            <li><h2><Link className={hs.menuItem} to="/applications">{t('APPLICATIONS')}</Link></h2></li>
+            <li><h2><Link className={hs.menuItem} to="/applications">{t('MENU.APPLICATIONS')}</Link></h2></li>
             <span className={hs.vl3}></span>
-            <li><h2><Link className={hs.menuItem} to="/photography">{t('PHOTOGRAPHY')}</Link></h2></li>
+            <li><h2><Link className={hs.menuItem} to="/photography">{t('MENU.PHOTOGRAPHY')}</Link></h2></li>
             <span className={hs.vl4}></span>
-            <li><h2><Link className={[hs.menuItem, hs.abt].join(' ')} to="/contact-me"> {t('CONTACT_ME')}
+            <li><h2><Link className={[hs.menuItem, hs.abt].join(' ')} to="/contact-me"> {t('MENU.CONTACT_ME')}
               <div className={hs.contactMe}>
                 <img alt='contact me' className={hs.imgContactMe} src={contactMe} />
               </div>

@@ -43,7 +43,7 @@
 
 .image {
   position: absolute;
-  animation-duration:0.4s;
+  animation-duration:0.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   place-self: center;
@@ -53,6 +53,10 @@
 
 .swipeRight {
   animation-name: swipeFromRight;
+}
+
+.swipeRightSlow{
+   animation-name: swipeFromRightSlow;
 }
 
 .swipeLeft {
@@ -71,6 +75,17 @@
 @keyframes swipeFromRight {
   from {
     transform: translateX(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes swipeFromRightSlow {
+  from {
+    transform: translateX(50%);
     opacity: 0;
   }
   to {

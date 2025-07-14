@@ -6,18 +6,18 @@ import forestTrees from '../../assets/images/Hawaii/forestTrees.webp'
 
 export default function getImgData() {
   return {
-    hawaii : {data : hawaiiData , descId : "GENERAL_DESC_HAWAII"},
-    newYork : {data :null},
-    montreal : {data :null }
+    hawaii : {data : hawaiiData , descId : "PHOTOGRAPHY.GENERAL_DESC_HAWAII"},
+    newYork : {data :null, descId : null},
+    montreal : {data :null, descId : null},
+    montreal2 : {data :null, descId : null}
   }
 }
-
 
 const hawaiiData =  [
     {
       src : beach,
       alt : "beach",
-      descId : "DESC_HAWAII_PH",
+      descId : "PHOTOGRAPHY.DESC_HAWAII_PH",
       id : 1
     },
     {

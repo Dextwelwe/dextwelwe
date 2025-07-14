@@ -24,14 +24,14 @@ export default function AboutMe() {
   return (
       <div ref={contentRef} className={contentClasses}>
         <Helmet>
-          <title>Dextwelwe |  {t('ABOUT_ME').toLowerCase()}</title>
+          <title>Dextwelwe |  {t('MENU.ABOUT_ME').toLowerCase()}</title>
           <link rel="canonical" href="https://dextwelwe.com/about-me" />
       </Helmet>
       <Background imgSrc={bgImg} />
-      <ArticleSection ref={introRef} title={t('TITLE_INTRO')} desc={t('TITLE_INTRO_DESC')} />
-      <BoxSection title={t('CURRENT_STACK')} items={stackItems} />
-      <ArticleSection title={t('MY_SKILLS')} desc={t('MY_SKILLS_DESC')} />
-      <BoxSection title={t('PERSONAL_INTERESTS')} items={interests} />
+      <ArticleSection ref={introRef} title={t('ABOUT_ME.TITLE_INTRO')} desc={t('ABOUT_ME.TITLE_INTRO_DESC')} />
+      <BoxSection title={t('ABOUT_ME.CURRENT_STACK')} items={stackItems} />
+      <ArticleSection title={t('ABOUT_ME.MY_SKILLS')} desc={t('ABOUT_ME.MY_SKILLS_DESC')} />
+      <BoxSection title={t('ABOUT_ME.PERSONAL_INTERESTS')} items={interests} />
       <Footer />
       </div>
   )
