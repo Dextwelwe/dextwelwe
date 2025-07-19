@@ -41,6 +41,7 @@
   left: -1px;
   box-sizing: border-box;
   width: calc(100% + 2px);
+  z-index: 9999;
 }
 
 .selectOption {
@@ -52,4 +53,10 @@
 .selectOption:hover{
 background-color: var(--white);
 color: var(--black);
+}
+
+@media screen and (max-width: 1100px) {
+  .selectOptions {
+    bottom: unset;
+  }
 }

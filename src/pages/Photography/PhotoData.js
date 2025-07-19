@@ -43,5 +43,5 @@ const hawaiiData =  [
       alt : "Trees in the forest",
       descId : "",
       id : 5
-  }
+  },
 ];

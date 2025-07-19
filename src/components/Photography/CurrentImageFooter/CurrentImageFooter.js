@@ -8,15 +8,17 @@ export default function CurrentImageFooter({desc, buttonAction, categories, chan
   const {t} = useTranslation();
   
   return (
-    <div className={cif.curentImageWrapper}>
-      <div className={cif.header}>
-      <h1>{t('MENU.PHOTOGRAPHY')}</h1>
-      <ImageCategories options={categories} onChange={changeCategory}  />
-      </div>
-      <p className={cif.desc}>{desc}</p>
-      <div className={cif.nav}>
-        <img onClick={()=>buttonAction('-')} src={prevIcon} alt=""></img>
-        <img onClick={()=>buttonAction('+')} src={nextIcon} alt=""></img>
+    <div className={cif.rootWrapper}>
+      <div className={cif.curentImageWrapper}>
+        <div className={cif.header}>
+        <h1>{t('MENU.PHOTOGRAPHY')}</h1>
+        <ImageCategories options={categories} onChange={changeCategory}  />
+        </div>
+        <p className={cif.desc}>{desc}</p>
+        <div className={cif.nav}>
+          <img onClick={()=>buttonAction('-')} src={prevIcon} alt=""></img>
+          <img onClick={()=>buttonAction('+')} src={nextIcon} alt=""></img>
+        </div>
       </div>
     </div>
   )

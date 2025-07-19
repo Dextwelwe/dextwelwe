@@ -248,7 +248,7 @@
     .responsive  {
      background-color: black !important;
      background: black;
-     height: 100vh;
+     height: 100dvh;
      padding-left : 20px;
      padding-right: 20px;
     }
