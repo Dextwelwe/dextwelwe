@@ -50,6 +50,14 @@
   max-width: 100%;
 }
 
+.allImagesScrollWrapper{
+  margin-top: 1vh;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .swipeRight {
   animation-name: swipeFromRight;
 }
@@ -128,8 +136,10 @@
 
 @media screen and (max-width: 740px) {
    .imageIndex{
+    padding-top: 10px;
     padding-bottom: 0;
     text-align: center;
+    font-size: 0.8rem;
    }
 
    .image {
@@ -153,6 +163,10 @@
    .mainContent{
      height: calc(99dvh - var(--navbarHeight));
    }
+
+   .allImagesScrollWrapper{
+    grid-template-columns: unset;
+}
  }
 
  @media screen and (max-width : 410px){
