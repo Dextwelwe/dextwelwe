@@ -42,8 +42,9 @@
         "SEND" : "SEND"
     },
     "PHOTOGRAPHY" :{
-        "DESC_HAWAII_PH" : "My photography is a way of capturing the mood and rhythm of places I’ve lived and loved. In Hawaii, I focused on natural light, vivid colors, and the calm energy of the ocean and landscapes.",
-        "GENERAL_DESC_HAWAII" : "My photography is a way of capturing the mood and rhythm of places I’ve lived and loved. In Hawaii, I focused on natural light, vivid colors, and the calm energy of the ocean and landscapes.My photography is a way of capturing the mood and rhythm of places I’ve lived and loved. In Hawaii, I focused on natural light, vivid colors, and the calm energy of the ocean and landscapes.My photography is a way of capturing the mood and rhythm of places I’ve lived and loved. In Hawaii, I focused on natural light, vivid colors, and the calm energy of the ocean and landscapes."
+        "GENERAL_DESC_HAWAII" : "My photography is a way of capturing the mood and rhythm of places I’ve lived and loved. In Hawaii, I focused on natural light, vivid colors, and the calm energy of the ocean and landscapes.",
+        "GENERAL_DESC_MTL" : "Exploring the city’s streets, I focus on calm, raw moments—quiet corners, shadowed alleys, and everyday scenes with a moody, dark-toned aesthetic. My work captures the stillness behind the movement, the grit behind the charm. This is Montreal, stripped down and real.",
+        "GENERAL_DESC_NYC" : "I captured the city in vertical frames, focusing on the most striking moments I experienced. From towering buildings to fleeting street scenes, each shot reflects what truly stood out to me—raw, unforgettable, and full of energy."
     },
     "PAGE_NOT_FOUND" : "PAGE NOT FOUND",
     "WEB_DEVELOPER" : "Web developer",

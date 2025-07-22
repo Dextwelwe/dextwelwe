@@ -42,7 +42,9 @@
         "SEND" : "ENVOYER"
     },
     "PHOTOGRAPHY" : {
-        "DESC_HAWAII_PH" : "Ma photographie est une façon de capturer l’ambiance et le rythme des lieux où j’ai vécu et que j’ai aimés. À Hawaï, je me suis concentré sur la lumière naturelle, les couleurs vives et l’énergie apaisante de l’océan et des paysages"
+        "DESC_HAWAII_PH" : "Ma photographie est une façon de capturer l’ambiance et le rythme des lieux où j’ai vécu et que j’ai aimés. À Hawaï, je me suis concentré sur la lumière naturelle, les couleurs vives et l’énergie apaisante de l’océan et des paysages",
+        "GENERAL_DESC.MTL" : "En explorant les rues de la ville, je capture des instants calmes et bruts — des coins tranquilles, des ruelles ombragées, et des scènes du quotidien avec une esthétique sombre et feutrée. Mon travail révèle le silence derrière le mouvement, le brut derrière le charme. Voici Montréal, sans artifice et authentique.",
+        "GENERAL_DESC_NYC" : "J’ai photographié la ville en format vertical, en figeant les instants les plus marquants que j’ai vécus. Des gratte-ciel aux scènes de rue spontanées, chaque image reflète ce qui m’a vraiment marqué — brut, inoubliable, vibrant."
     },
     "PAGE_NOT_FOUND" : "PAGE NON TROUVÉE",
     "WEB_DEVELOPER" : "Développeur web",

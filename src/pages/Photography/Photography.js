@@ -13,7 +13,7 @@ const imgData = getImgData();
 const categories = [
   {title : "HAWAII",     index : 0, data : imgData.hawaii.data , desc : imgData.hawaii.descId},
   {title : "NEW YORK",   index : 1, data : imgData.newYork.data,  desc : imgData.newYork.descId},
- // {title : "MONTREAL",   index : 2, data : imgData.montreal.data,  desc : imgData.montreal.descId}
+  {title : "MONTREAL",   index : 2, data : imgData.montreal.data,  desc : imgData.montreal.descId}
 ];
 
 export default function Photography() {

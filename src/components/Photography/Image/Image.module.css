@@ -6,11 +6,19 @@
 
 .singlePicture{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .singlePicture:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+
+.imageScrollWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .picture {
@@ -64,6 +72,5 @@
   transform: unset;
   transition: unset;
 }
-
  }
 

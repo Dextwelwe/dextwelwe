@@ -1,10 +1,10 @@
 
 
 import im from './Image.module.css'
-import { useState , useEffect, useRef} from 'react';
+import {useState , useEffect} from 'react';
 import loading from '../../../assets/images/loadingGif.gif'
 
-export default function Image({src, alt, className}) {
+export default function Image({src, alt}) {
 const [isLoaded, setIsLoaded] = useState(false);
 const [showLoader, setShowLoader] = useState(false);
  
@@ -16,7 +16,7 @@ const [showLoader, setShowLoader] = useState(false);
     }, [src]);
 
      return (
-      <div className={`${className}`}>
+      <div className={im.imageScrollWrapper}>
        {!isLoaded && showLoader && <div className={im.loadingWrapper}>
         <img alt={alt}  className={` ${im.image} ${im.loading}`}  src={loading} />
         </div>
