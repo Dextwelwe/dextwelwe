@@ -1,7 +1,7 @@
 {
-  "short_name": "Dextwelwe",
-  "name": "",
-  "icons": [ 
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
   ],
   "start_url": ".",
   "display": "standalone",
