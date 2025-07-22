@@ -28,6 +28,7 @@ import highwaySM from '../../assets/images/Hawaii/SM/highway.webp'
 import templeSM from  '../../assets/images/Hawaii/SM/temple.webp'
 import treesForestSM from '../../assets/images/Hawaii/SM/treesForest.webp'
 
+
 const hawaiiData =  [
     {
       srcXL : beach,
@@ -111,10 +112,76 @@ const hawaiiData =  [
   }
 ];
 
+const NYCData = [
+  {
+     srcXL : require('../../assets/images/Nyc/XL/car.webp'),
+     srcLG : require('../../assets/images/Nyc/LG/car.webp'),
+     srcSM : require('../../assets/images/Nyc/SM/car.webp'),
+     alt : "Car",
+     descId : "",
+     id : 1
+  },
+  {
+     srcXL : require('../../assets/images/Nyc/XL/highscrapper.webp'),
+     srcLG : require('../../assets/images/Nyc/LG/highscrapper.webp'),
+     srcSM : require('../../assets/images/Nyc/SM/highscrapper.webp'),
+     alt : "Highscrapper",
+     descId : "",
+     id : 2
+  },
+   {
+     srcXL : require('../../assets/images/Nyc/XL/highscrapper2.webp'),
+     srcLG : require('../../assets/images/Nyc/LG/highscrapper2.webp'),
+     srcSM : require('../../assets/images/Nyc/SM/highscrapper2.webp'),
+     alt : "Highscrapper 2",
+     descId : "",
+     id : 3
+  },
+  {
+     srcXL : require('../../assets/images/Nyc/XL/bridge.webp'),
+     srcLG : require('../../assets/images/Nyc/LG/bridge.webp'),
+     srcSM : require('../../assets/images/Nyc/SM/bridge.webp'),
+     alt : "Bridge",
+     descId : "",
+     id : 4
+  },
+  {
+     srcXL : require('../../assets/images/Nyc/XL/subway.webp'),
+     srcLG : require('../../assets/images/Nyc/LG/subway.webp'),
+     srcSM : require('../../assets/images/Nyc/SM/subway.webp'),
+     alt : "Subway",
+     descId : "",
+     id : 5
+  },
+  {
+     srcXL : require('../../assets/images/Nyc/XL/statue.webp'),
+     srcLG : require('../../assets/images/Nyc/LG/statue.webp'),
+     srcSM : require('../../assets/images/Nyc/SM/statue.webp'),
+     alt : "Statue",
+     descId : "",
+     id : 6
+  },
+  {
+     srcXL : require('../../assets/images/Nyc/XL/entranceSubway.webp'),
+     srcLG : require('../../assets/images/Nyc/LG/entranceSubway.webp'),
+     srcSM : require('../../assets/images/Nyc/SM/entranceSubway.webp'),
+     alt : "Entrance Subway",
+     descId : "",
+     id : 6
+  }
+
+
+
+
+
+
+
+];
+
 export default function getImgData() {
   return {
-    hawaii : {data : hawaiiData , descId : "PHOTOGRAPHY.GENERAL_DESC_HAWAII"}
-  //  newYork : {data :null, descId : null},
+    hawaii : {data : hawaiiData , descId : "PHOTOGRAPHY.GENERAL_DESC_HAWAII"},
+    newYork : {data :NYCData, descId : "PHOTOGRAPHY.GENERAL_DESC_HAWAII"},
   //  montreal : {data :null, descId : null},
   //  montreal2 : {data :null, descId : null}
   }
