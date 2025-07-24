@@ -23,7 +23,7 @@ export default function Applications() {
    return (
     <>
       <Helmet>
-          <title>Dextwelwe |  {t('APPLICATIONS').toLowerCase()}</title>
+          <title>Dextwelwe |  {t('MENU.APPLICATIONS').toLowerCase()}</title>
           <link rel="canonical" href="https://dextwelwe.com/applications" />
       </Helmet>
         <Background imgSrc={bgImg} / >

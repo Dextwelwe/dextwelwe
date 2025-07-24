@@ -6,6 +6,15 @@
     <meta name="description" content="Dextwelwe.com"/>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Dextwelwe </title>
+    <script>
+      (function() {
+        var path = window.location.pathname;
+        var hasHash = window.location.hash;
+        if (!hasHash && path !== '/') {
+          var newUrl = window.location.origin + '/#' + path;
+          window.location.replace(newUrl);
+        }})();
+</script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this web page</noscript>

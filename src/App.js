@@ -6,7 +6,7 @@ import ContactMe from '../src/pages/ContactMe/ContactMe'
 import Photography from './pages/Photography/Photography';
 import NotFound from './pages/NotFound/NotFound';
 
-import { BrowserRouter , Routes, Route} from "react-router";
+import { HashRouter , Routes, Route} from "react-router";
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet'
@@ -31,7 +31,7 @@ export default function App() {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://dextwelwe.com/"  />
       </Helmet>
-      <BrowserRouter>
+      <HashRouter>
             <PreloadBackgrounds />
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -43,7 +43,7 @@ export default function App() {
               <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
-      </BrowserRouter>
+      </HashRouter>
 </>
 )
 }
