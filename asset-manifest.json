@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca40585c.css",
-    "main.js": "/static/js/main.b9d58d83.js",
+    "main.css": "/static/css/main.eae64159.css",
+    "main.js": "/static/js/main.3d79cf2b.js",
     "static/media/highscrapper2.webp": "/static/media/highscrapper2.7cbf99c9249d50753e9a.webp",
     "static/media/statue.webp": "/static/media/statue.f4fab3dbd42b7f2defd6.webp",
     "static/media/bridge.webp": "/static/media/bridge.f2ff7d52abcdf2459905.webp",
@@ -13,7 +13,6 @@
     "static/media/entranceSubway.webp": "/static/media/entranceSubway.77d708578dc68fab7b1d.webp",
     "static/media/beach.webp": "/static/media/beach.41c8497af873a45fd92c.webp",
     "static/media/buildings.webp": "/static/media/buildings.751b0587bb4e13cad14c.webp",
-    "static/media/bus.webp": "/static/media/bus.064aadaac21661bddd50.webp",
     "static/media/darkStreet.webp": "/static/media/darkStreet.92e22533218f9827a351.webp",
     "static/media/sphere.webp": "/static/media/sphere.94d23d85aae6354ca6c4.webp",
     "static/media/clock2.webp": "/static/media/clock2.7a40db268346f4247ce6.webp",
@@ -25,7 +24,6 @@
     "static/media/hike.webp": "/static/media/hike.5742aa741e52e2d11899.webp",
     "static/media/abtMeBg.webp": "/static/media/abtMeBg.2f16bffbc8ec64ca68f6.webp",
     "static/media/beachPeople.webp": "/static/media/beachPeople.139db8fbf059e474c9d3.webp",
-    "static/media/exit.JPG": "/static/media/exit.3f12973f25cdbd0965ff.JPG",
     "static/media/gas.webp": "/static/media/gas.73117d79a575f822ae15.webp",
     "static/media/car.webp": "/static/media/car.bad05e6614da0a068abd.webp",
     "static/media/foggyLight.webp": "/static/media/foggyLight.57a27f114b46d6c42aaa.webp",
@@ -34,11 +32,11 @@
     "static/media/Satoshi-Regular.otf": "/static/media/Satoshi-Regular.811ccb0b5af1892a71df.otf",
     "static/media/NamataSemiBold.otf": "/static/media/NamataSemiBold.03dbe032b9c6df88c4b5.otf",
     "index.html": "/index.html",
-    "main.ca40585c.css.map": "/static/css/main.ca40585c.css.map",
-    "main.b9d58d83.js.map": "/static/js/main.b9d58d83.js.map"
+    "main.eae64159.css.map": "/static/css/main.eae64159.css.map",
+    "main.3d79cf2b.js.map": "/static/js/main.3d79cf2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca40585c.css",
-    "static/js/main.b9d58d83.js"
+    "static/css/main.eae64159.css",
+    "static/js/main.3d79cf2b.js"
   ]
 }
