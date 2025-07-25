@@ -18,7 +18,7 @@ export default function AboutMe() {
    const introRef = useRef(null); 
    const contentRef = useRef(null);
    useRollUp(introRef, contentRef);
-   const stackItems = ["Express.js", "Node.js", "ASP Classic", "VBScript", "Oracle DB", "PL-SQL", "CSS", "JQuery", "Tailwind", "Crystal Reports", "Git" , "Tourtoise SVN"];
+   const stackItems = ["Express.js", "Node.js", "React", "ASP Classic", "Python", "Java", "VBScript", "Stored Procedures","Oracle DB",  "PL/SQL", "CSS", "JQuery", "Crystal Reports", "Git" , "Tortoise SVN"];
    const interests = [ t('ABOUT_ME.INTEREST_USER_EXPERIENCE'), t('ABOUT_ME.INTEREST_NEW_TECH'),t('ABOUT_ME.INTEREST_PROGRAMMING_TECHNIQUES'),t('ABOUT_ME.INTEREST_CYCLING'),t('ABOUT_ME.INTEREST_PHOTOGRAPHY')];
    const contentClasses = [abt.content , 'defaultPadding' , 'content'].join(" ")
   return (
@@ -29,8 +29,8 @@ export default function AboutMe() {
       </Helmet>
       <Background imgSrc={bgImg} />
       <ArticleSection ref={introRef} title={t('ABOUT_ME.TITLE_INTRO')} desc={t('ABOUT_ME.TITLE_INTRO_DESC')} />
-      <BoxSection title={t('ABOUT_ME.CURRENT_STACK')} items={stackItems} />
       <ArticleSection title={t('ABOUT_ME.MY_SKILLS')} desc={t('ABOUT_ME.MY_SKILLS_DESC')} />
+      <BoxSection title={t('ABOUT_ME.CURRENT_STACK')} items={stackItems} />
       <BoxSection title={t('ABOUT_ME.PERSONAL_INTERESTS')} items={interests} />
       <Footer />
       </div>

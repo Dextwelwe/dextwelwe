@@ -31,10 +31,10 @@ export default function ContactMe() {
           <a href='https://linkedin.com/in/danil-moskalenko-a94391282' target='_blank' rel='noreferrer'>LINKEDIN</a>
           <a href='mailto:dextwelwe@gmail.com' target='_blank' rel='noreferrer'>GMAIL</a>
        </nav>
-          <h2 className={cm.title2}>{t("CONTACT_ME.OR")}</h2>
+          <h1 className={cm.title2}>{t("CONTACT_ME.OR")}</h1>
       <section className={cm.bottom}>
         <div className={cm.bottomTxt}>
-          <h2 className={cm.title2}>{t("CONTACT_ME.LETS_TALK")} ...</h2>
+          <h1 className={cm.title2}>{t("CONTACT_ME.LETS_TALK")} ...</h1>
         </div>
 
         <div className={cm.formWrapper}>

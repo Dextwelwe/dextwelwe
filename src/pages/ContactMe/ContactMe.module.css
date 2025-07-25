@@ -8,9 +8,9 @@
 }
 
 .title {
-    line-height: 40px;
+    line-height: 35px;
     color: var(--white);
-    font-size: 2.3rem !important;
+    font-size: 2rem !important;
     font-weight: bold !important;
 }
 
@@ -151,6 +151,17 @@
  }
 
  @media screen and (max-width: 740px) {
+
+    .title {
+    line-height: 25px;
+    font-size: 1.5rem !important ;
+    }
+
+    .title2 {
+    line-height: 25px;
+    font-size: 1.5rem !important ;
+    }
+
    .formWrapper {
     width: 100%;
    }
@@ -164,5 +175,7 @@
     border-width: 1px;
    }
 
-
+   .links a {
+    font-size: 0.9rem;
+   }
  }

@@ -30,9 +30,9 @@ export default function Applications() {
         <div ref={contentRef} className={contentClasses}>
         <div ref={firstRollElem}>
         <h1 className={app.title}>{t('MENU.APPLICATIONS')}</h1>
-        <AppCard title={t('APPLICATIONS.GROCERY_APP')} desc={t('APPLICATIONS.GROCERY_APP_DESC')} stack={t('APPLICATIONS.GROCERY_APP_STACK')} gh={"https://github.com/Dextwelwe/GroceryApp"} preview={"https://dextwelwe.github.io/GroceryApp/"} />
-        </div>
         <AppCard title={t('APPLICATIONS.PERSONAL_WEBSITE')} desc={t('APPLICATIONS.PERSONAL_WEBSITE_DESC')} stack={t('APPLICATIONS.PERSONAL_WEBSITE_STACK')} gh={"https://github.com/Dextwelwe/dextwelwe"} />
+        </div>
+        <AppCard title={t('APPLICATIONS.GROCERY_APP')} desc={t('APPLICATIONS.GROCERY_APP_DESC')} stack={t('APPLICATIONS.GROCERY_APP_STACK')} gh={"https://github.com/Dextwelwe/GroceryApp"}  />
       <Footer />
       </div>
     </>

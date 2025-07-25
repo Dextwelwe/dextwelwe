@@ -54,11 +54,12 @@ function changeImg(dir) {
   setTimeout(() => {
     setIsAnimating(false);
     setOldImgIndex(null);
-  }, 500);
+  }, 600);
 }
 
 useEffect(() => {
   if (isFirstRender.current) {
+    window.scrollTo(0, 0);
     isFirstRender.current = false;
   }
 }, []);

@@ -13,7 +13,7 @@
         "MY_SKILLS" : "MY SKILLS",
         "PERSONAL_INTERESTS" : "PERSONAL INTERESTS",
         "MY_SKILLS_DESC" : "I have a strong foundation in object-oriented programming, data structures, algorithms, and design patterns. I'm experienced with Java, C#, and Python, and I write clean, testable code using unit and mock testing. On the web side, I work with HTML, CSS, JavaScript, TypeScript, and ASP. My database skills include PL/SQL, PostgreSQL, Oracle, and Firebase. I'm also familiar with modern frameworks like React, Flask, Java Spring, Bootstrap, and jQuery.",
-        "TITLE_INTRO_DESC" : "My name is Danil Moskalenko. I am a Full Stack Web Developper and amateur Photographer living in Montréal, Canada. I’ve got a thing for both tech and photography. I love exploring new ideas, learning as I go, and finding that perfect mix of creativity and problem-solving. Whether I'm working on a project or just out with my camera, I'm always up for trying something new and challenging myself.",
+        "TITLE_INTRO_DESC" : "Hi, my name is Danil Moskalenko. I’m a Full Stack Web Developer with 2 years of professional experience living in Brossard, Canada. I enjoy building things that are useful, simple to use, and well-designed. I’m always looking to learn new skills and improve myself, with a strong desire to keep progressing in my career and personal life. Outside of work, I spend my time taking pictures of things that catch my eye, cycling around and exploring new places.",
         "INTEREST_USER_EXPERIENCE": "User Experience",
         "INTEREST_NEW_TECH": "New Technologies",
         "INTEREST_PROGRAMMING_TECHNIQUES": "Discovering new programming techniques",
@@ -23,10 +23,10 @@
     },
     "APPLICATIONS" : {
         "GROCERY_APP" : "GROCERY APP",
-        "GROCERY_APP_DESC" :"A personal-use grocery app with a simple, intuitive design and focused functionality. Built with React, vanilla CSS, and Firestore. It supports creating and removing custom food categories, adding multiple items at once, and marking items as purchased or deleted. Designed for quick, straight to the point list management.",
+        "GROCERY_APP_DESC" :"I built a small grocery web app using React, CSS, and Firebase. It’s a personal app that can be installed on your phone’s home screen and works like a native app. I created it to replace shared Apple Notes, which wasn’t very practical. Users can sort products by categories, add, remove, and edit items. Simple and efficient. I’m still adding new features with the goal of turning it into a full PWA, and soon it will be available to more people.",
         "GROCERY_APP_STACK" : "REACT,CSS,FIREBASE",
         "PERSONAL_WEBSITE" : "PERSONAL WEBSITE",
-        "PERSONAL_WEBSITE_DESC" : "You're currently browsing it :) \n This project was a full redesign of my previous site, created to challenge and refine my front-end skills. Built with React and vanilla CSS for an extra layer of difficulty. If you made it here, then the mission was a success.",
+        "PERSONAL_WEBSITE_DESC" :"You're currently browsing it :) This project was a full redesign of my previous site, created to challenge and refine my front-end skills. Built from scratch using React and pure CSS. The custom design was created by my girlfriend, a graphic designer who kindly helped out. Thanks for stopping by!",
         "PERSONAL_WEBSITE_STACK" : "REACT,CSS,FIGMA"
     },
     "CONTACT_ME" :{
@@ -44,7 +44,7 @@
     "PHOTOGRAPHY" :{
         "GENERAL_DESC_HAWAII" : "My photography is a way of capturing the mood and rhythm of places I’ve lived and loved. In Hawaii, I focused on natural light, vivid colors, and the calm energy of the ocean and landscapes.",
         "GENERAL_DESC_MTL" : "Exploring the city’s streets, I focus on calm, raw moments—quiet corners, shadowed alleys, and everyday scenes with a moody, dark-toned aesthetic. My work captures the stillness behind the movement, the grit behind the charm. This is Montreal, stripped down and real.",
-        "GENERAL_DESC_NYC" : "I captured the city in vertical frames, focusing on the most striking moments I experienced. From towering buildings to fleeting street scenes, each shot reflects what truly stood out to me—raw, unforgettable, and full of energy."
+        "GENERAL_DESC_NYC" : "I captured the city in vertical frames, focusing on the most striking moments I experienced. From towering buildings to fleeting street scenes, each shot reflects what truly stood out to me."
     },
     "PAGE_NOT_FOUND" : "PAGE NOT FOUND",
     "WEB_DEVELOPER" : "Web developer",

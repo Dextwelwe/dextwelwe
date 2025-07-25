@@ -9,7 +9,7 @@
    font-size: 2rem !important;
    font-weight: normal;
    width: max-content;
-  font-family: 'Satoshi';
+   font-family: 'Satoshi';
 }
 
 @media screen and (max-width: 770px) {

@@ -97,15 +97,9 @@
         align-items: flex-start;
     }
 
-    .desc {
-         font-size: 0.8rem;
-    }
+     .desc {
+        font-size: 0.9rem;
+     }
 
-    .header{
-     font-size: 0.9rem;
-    }
-
-     .header h1{
-        font-size: 1rem;
-    }
+    
   }
