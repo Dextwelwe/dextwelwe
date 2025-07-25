@@ -8,6 +8,7 @@ import ImageMain from "../../components/Photography/Image/ImageMain";
 import Image from "../../components/Photography/Image/Image.js";
 import { Helmet } from 'react-helmet'
 import Footer from '../../components/Navigation/Bottom/Footer';
+import useLocalStorage from "../../hooks/useLocalStorage.js";
 const imgData = getImgData();
 
 const categories = [
@@ -17,9 +18,9 @@ const categories = [
 ];
 
 export default function Photography() {
-
+  const [savedCategory,setSavedCategory] = useLocalStorage('category',0);
   const {t} = useTranslation();
-  const [currCategory, setCurrCategory] = useState(categories[0]);
+  const [currCategory, setCurrCategory] = useState(categories[savedCategory]);
   const [currImgIndex, setCurrImgIndex] = useState(0);
   const [oldImgIndex, setOldImgIndex] = useState(null);
   const [direction, setDirection] = useState('+');
@@ -28,6 +29,7 @@ export default function Photography() {
   const isFirstRender = useRef(true);
 
   function setCategory(category) {
+    setSavedCategory(category)
     setCurrCategory(categories[category]);
     setCurrImgIndex(0);
     setOldImgIndex(null);
@@ -83,14 +85,14 @@ return (
  />
       </div>
         <span className={ph.imageIndex}>{currImgIndex + 1} / {currCategory.data.length}</span>
-        <CurrentImageFooter desc={currCategory.data[currImgIndex].descId.trim() === "" ? t(currCategory.desc) : t(currCategory.data[currImgIndex].descId.trim())} category={currCategory.title} categories={categories} changeCategory={setCategory} buttonAction={changeImg}/>
+        <CurrentImageFooter desc={t(currCategory.desc)} category={currCategory.title} categories={categories} changeCategory={setCategory} buttonAction={changeImg}/>
       </div>
     </div>
     <div className={ph.allImagesScrollWrapper}>
       {
         currCategory && currCategory.data &&
         currCategory.data.map((photo, index) => (
-          <Image src={photo} key={`curr-${index}`} alt={currCategory.data[currImgIndex].descId.trim() === "" ? t(currCategory.desc) : t(currCategory.data[currImgIndex].descId.trim())} />
+          <Image src={photo} key={`curr-${index}`} alt={t(currCategory.desc)} />
         ))
       }
         </div>
