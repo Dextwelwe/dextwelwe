@@ -75,14 +75,13 @@ const scrollToTop = () => {
 }
 
 const handleImageClick = (index) => {
-  let prevIndex = index - 1;
-  if (prevIndex < 0){
-    prevIndex = currCategory.data.length - 1;
-  } else {
-    prevIndex = index - 1;
-  }
+  if (currImgIndex === index) return;
+  setOldImgIndex(currImgIndex)
   setCurrImgIndex(index)
-  setOldImgIndex(prevIndex)
+  setTimeout(() => {
+    setIsAnimating(false);
+    setOldImgIndex(null);
+  }, 600);
   scrollToTop();
 }
 
