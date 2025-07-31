@@ -61,11 +61,30 @@ function changeImg(dir) {
 
 useEffect(() => {
   if (isFirstRender.current) {
-    window.scrollTo(0, 0);
-    isFirstRender.current = false;
+      scrollToTop();
+      isFirstRender.current = false;
   }
 }, []);
 
+const scrollToTop = () => {
+   window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
+  });
+}
+
+const handleImageClick = (index) => {
+  let prevIndex = index - 1;
+  if (prevIndex < 0){
+    prevIndex = currCategory.data.length - 1;
+  } else {
+    prevIndex = index - 1;
+  }
+  setCurrImgIndex(index)
+  setOldImgIndex(prevIndex)
+  scrollToTop();
+}
 
 
 return (
@@ -92,7 +111,7 @@ return (
       {
         currCategory && currCategory.data &&
         currCategory.data.map((photo, index) => (
-          <Image src={photo} key={`curr-${index}`} alt={t(currCategory.desc)} />
+          <Image src={photo} key={`curr-${index}`} alt={t(currCategory.desc)} clickAction={()=>handleImageClick(index)} />
         ))
       }
         </div>
