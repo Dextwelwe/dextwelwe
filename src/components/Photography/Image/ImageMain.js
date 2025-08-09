@@ -1,6 +1,6 @@
 
 import im from './Image.module.css'
-import { useState , useEffect, useRef} from 'react';
+import { useState , useEffect} from 'react';
 import loading from '../../../assets/images/loadingGif.gif'
 
 export default function ImageMain({src, alt, className}) {

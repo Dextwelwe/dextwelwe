@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet'
 import RouteNavWrapper from './pages/RouteNavWrapper/RouteNavWrapper';
 import PreloadBackgrounds from './components/Background/PreloadBackgrounds';
+import RouteAnalytics from './RouteAnalytics';
 
 export default function App() {
   const { i18n } = useTranslation();
@@ -32,6 +33,7 @@ export default function App() {
         <link rel="canonical" href="https://dextwelwe.com/"  />
       </Helmet>
       <HashRouter>
+            <RouteAnalytics />
             <PreloadBackgrounds />
             <Routes>
               <Route path="/" element={<HomePage />} />

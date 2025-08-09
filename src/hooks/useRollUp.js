@@ -1,8 +1,6 @@
 import { useEffect,useRef} from 'react';
-import { useViewportSize } from './useViewportWidth';
-let prevHeight = window.innerHeight;
-export function useRollUp(introRef, contentRef,  minPaddingTop=0, offset=0) {
-  const { height } = useViewportSize();   
+
+export function useRollUp(introRef, contentRef,  minPaddingTop=0, offset=0) { 
   const prevHeightRef = useRef(window.innerHeight);
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
@@ -25,7 +23,7 @@ export function useRollUp(introRef, contentRef,  minPaddingTop=0, offset=0) {
       const diff = Math.abs(currH - prevHeightRef.current);
 
       // bail if change is less than 50px
-      if ((diff < 150 && window.innerWidth < 800) && diff != 0) return;
+      if ((diff < 150 && window.innerWidth < 800) && diff !== 0) return;
 
       // calculate padding in px
       const introH = intro.getBoundingClientRect().height;
