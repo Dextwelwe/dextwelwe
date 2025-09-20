@@ -13,7 +13,7 @@
         "MY_SKILLS" : "MY SKILLS",
         "PERSONAL_INTERESTS" : "PERSONAL INTERESTS",
         "MY_SKILLS_DESC" : "I have a strong foundation in object-oriented programming, data structures, algorithms, and design patterns. I'm experienced with Java, C#, and Python, and I write clean, testable code using unit and mock testing. On the web side, I work with HTML, CSS, JavaScript, TypeScript, and ASP. My database skills include PL/SQL, PostgreSQL, Oracle, and Firebase. I'm also familiar with modern frameworks like React, Flask, Java Spring, Bootstrap, and jQuery.",
-        "TITLE_INTRO_DESC" : "Hi, my name is Danil Moskalenko. I’m a Full Stack Web Developer with 2 years of professional experience living in Brossard, Canada. I enjoy building things that are useful, simple to use, and well-designed. I’m always looking to learn new skills and improve myself, with a strong desire to keep progressing in my career and personal life. Outside of work, I spend my time taking pictures of things that catch my eye, cycling around and exploring new places.",
+        "TITLE_INTRO_DESC" : "Hi, my name is Danil Moskalenko. I’m a Full Stack Web Developer with 2 years of professional experience. I enjoy building things that are useful, simple to use, and well-designed. I’m always looking to learn new skills and improve myself, with a strong desire to keep progressing in my career and personal life. Outside of work, I spend my time taking pictures of things that catch my eye, biking and exploring new places.",
         "INTEREST_USER_EXPERIENCE": "User Experience",
         "INTEREST_NEW_TECH": "New Technologies",
         "INTEREST_PROGRAMMING_TECHNIQUES": "Discovering new programming techniques",
@@ -23,11 +23,11 @@
     },
     "APPLICATIONS" : {
         "GROCERY_APP" : "GROCERY APP",
-        "GROCERY_APP_DESC" :"I built a small grocery web app using React, CSS, and Firebase. It’s a personal app that can be installed on your phone’s home screen and works like a native app. I created it to replace shared Apple Notes, which wasn’t very practical. Users can sort products by categories, add, remove, and edit items. Simple and efficient. I’m still adding new features with the goal of turning it into a full PWA, and soon it will be available to more people.",
-        "GROCERY_APP_STACK" : "REACT,CSS,FIREBASE",
+        "GROCERY_APP_DESC" :"I built a mobile-first grocery app with React, CSS, and Firebase, which I developed for personal use. It installs directly on a phone’s home screen and feels like a native app. The app offers secure login, real-time syncing, multi-language item support, and shared lists, all with smooth performance and an intuitive interface.",
+        "GROCERY_APP_STACK" : "REACT,CSS,FIREBASE,AUTH,I18N",
         "PERSONAL_WEBSITE" : "PERSONAL WEBSITE",
         "PERSONAL_WEBSITE_DESC" :"You're currently browsing it :) This project was a full redesign of my previous site, created to challenge and refine my front-end skills. Built from scratch using React and pure CSS. The custom design was created by my girlfriend, a graphic designer who kindly helped out. Thanks for stopping by!",
-        "PERSONAL_WEBSITE_STACK" : "REACT,CSS,FIGMA"
+        "PERSONAL_WEBSITE_STACK" : "REACT,CSS,FIGMA,I18N"
     },
     "CONTACT_ME" :{
         "GROCERY_APP" : "GROCERY APP",
