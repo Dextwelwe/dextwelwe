@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c35a6e51.css",
-    "main.js": "/static/js/main.1b9dd637.js",
+    "main.js": "/static/js/main.4e49371c.js",
     "static/media/highscrapper2.webp": "/static/media/highscrapper2.7cbf99c9249d50753e9a.webp",
     "static/media/statue.webp": "/static/media/statue.f4fab3dbd42b7f2defd6.webp",
     "static/media/bridge.webp": "/static/media/bridge.f2ff7d52abcdf2459905.webp",
@@ -33,10 +33,10 @@
     "static/media/NamataSemiBold.otf": "/static/media/NamataSemiBold.03dbe032b9c6df88c4b5.otf",
     "index.html": "/index.html",
     "main.c35a6e51.css.map": "/static/css/main.c35a6e51.css.map",
-    "main.1b9dd637.js.map": "/static/js/main.1b9dd637.js.map"
+    "main.4e49371c.js.map": "/static/js/main.4e49371c.js.map"
   },
   "entrypoints": [
     "static/css/main.c35a6e51.css",
-    "static/js/main.1b9dd637.js"
+    "static/js/main.4e49371c.js"
   ]
 }
