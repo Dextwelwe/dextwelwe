@@ -21,7 +21,7 @@ const AppCard = React.forwardRef((props, ref) => {
         <a href={gh} target='_blank' rel='noreferrer'>GITHUB</a>
         {preview && 
         <a href={preview} target='blank' rel='noreferrer'>{t('TRY')}</a>
-}
+      }
         </div>
       </div>
     </div>
