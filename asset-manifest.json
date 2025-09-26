@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c35a6e51.css",
-    "main.js": "/static/js/main.4e49371c.js",
+    "main.css": "/static/css/main.3e34e2f7.css",
+    "main.js": "/static/js/main.401d805b.js",
     "static/media/highscrapper2.webp": "/static/media/highscrapper2.7cbf99c9249d50753e9a.webp",
     "static/media/statue.webp": "/static/media/statue.f4fab3dbd42b7f2defd6.webp",
     "static/media/bridge.webp": "/static/media/bridge.f2ff7d52abcdf2459905.webp",
@@ -32,11 +32,11 @@
     "static/media/Satoshi-Regular.otf": "/static/media/Satoshi-Regular.811ccb0b5af1892a71df.otf",
     "static/media/NamataSemiBold.otf": "/static/media/NamataSemiBold.03dbe032b9c6df88c4b5.otf",
     "index.html": "/index.html",
-    "main.c35a6e51.css.map": "/static/css/main.c35a6e51.css.map",
-    "main.4e49371c.js.map": "/static/js/main.4e49371c.js.map"
+    "main.3e34e2f7.css.map": "/static/css/main.3e34e2f7.css.map",
+    "main.401d805b.js.map": "/static/js/main.401d805b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c35a6e51.css",
-    "static/js/main.4e49371c.js"
+    "static/css/main.3e34e2f7.css",
+    "static/js/main.401d805b.js"
   ]
 }
