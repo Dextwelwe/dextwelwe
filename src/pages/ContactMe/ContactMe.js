@@ -13,7 +13,7 @@ export default function ContactMe() {
   const contentRef = useRef(null);
   const firstRollElem = useRef(null);
   const {height} = useViewportSize();
-  useRollUp(firstRollElem, contentRef, height*0.25,20)
+  useRollUp(firstRollElem, contentRef, height*0.2,25)
   return (
     <>
       <Helmet>

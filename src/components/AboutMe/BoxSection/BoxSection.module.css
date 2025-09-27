@@ -22,6 +22,12 @@
 .stackList {
     width: 55%;
 }
+.item {
+    margin: 4px;
+    padding: 4px;
+    border: 1px solid var(--white);
+    flex-grow: 1;
+   }
  }
 
  @media screen and (max-width: 740px) {

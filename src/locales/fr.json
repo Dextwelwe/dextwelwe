@@ -7,13 +7,21 @@
         "MENU" : "MENU",
         "CLOSE" : "FERMER"
     },
-    
+    "SKILLS": {
+    "BUILD_MAINT_APPS": "Créer et maintenir des applications web full-stack.",
+    "DESIGN_IMPL_BACKEND": "Concevoir et implémenter des systèmes backend et des API.",
+    "DATABASES": "Travailler avec des bases de données relationnelles et NoSQL (Oracle, Firebase Firestore).",
+    "TECHNICAL": "Déboguer, optimiser et refactoriser du code.",
+    "UI/UX": "Améliorer l’UI/UX et créer des designs responsives.",
+    "DEPLOY": "Déployer des fonctionnalités en production et assurer leur fiabilité.",
+    "COLLAB": "Collaborer sur des projets en utilisant Git, SVN et Jira."
+    },
     "ABOUT_ME" : {
         "CURRENT_STACK" : "MON STACK ACTUEL",
         "MY_SKILLS" : "MES COMPÉTENCES",
         "PERSONAL_INTERESTS" : "CENTRES D'INTÉRÊT",
         "MY_SKILLS_DESC" : "J’ai une solide base en programmation orientée objet, structures de données, algorithmes et design patterns. J’ai de l’expérience avec Java, C# et Python, et j’écris du code propre et testable en utilisant des tests unitaires et des mocks. Côté web, je travaille avec HTML, CSS, JavaScript, TypeScript et ASP. Mes compétences en bases de données incluent PL/SQL, PostgreSQL, Oracle et Firebase. Je suis également familier avec des frameworks modernes comme React, Flask, Java Spring, Bootstrap et jQuery.",
-        "TITLE_INTRO_DESC" : "Salut, je m’appelle Danil Moskalenko. Je suis développeur Full Stack avec 2 ans d’expérience professionnelle. J’aime créer des choses utiles, simples à utiliser et bien conçues. Je cherche toujours à apprendre de nouvelles compétences et à m’améliorer. En dehors du travail, je passe mon temps à prendre en photo ce qui attire mon attention, à faire du vélo et à explorer de nouveaux endroits.",
+        "TITLE_INTRO_DESC" : "Salut, je m’appelle Danil Moskalenko. Je suis développeur web full stack avec 2 ans d’expérience professionnelle. Je me spécialise dans la création d’applications web modernes, autant dans la conception de l’architecture backend que dans le soin de bien centrer une div. J’ai développé et mis en ligne plusieurs fonctionnalités utilisées chaque jour par de nombreux clients, et voir les gens utiliser ce que je construis m’inspire à toujours m’améliorer et à offrir de meilleures solutions.",
         "TITLE_INTRO" : "SALUT TOI!",
         "INTEREST_USER_EXPERIENCE": "Expérience utilisateur",
         "INTEREST_NEW_TECH": "Nouvelles technologies",

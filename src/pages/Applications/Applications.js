@@ -18,7 +18,7 @@ export default function Applications() {
    const contentRef = useRef(null);
    const {height} = useViewportSize();
    const contentClasses = [app.content , 'defaultPadding' , 'content'].join(" ");
-   useRollUp(firstRollElem,contentRef, height * 0.25, 10);
+   useRollUp(firstRollElem,contentRef, height * 0.25, 50);
 
    return (
     <>
@@ -33,7 +33,7 @@ export default function Applications() {
         <AppCard title={t('APPLICATIONS.GROCERY_APP')} desc={t('APPLICATIONS.GROCERY_APP_DESC')} stack={t('APPLICATIONS.GROCERY_APP_STACK')} gh={"https://github.com/Dextwelwe/GroceryApp"} preview={'https://dextwelwe.github.io/GroceryApp/'}   />
         </div>
         <AppCard title={t('APPLICATIONS.PERSONAL_WEBSITE')} desc={t('APPLICATIONS.PERSONAL_WEBSITE_DESC')} stack={t('APPLICATIONS.PERSONAL_WEBSITE_STACK')} gh={"https://github.com/Dextwelwe/dextwelwe"} />
-      <Footer />
+        <Footer />
       </div>
     </>
   )

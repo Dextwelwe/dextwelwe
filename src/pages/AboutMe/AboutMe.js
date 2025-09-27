@@ -17,9 +17,10 @@ export default function AboutMe() {
    const {t} = useTranslation();
    const introRef = useRef(null); 
    const contentRef = useRef(null);
-   useRollUp(introRef, contentRef);
-   const stackItems = ["Express.js", "Node.js", "React", "Typescript", "ASP Classic", "VBScript", "Stored Procedures","Oracle DB", "Firebase", "CSS", "JQuery", "Crystal Reports", "Git" , "Tortoise SVN"];
+   useRollUp(introRef, contentRef,0,50);
+   const stackItems = ["Express.js", "Node.js", "React", "Typescript", "VBScript", "Stored Procedures","Oracle DB", "ASP Classic", "Firebase", "CSS", "JQuery", "Crystal Reports", "Git" , "Tortoise SVN"];
    const interests = [ t('ABOUT_ME.INTEREST_USER_EXPERIENCE'), t('ABOUT_ME.INTEREST_NEW_TECH'),t('ABOUT_ME.INTEREST_PROGRAMMING_TECHNIQUES'),t('ABOUT_ME.INTEREST_CYCLING'),t('ABOUT_ME.INTEREST_PHOTOGRAPHY')];
+   const skillsBulletPoints = [t('SKILLS.BUILD_MAINT_APPS'),t('SKILLS.DESIGN_IMPL_BACKEND'),t('SKILLS.DATABASES'), t('SKILLS.TECHNICAL'), t('SKILLS.UI/UX'), t('SKILLS.DEPLOY'), t('SKILLS.COLLAB')]
    const contentClasses = [abt.content , 'defaultPadding' , 'content'].join(" ")
   return (
       <div ref={contentRef} className={contentClasses}>
@@ -29,7 +30,7 @@ export default function AboutMe() {
       </Helmet>
       <Background imgSrc={bgImg} />
       <ArticleSection ref={introRef} title={t('ABOUT_ME.TITLE_INTRO')} desc={t('ABOUT_ME.TITLE_INTRO_DESC')} />
-      <ArticleSection title={t('ABOUT_ME.MY_SKILLS')} desc={t('ABOUT_ME.MY_SKILLS_DESC')} />
+      <ArticleSection title={t('ABOUT_ME.MY_SKILLS')} bulletPointsArr={skillsBulletPoints}  />
       <BoxSection title={t('ABOUT_ME.CURRENT_STACK')} items={stackItems} />
       <BoxSection title={t('ABOUT_ME.PERSONAL_INTERESTS')} items={interests} />
       <Footer />
