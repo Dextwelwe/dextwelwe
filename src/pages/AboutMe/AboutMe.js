@@ -18,7 +18,27 @@ export default function AboutMe() {
    const introRef = useRef(null); 
    const contentRef = useRef(null);
    useRollUp(introRef, contentRef,0,50);
-   const stackItems = ["Express.js", "Node.js", "React", "Typescript", "VBScript", "Stored Procedures","Oracle DB", "ASP Classic", "Firebase", "CSS", "JQuery", "Crystal Reports", "Git" , "Tortoise SVN"];
+
+   const stackItems = [
+    "JavaScript (ES6+)",
+    "Typescript",
+    "Node.js",
+    "NestJS",
+    "Express.js",
+    "React",
+    "Jest",
+    "Firebase (Firestore, Auth, Hosting)",
+    "Oracle DB",
+    "SQL / Stored Procedures",
+    "Git" ,
+    "CSS",
+    "ASP Classic",
+    "VBScript",
+    "JQuery",
+    "Crystal Reports",
+    "Tortoise SVN" 
+  ];
+
    const interests = [ t('ABOUT_ME.INTEREST_USER_EXPERIENCE'), t('ABOUT_ME.INTEREST_NEW_TECH'),t('ABOUT_ME.INTEREST_PROGRAMMING_TECHNIQUES'),t('ABOUT_ME.INTEREST_CYCLING'),t('ABOUT_ME.INTEREST_PHOTOGRAPHY')];
    const skillsBulletPoints = [t('SKILLS.BUILD_MAINT_APPS'),t('SKILLS.DESIGN_IMPL_BACKEND'),t('SKILLS.DATABASES'), t('SKILLS.TECHNICAL'), t('SKILLS.UI/UX'), t('SKILLS.DEPLOY'), t('SKILLS.COLLAB')]
    const contentClasses = [abt.content , 'defaultPadding' , 'content'].join(" ")

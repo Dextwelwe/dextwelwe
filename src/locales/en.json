@@ -10,7 +10,7 @@
     "SKILLS" :{
         "BUILD_MAINT_APPS" : "Building and maintaining full-stack web applications",
         "DESIGN_IMPL_BACKEND" : "Designing and implementing backend systems and APIs",
-        "DATABASES" : "Working with relational and NoSQL databases (Oracle, Firebase Firestore)",
+        "DATABASES" : "Working with relational and NoSQL databases.",
         "TECHNICAL" : "Debugging, optimizing, and refactoring code",
         "UI/UX" : "Improving UI/UX and creating responsive designs",
         "DEPLOY" : "Deploying features to production and ensuring reliability",
@@ -21,21 +21,23 @@
         "CURRENT_STACK" : "MY CURRENT STACK",
         "MY_SKILLS" : "MY SKILLS",
         "PERSONAL_INTERESTS" : "PERSONAL INTERESTS",
-        "TITLE_INTRO_DESC" : "Hi, my name is Danil Moskalenko. I’m a Full Stack Web Developer with 2 years of professional experience. I'm specializing in building modern web applications from designing the backend architecture to making sure a div is perfectly centered. I have built and deployed many features that is used by many customers every day and seeing other people using things i have build inspire me to keep improving and providing even better solutions.",
+        "TITLE_INTRO_DESC" : "My name is Danil Moskalenko, a Full-Stack Software Developer from Montréal, Canada. I specialize in building   fast, reliable, and user-friendly web applications. My experience covers the full development cycle from designing backend architecture, writing complex SQL queries to building APIs, creating intuitive user interfaces, and  deploying solutions to customers. What drives me is seeing my work in action, helping people solve real problems, and using that momentum to take on even greater challenges.",
         "INTEREST_USER_EXPERIENCE": "User Experience",
         "INTEREST_NEW_TECH": "New Technologies",
-        "INTEREST_PROGRAMMING_TECHNIQUES": "Discovering new programming techniques",
+        "INTEREST_PROGRAMMING_TECHNIQUES": "Progressive Web Applications",
         "INTEREST_CYCLING": "Cycling",
         "INTEREST_PHOTOGRAPHY": "Photography",
         "TRY" : "TRY"
     },
     "APPLICATIONS" : {
         "GROCERY_APP" : "GROCERY APP",
-        "GROCERY_APP_DESC" :"I built a mobile-first grocery app with React, CSS, and Firebase, which I developed for personal use. It installs directly on a phone’s home screen and feels like a native app. The app offers secure login, real-time syncing, multi-language item support, and shared lists, all with smooth performance and an intuitive interface.",
+        "GROCERY_APP_DESC" :"Developed a mobile-first grocery list app using React, Firebase, and CSS, deployed as a progressive web app (PWA). Implemented secure authentication, real-time data synchronization, and collaborative shared lists. Built multi-language item support (i18n) and optimized performance for smooth use across devices. Designed to deliver a native-like experience directly from the browser.",
         "GROCERY_APP_STACK" : "REACT,CSS,FIREBASE,AUTH,I18N",
         "PERSONAL_WEBSITE" : "PERSONAL WEBSITE",
-        "PERSONAL_WEBSITE_DESC" :"You're currently browsing it :) This project was a full redesign of my previous site, created to challenge and refine my front-end skills. Built from scratch using React and pure CSS. The custom design was created by my girlfriend, a graphic designer who kindly helped out. Thanks for stopping by!",
-        "PERSONAL_WEBSITE_STACK" : "REACT,CSS,FIGMA,I18N"
+        "PERSONAL_WEBSITE_DESC" :"Designed and developed a responsive portfolio website from scratch using React and CSS, based on custom Figma designs. Implemented internationalization (i18n) for multilingual support, optimized for performance and accessibility, and deployed for public access. Serves as a personal brand platform, highlighting full-stack projects and technical skills.",
+        "PERSONAL_WEBSITE_STACK" : "REACT,CSS,FIGMA,I18N",
+        "LIVE_DEMO" : "TRY"
+
     },
     "CONTACT_ME" :{
         "GROCERY_APP" : "GROCERY APP",

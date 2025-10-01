@@ -10,7 +10,7 @@
     "SKILLS": {
     "BUILD_MAINT_APPS": "Créer et maintenir des applications web full-stack.",
     "DESIGN_IMPL_BACKEND": "Concevoir et implémenter des systèmes backend et des API.",
-    "DATABASES": "Travailler avec des bases de données relationnelles et NoSQL (Oracle, Firebase Firestore).",
+    "DATABASES": "Travailler avec des bases de données relationnelles et NoSQL.",
     "TECHNICAL": "Déboguer, optimiser et refactoriser du code.",
     "UI/UX": "Améliorer l’UI/UX et créer des designs responsives.",
     "DEPLOY": "Déployer des fonctionnalités en production et assurer leur fiabilité.",
@@ -21,22 +21,23 @@
         "MY_SKILLS" : "MES COMPÉTENCES",
         "PERSONAL_INTERESTS" : "CENTRES D'INTÉRÊT",
         "MY_SKILLS_DESC" : "J’ai une solide base en programmation orientée objet, structures de données, algorithmes et design patterns. J’ai de l’expérience avec Java, C# et Python, et j’écris du code propre et testable en utilisant des tests unitaires et des mocks. Côté web, je travaille avec HTML, CSS, JavaScript, TypeScript et ASP. Mes compétences en bases de données incluent PL/SQL, PostgreSQL, Oracle et Firebase. Je suis également familier avec des frameworks modernes comme React, Flask, Java Spring, Bootstrap et jQuery.",
-        "TITLE_INTRO_DESC" : "Salut, je m’appelle Danil Moskalenko. Je suis développeur web full stack avec 2 ans d’expérience professionnelle. Je me spécialise dans la création d’applications web modernes, autant dans la conception de l’architecture backend que dans le soin de bien centrer une div. J’ai développé et mis en ligne plusieurs fonctionnalités utilisées chaque jour par de nombreux clients, et voir les gens utiliser ce que je construis m’inspire à toujours m’améliorer et à offrir de meilleures solutions.",
+        "TITLE_INTRO_DESC" : "Je m’appelle Danil Moskalenko, Développeur Full-Stack basé à Montréal, Canada. Je me spécialise dans la création d’applications web modernes, rapides, fiables et faciles à utiliser. Mon expérience couvre l’ensemble du cycle de développement : de la conception de l’architecture backend et l’écriture de requêtes SQL complexes, jusqu’à la création d’API, d’interfaces utilisateur intuitives et le déploiement de solutions chez les clients. Ce qui me motive, c’est de voir mon travail en action, aider les gens à résoudre de vrais problèmes et utiliser cette énergie pour relever des défis encore plus grands.",
         "TITLE_INTRO" : "SALUT TOI!",
         "INTEREST_USER_EXPERIENCE": "Expérience utilisateur",
         "INTEREST_NEW_TECH": "Nouvelles technologies",
-        "INTEREST_PROGRAMMING_TECHNIQUES": "Découverte de nouvelles techniques de programmation",
+        "INTEREST_PROGRAMMING_TECHNIQUES": "Application Web Progressive",
         "INTEREST_CYCLING": "Vélo de route",
         "INTEREST_PHOTOGRAPHY": "Photographie",
         "TRY" : "ESSAYEZ"
     },
     "APPLICATIONS" : {
         "GROCERY_APP" : "ÉPICERIE",
-        "GROCERY_APP_DESC" :"J’ai créé une application d’épicerie mobile-first avec React, CSS et Firebase, que j’utilise personnellement au quotidien. Elle s’installe directement sur l’écran d’accueil d’un téléphone et se comporte comme une application native. L’app propose une connexion sécurisée, une synchronisation en temps réel, la gestion multilingue des articles et des listes partagées, le tout avec des performances fluides et une interface intuitive.",
+        "GROCERY_APP_DESC" :"Développé une application de liste d’épicerie mobile-first avec React, Firebase et CSS, déployée en tant qu’application web progressive (PWA). Mis en place une authentification sécurisée, une synchronisation des données en temps réel et des listes partagées collaboratives. Conçu un support multilingue (i18n) et optimisé les performances pour une utilisation fluide sur tous les appareils. L’application offre une expérience similaire à celle d’une application native, directement depuis le navigateur.",
         "GROCERY_APP_STACK" : "REACT,CSS,FIREBASE,I18N",
         "PERSONAL_WEBSITE" : "SITE WEB PERSONNEL",
-        "PERSONAL_WEBSITE_DESC"  : "Tu es en train de naviguer dessus :) Ce projet est une refonte complète de mon ancien site, réalisé pour me challenger et améliorer mes compétences en front-end. J’ai tout construit à partir de zéro avec React et du CSS pur. Le design personnalisé a été créé par ma copine, une graphiste qui m’a gentiment aidé. Merci d’être passé !",
-        "PERSONAL_WEBSITE_STACK" : "REACT,CSS,FIGMA,I18N"
+        "PERSONAL_WEBSITE_DESC"  : "Conçu et développé un site portfolio responsive à partir de zéro avec React et CSS, basé sur des designs personnalisés réalisés dans Figma. Mis en place l’internationalisation (i18n) pour le support multilingue, optimisé les performances et l’accessibilité, puis déployé pour un accès public. Sert de plateforme de marque personnelle, mettant en valeur des projets full-stack et des compétences techniques.",
+        "PERSONAL_WEBSITE_STACK" : "REACT,CSS,FIGMA,I18N",
+        "LIVE_DEMO" : "ÉSSAYEZ"
     },
     "CONTACT_ME" : {
         "THANK_YOU" : "MERCI",
