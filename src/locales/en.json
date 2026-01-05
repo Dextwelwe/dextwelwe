@@ -21,13 +21,17 @@
         "CURRENT_STACK" : "MY CURRENT STACK",
         "MY_SKILLS" : "MY SKILLS",
         "PERSONAL_INTERESTS" : "PERSONAL INTERESTS",
-        "TITLE_INTRO_DESC" : "My name is Danil Moskalenko, a Full-Stack Software Developer from Montréal, Canada. I specialize in building   fast, reliable, and user-friendly web applications. My experience covers the full development cycle from designing backend architecture, writing complex SQL queries to building APIs, creating intuitive user interfaces, and  deploying solutions to customers. What drives me is seeing my work in action, helping people solve real problems, and using that momentum to take on even greater challenges.",
+        "TITLE_INTRO_DESC" : "My name is Danil Moskalenko, a Full-Stack Software Developer based in Montreal. I build, modernize, and scale business-critical applications, covering the full development cycle, from analyzing complex requirements to deploying working solutions. My experience includes developing new features, troubleshooting issues, and maintaining legacy systems. I’m driven by constant professional growth and the challenge of mastering new technologies.",
         "INTEREST_USER_EXPERIENCE": "User Experience",
         "INTEREST_NEW_TECH": "New Technologies",
         "INTEREST_PROGRAMMING_TECHNIQUES": "Progressive Web Applications",
         "INTEREST_CYCLING": "Cycling",
         "INTEREST_PHOTOGRAPHY": "Photography",
-        "TRY" : "TRY"
+        "TRY" : "TRY",
+        "PROGRAMMING_LANGUAGES" : "Programming Languages",
+        "FRAMEWORKS_LIBRARIES" : "Frameworks & Libraries",
+        "DATABASES" : "Databases",
+        "TOOLS_OTHERS" : "Tools & Others"
     },
     "APPLICATIONS" : {
         "GROCERY_APP" : "GROCERY APP",

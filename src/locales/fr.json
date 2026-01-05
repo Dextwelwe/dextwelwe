@@ -21,14 +21,18 @@
         "MY_SKILLS" : "MES COMPÉTENCES",
         "PERSONAL_INTERESTS" : "CENTRES D'INTÉRÊT",
         "MY_SKILLS_DESC" : "J’ai une solide base en programmation orientée objet, structures de données, algorithmes et design patterns. J’ai de l’expérience avec Java, C# et Python, et j’écris du code propre et testable en utilisant des tests unitaires et des mocks. Côté web, je travaille avec HTML, CSS, JavaScript, TypeScript et ASP. Mes compétences en bases de données incluent PL/SQL, PostgreSQL, Oracle et Firebase. Je suis également familier avec des frameworks modernes comme React, Flask, Java Spring, Bootstrap et jQuery.",
-        "TITLE_INTRO_DESC" : "Je m’appelle Danil Moskalenko, Développeur Full-Stack basé à Montréal, Canada. Je me spécialise dans la création d’applications web modernes, rapides, fiables et faciles à utiliser. Mon expérience couvre l’ensemble du cycle de développement : de la conception de l’architecture backend et l’écriture de requêtes SQL complexes, jusqu’à la création d’API, d’interfaces utilisateur intuitives et le déploiement de solutions chez les clients. Ce qui me motive, c’est de voir mon travail en action, aider les gens à résoudre de vrais problèmes et utiliser cette énergie pour relever des défis encore plus grands.",
+        "TITLE_INTRO_DESC" : "Je suis Danil Moskalenko, développeur Full-Stack établi à Montréal. Mon quotidien consiste à bâtir, moderniser et faire évoluer des applications essentielles au succès des entreprises. Je prends en charge tout le cycle de développement, de l’analyse de besoins complexes jusqu’au déploiement de solutions concrètes. Mon parcours m'a amené autant à créer de nouvelles fonctionnalités qu'à résoudre des problèmes techniques ou maintenir des systèmes existants. Ce qui me motive, c'est d'apprendre continuellement et de relever le défi de maîtriser les nouvelles technologies.",
         "TITLE_INTRO" : "SALUT TOI!",
         "INTEREST_USER_EXPERIENCE": "Expérience utilisateur",
         "INTEREST_NEW_TECH": "Nouvelles technologies",
         "INTEREST_PROGRAMMING_TECHNIQUES": "Application Web Progressive",
         "INTEREST_CYCLING": "Vélo de route",
         "INTEREST_PHOTOGRAPHY": "Photographie",
-        "TRY" : "ESSAYEZ"
+        "TRY" : "ESSAYEZ",
+        "PROGRAMMING_LANGUAGES" : "Langages de programmation",
+        "FRAMEWORKS_LIBRARIES" : "Frameworks & Bibliothèques",
+        "DATABASES" : "Bases de données",
+        "TOOLS_OTHERS" : "Outils & Autres"
     },
     "APPLICATIONS" : {
         "GROCERY_APP" : "ÉPICERIE",
