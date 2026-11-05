@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     height: 100dvh;
     color: var(--white);
     animation: bgMoveIn 1.2s ease-out forwards;
@@ -276,8 +277,6 @@
         font-size: 1.2rem;
     }
     
-    /* Nav Bar Responsive */
-
     .responsive {
         background: black !important;
     }

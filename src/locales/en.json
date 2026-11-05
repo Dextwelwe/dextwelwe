@@ -8,29 +8,28 @@
         "CLOSE" : "CLOSE"
     },
     "SKILLS" :{
-        "BUILD_MAINT_APPS" : "Building and maintaining full-stack web applications",
-        "DESIGN_IMPL_BACKEND" : "Designing and implementing backend systems and APIs",
-        "DATABASES" : "Working with relational and NoSQL databases.",
-        "TECHNICAL" : "Debugging, optimizing, and refactoring code",
-        "UI/UX" : "Improving UI/UX and creating responsive designs",
-        "DEPLOY" : "Deploying features to production and ensuring reliability",
-        "COLLAB" : "Collaborating on projects using Git, SVN, and Jira"
+        "ERP_FULL_CYCLE" : "Full-Cycle ERP Development: Building end-to-end features, resolving daily Jira tickets, and shipping business logic updates to production.",
+        "BACKEND_SERVICES" : "Backend Services & APIs: Developing backend services in .NET (ASP.NET Core, Razor Pages, SignalR) and Node.js/Express.js.",
+        "LEGACY_MODERNIZATION" : "Legacy Modernization: Migrating outdated ERP screens and Classic ASP pages into modern MVC architectures and maintainable web stacks.",
+        "DATABASE_PROGRAMMING" : "Database Programming: Writing complex SQL queries, views, and PL/SQL stored procedures across Oracle and PostgreSQL.",
+        "AUTOMATION_REALTIME" : "Automation & Real-Time Tooling: Designing live problem reporting, notification services, and automated mass-emailing workflows.",
+        "UI_DASHBOARDS" : "UI & Production Dashboards: Creating responsive web interfaces and shop-floor dashboards using React, modern HTML/CSS, and EJS."
     },
     "ABOUT_ME" : {
         "TITLE_INTRO" : "HEY THERE!",
         "CURRENT_STACK" : "MY CURRENT STACK",
         "MY_SKILLS" : "MY SKILLS",
         "PERSONAL_INTERESTS" : "PERSONAL INTERESTS",
-        "TITLE_INTRO_DESC" : "My name is Danil Moskalenko, a Full-Stack Software Developer based in Montreal. I build, modernize, and scale business-critical applications, covering the full development cycle, from analyzing complex requirements to deploying working solutions. My experience includes developing new features, troubleshooting issues, and maintaining legacy systems. I’m driven by constant professional growth and the challenge of mastering new technologies.",
-        "INTEREST_USER_EXPERIENCE": "User Experience",
-        "INTEREST_NEW_TECH": "New Technologies",
-        "INTEREST_PROGRAMMING_TECHNIQUES": "Progressive Web Applications",
-        "INTEREST_CYCLING": "Cycling",
-        "INTEREST_PHOTOGRAPHY": "Photography",
+        "TITLE_INTRO_DESC" : "My name is Danil Moskalenko, a Full-Stack Web Developer based in Montreal. Specialized in supporting and developing web applications and enterprise software, I have 3+ years of experience in the manufacturing ERP sector. My work covers everything from analyzing client requirements and resolving Jira tickets to writing .NET services, migrating legacy systems to modern tech (Node.js, React, C#), and managing databases with complex SQL/PL-SQL in Oracle and PostgreSQL.",
+        "INTEREST_STREET_PHOTOGRAPHY": "Street / Urban Photography",
+        "INTEREST_CYCLING": "Road Cycling",
+        "INTEREST_HOMELAB": "Homelab & Self-Hosting",
+        "INTEREST_AGENTIC_AI": "Agentic AI Workflows",
         "TRY" : "TRY",
         "PROGRAMMING_LANGUAGES" : "Programming Languages",
         "FRAMEWORKS_LIBRARIES" : "Frameworks & Libraries",
         "DATABASES" : "Databases",
+        "AI_AGENTIC_WORKFLOWS" : "AI & Agentic Workflows",
         "TOOLS_OTHERS" : "Tools & Others"
     },
     "APPLICATIONS" : {
@@ -40,6 +39,12 @@
         "PERSONAL_WEBSITE" : "PERSONAL WEBSITE",
         "PERSONAL_WEBSITE_DESC" :"Designed and developed a responsive portfolio website from scratch using React and CSS, based on custom Figma designs. Implemented internationalization (i18n) for multilingual support, optimized for performance and accessibility, and deployed for public access. Serves as a personal brand platform, highlighting full-stack projects and technical skills.",
         "PERSONAL_WEBSITE_STACK" : "REACT,CSS,FIGMA,I18N",
+        "UFC_FIGHT_NIGHT_STATS" : "UFC FIGHT NIGHT STATS",
+        "UFC_FIGHT_NIGHT_STATS_DESC" : "A companion app for UFC fight nights that shows live data while the card is on: who is fighting right now, round by round, plus each fighter's stats, record and recent form. Open any bout for a side-by-side comparison of the two fighters and their full fight history. The card keeps itself up to date on its own, so what is on screen is always the current state of the night.",
+        "UFC_FIGHT_NIGHT_STATS_STACK" : "C#,ASP.NET CORE,REACT,TYPESCRIPT,SQLITE,DOCKER",
+        "OPEN_GALLERY" : "Open project screenshots",
+        "PREVIOUS" : "Previous screenshot",
+        "NEXT" : "Next screenshot",
         "LIVE_DEMO" : "TRY"
 
     },

@@ -21,14 +21,15 @@ export default function AboutMe() {
    useRollUp(introRef, contentRef,0,50);
 
    const stackItems = {
-    Languages : ["C#", "Java", "Javascript", "Typescript", "ASP", "VBScript"],
-    FrameworksLibraries : ["Node.js", "React", "Express.js", "ASP.NET Core", "Spring Boot", "Hibernate/JPA"],
+    Languages : ["C#", "JavaScript", "TypeScript", "Bash"],
+    FrameworksLibraries : ["Node.js", "Express.js", "React", ".NET", "ASP.NET Core", "SignalR", "Razor Pages"],
     Databases : ["Oracle (PL/SQL, Stored Procedures)", "PostgreSQL", "Firebase (NoSQL)"],
-    ToolsOthers : ["Git", "Github", "Docker", "Jira", "Linux", "Bash", "Nginx", "Tortoise SVN", "Crystal Reports", "Maven"]
+    AiAgentic : ["Cursor", "Cline", "Agentic Development"],
+    ToolsOthers : ["Git", "GitHub", "Docker", "Linux", "Nginx", "Jira", "Crystal Reports", "Tortoise SVN"]
    };
 
-   const interests = [ t('ABOUT_ME.INTEREST_USER_EXPERIENCE'), t('ABOUT_ME.INTEREST_NEW_TECH'),t('ABOUT_ME.INTEREST_PROGRAMMING_TECHNIQUES'),t('ABOUT_ME.INTEREST_CYCLING'),t('ABOUT_ME.INTEREST_PHOTOGRAPHY')];
-   const skillsBulletPoints = [t('SKILLS.BUILD_MAINT_APPS'),t('SKILLS.DESIGN_IMPL_BACKEND'),t('SKILLS.DATABASES'), t('SKILLS.TECHNICAL'), t('SKILLS.UI/UX'), t('SKILLS.DEPLOY'), t('SKILLS.COLLAB')]
+   const interests = [ t('ABOUT_ME.INTEREST_STREET_PHOTOGRAPHY'), t('ABOUT_ME.INTEREST_CYCLING'),t('ABOUT_ME.INTEREST_HOMELAB'),t('ABOUT_ME.INTEREST_AGENTIC_AI')];
+   const skillsBulletPoints = [t('SKILLS.ERP_FULL_CYCLE'),t('SKILLS.BACKEND_SERVICES'),t('SKILLS.LEGACY_MODERNIZATION'), t('SKILLS.DATABASE_PROGRAMMING'), t('SKILLS.AUTOMATION_REALTIME'), t('SKILLS.UI_DASHBOARDS')]
    const contentClasses = [abt.content , 'defaultPadding' , 'content'].join(" ")
   return (
       <div ref={contentRef} className={contentClasses}>

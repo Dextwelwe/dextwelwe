@@ -22,10 +22,8 @@ export function useRollUp(introRef, contentRef,  minPaddingTop=0, offset=0) {
       const currH = window.innerHeight;
       const diff = Math.abs(currH - prevHeightRef.current);
 
-      // bail if change is less than 50px
       if ((diff < 150 && window.innerWidth < 800) && diff !== 0) return;
 
-      // calculate padding in px
       const introH = intro.getBoundingClientRect().height;
       let padPx = currH - introH - offset;
       if (padPx < 100) padPx = Math.max(padPx, minPaddingTop);
@@ -33,11 +31,9 @@ export function useRollUp(introRef, contentRef,  minPaddingTop=0, offset=0) {
       content.style.transition = 'padding-top 1s ease';
       content.style.paddingTop = `${padPx}px`;
 
-      // update for next comparison
       prevHeightRef.current = currH;
     };
 
-    // initial application
     onResize();
 
     window.addEventListener('resize', onResize);

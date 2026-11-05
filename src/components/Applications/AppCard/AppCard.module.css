@@ -12,6 +12,31 @@
     padding: 10px 0px 30px 0px;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.galleryButton {
+    display: flex;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.galleryButton:hover {
+    opacity: 1;
+}
+
+.galleryIcon {
+    width: 28px;
+    height: 28px;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -22,7 +47,9 @@
     border: 1px solid var(--black);
     padding: 5px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    min-width: 0;
 }
 
 .links {
@@ -51,7 +78,9 @@
     }
 
     .stack {
-        width: max-content;
+        width: auto;
+        max-width: 100%;
+        gap: 8px;
         font-size: 11px;
     }
 

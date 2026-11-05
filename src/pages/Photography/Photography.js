@@ -97,7 +97,7 @@ return (
      <div className={ph.currentImage}>
       <div className={ph.imageWrapper}>
       {oldImgIndex !== null && 
-        <ImageMain src={currCategory.data[oldImgIndex]}  key={`curr-${oldImgIndex}`} className={`${ph.image} ${ph.imageSwipe} ${direction === '+' ? ph.swipeOutLeft : ph.swipeOutRight}`}/>
+        <ImageMain src={currCategory.data[oldImgIndex]}  key={`curr-${oldImgIndex}`} className={`${ph.image} ${direction === '+' ? ph.swipeOutLeft : ph.swipeOutRight}`}/>
       }
         <ImageMain src={currCategory.data[currImgIndex]} key={`curr-${currImgIndex}`} className={`${ph.image} ${isFirstRender.current ? ph.swipeRightSlow : (direction === '+' ? ph.swipeRight : ph.swipeLeft)}`}
  />

@@ -11,8 +11,9 @@
 .desc {
     width: 50%;
     font-size: 1.1rem;
-    line-height: 20px;
+    line-height: 1.6;
     padding-left: 10px;
+    padding-top: 10px;
     box-sizing: border-box;
 }
 
@@ -28,9 +29,13 @@
 }
 
 .bulletItem{
-    margin-bottom: 5px;
+    margin-bottom: 16px;
     padding-left: 10px;
     font-size: 1.1rem;
+}
+
+.bulletLabel{
+    font-weight: bold;
 }
 
  @media screen and (max-width: 1100px) {

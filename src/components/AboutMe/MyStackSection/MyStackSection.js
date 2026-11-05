@@ -28,6 +28,12 @@ export default function MyStackSection({title, items}) {
         <li key={index} className={ss.item}>{item}</li>
       ))}
     </ul>
+      <h3 className={ss.stackTitle}>{t('ABOUT_ME.AI_AGENTIC_WORKFLOWS').toUpperCase()}</h3>
+      <ul className={ss.stackItems}>
+      {items.AiAgentic.map((item, index) => (
+        <li key={index} className={ss.item}>{item}</li>
+      ))}
+    </ul>
       <h3 className={ss.stackTitle}>{t('ABOUT_ME.TOOLS_OTHERS').toUpperCase()}</h3>
       <ul className={ss.stackItems}>
       {items.ToolsOthers.map((item, index) => (

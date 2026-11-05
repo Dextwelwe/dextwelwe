@@ -1,10 +1,7 @@
 .bgFixed {
   position: fixed;
+  inset: 0;
   overflow: hidden;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
   z-index: -1;
   background-position: center;
   background-repeat: no-repeat;

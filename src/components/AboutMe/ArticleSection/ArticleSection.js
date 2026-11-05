@@ -9,9 +9,16 @@ import React from 'react';
       {desc &&<p className={int.desc}>{desc}</p>}
       {bulletPointsArr.length > 0 && (
       <ul  className={int.bulletPoints}>
-        {bulletPointsArr.map((item, index) => (
-          <li className={int.bulletItem} key={index}>{item}</li>
-        ))}
+        {bulletPointsArr.map((item, index) => {
+          const separator = item.indexOf(': ');
+          const label = separator > 0 ? item.slice(0, separator + 1) : null;
+          return (
+            <li className={int.bulletItem} key={index}>
+              {label && <b className={int.bulletLabel}>{label}</b>}
+              {separator > 0 ? item.slice(separator + 1) : item}
+            </li>
+          );
+        })}
       </ul>
       )}
     </article>
