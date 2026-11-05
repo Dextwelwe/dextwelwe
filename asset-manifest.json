@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1a769cb.css",
-    "main.js": "/static/js/main.849ac8fa.js",
+    "main.css": "/static/css/main.05dcfb59.css",
+    "main.js": "/static/js/main.153dab42.js",
     "static/media/highscrapper2.webp": "/static/media/highscrapper2.7cbf99c9249d50753e9a.webp",
     "static/media/statue.webp": "/static/media/statue.f4fab3dbd42b7f2defd6.webp",
     "static/media/bridge.webp": "/static/media/bridge.f2ff7d52abcdf2459905.webp",
@@ -26,17 +26,24 @@
     "static/media/beachPeople.webp": "/static/media/beachPeople.139db8fbf059e474c9d3.webp",
     "static/media/gas.webp": "/static/media/gas.73117d79a575f822ae15.webp",
     "static/media/car.webp": "/static/media/car.bad05e6614da0a068abd.webp",
+    "static/media/ufc3.webp": "/static/media/ufc3.3059dc8e6bfdb7f23f48.webp",
     "static/media/foggyLight.webp": "/static/media/foggyLight.57a27f114b46d6c42aaa.webp",
+    "static/media/ufc2.webp": "/static/media/ufc2.190b25282652e53b3487.webp",
     "static/media/tim.webp": "/static/media/tim.f392fb016b103c420ed9.webp",
+    "static/media/ufc1.webp": "/static/media/ufc1.c9cb16dbae2d4df576ed.webp",
     "static/media/loadingGif.gif": "/static/media/loadingGif.42aaa181adb3af3bef08.gif",
     "static/media/Satoshi-Regular.otf": "/static/media/Satoshi-Regular.811ccb0b5af1892a71df.otf",
+    "static/media/grocery.webp": "/static/media/grocery.43554c32cb5ab30ef144.webp",
+    "static/media/grocery2.webp": "/static/media/grocery2.723f391d58db772b6d0a.webp",
     "static/media/NamataSemiBold.otf": "/static/media/NamataSemiBold.03dbe032b9c6df88c4b5.otf",
+    "static/media/grocery3.webp": "/static/media/grocery3.2b37e5241f1d88f8beeb.webp",
     "index.html": "/index.html",
-    "main.b1a769cb.css.map": "/static/css/main.b1a769cb.css.map",
-    "main.849ac8fa.js.map": "/static/js/main.849ac8fa.js.map"
+    "static/media/gallery.svg": "/static/media/gallery.c0f7188598275849e40d883dfd087142.svg",
+    "main.05dcfb59.css.map": "/static/css/main.05dcfb59.css.map",
+    "main.153dab42.js.map": "/static/js/main.153dab42.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1a769cb.css",
-    "static/js/main.849ac8fa.js"
+    "static/css/main.05dcfb59.css",
+    "static/js/main.153dab42.js"
   ]
 }
